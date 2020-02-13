@@ -1541,7 +1541,7 @@ body {
 	font-size: 20pt;
 	font-weight: 300;
 	line-height: 1.75em;
-	color: #666;
+	color: #777;
 	}
 
 body.is-loading * {
@@ -1557,7 +1557,7 @@ body.is-loading * {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
-	color: #555;
+	color: #666;
 	line-height: 1.75em;
 	}
 
@@ -1566,7 +1566,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	text-decoration: none;
 	}
 
-h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {color: #222;}
+h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {color: #333;}
 
 h2 {
 	font-size: 2em;
@@ -1575,7 +1575,7 @@ h2 {
 
 strong, b {
 	font-weight: 400;
-	color: #444;
+	color: #555;
 	}
 
 em, i {
@@ -1658,7 +1658,7 @@ br.clear {
 ul p {
 	margin-bottom: 0.75em;
     font-size: 1.1em;
-	color: #444;
+	color: #555;
 	}
 
 ul.default {
@@ -1824,7 +1824,7 @@ ul.ample li {
 #footer {
 	margin-left: 375px;
 	text-align: left;
-	background-color: #e8edec;
+	background-color: #dce3e2;
 	padding: 3em 2em 1em 2em;
 	font-size: 0.65em;
 	}
@@ -1868,19 +1868,19 @@ ul.ample li {
 	}
 
 #main > section.one {
-	background-color: #f5fafa;
+	background-color: #e8edec;
 	}
 
 #main > section.two {
-	background-color: #ecf1f1;
-	}
-
-#main > section.three {
 	background-color: #f5fafa;
 	}
 
-#main > section.four {
+#main > section.three {
 	background-color: #ecf1f1;
+	}
+
+#main > section.four {
+	background-color: #e8edec;
 	}
 
 
