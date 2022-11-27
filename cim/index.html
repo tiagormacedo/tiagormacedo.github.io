@@ -1,0 +1,206 @@
+<h1> Communications in Mathematics </h1>
+<h2> Technical editing process </h2>
+
+
+<h3> Step 1 </h3>
+
+    <p> 
+        As soon as an author sends their manuscript, verify if the manuscript is
+        in the format of the journal. 
+    </p>
+
+    <ul>
+        <li> 
+            If it is not, then ask the author to edit their manuscript using the 
+            format of the journal.  Here is a template email that you can use:
+            <blockquote>
+                Dear author,
+
+                Thank you for your response.
+
+                The template we use to publish articles in Communications in Mathematics is 
+                attached.  Notice that there are 3 files.  The only file you will need to
+                edit is commat.tex.  However, you will need to have all of these 3 files
+                inside the same folder in order to successfully compile file commat.tex.
+
+                Please, send us the edited commat.tex file together with any other source 
+                file that is necessary to successfully compile your article as soon as 
+                possible.
+
+                Best regards,
+
+                <your name>
+                Technical editor of Communication in Mathematics
+            </blockquote>
+            Remeber to attach: commat.tex, commat.cls and episciences.png.
+        </li>
+
+        <li> 
+            If the manuscript is in the format of the journal, proceed with its 
+            revision (Step 2). 
+        </li>
+    </ul>
+
+
+<h3> Step 2 </h3>
+
+    <p>
+        Revision of the paper.  Make sure to check the following: 
+    </p>
+
+    <ul>
+        <li>
+            Spell and grammar.  My suggestion if that you copy the content of the 
+            paper, open Google Mail, create a new email and paste the content of the
+            paper.  Google checks both spell and grammar. 
+        </li>
+
+        <li>
+            Sentences starting with a mathematical formula.  My suggestion is that
+            you search for <i>". $"</i> in the content of the paper.
+        </li>
+
+        <li>
+            Avoid inline formulas longer than half of a line. Use math displays
+            <i>\[...\]</i> instead. 
+        </li>
+
+        <li>
+            Always use the enumerate and itemize environments for lists.
+        </li>
+
+        <li>
+            Always use \dots, \ldots, \dotsc, \cdot, etc, instead of "..." or ".".
+            My suggestion is that you search for <i>"..."</i> in the content of the 
+            paper.
+        </li>
+
+        <li>
+            Instead of numbering equations or citing a reference by hand (using 
+            parenthesis or brackets), always use \cite, \ref and \eqref.
+        </li>
+
+        <li>
+            Delete all horizontal or vertical spacing, such as \hskip, \vskip, 
+            \smallskip, \medskip, \bigskip, \\, \newpage and \clearpage.
+        </li>
+
+        <li>
+            The references contain: authors' names, title, no empty fields (such as
+            empty parenthesis), the page numbers are not followed by a dash (replace
+            "--" by "-" between the pages' numbers).
+        </li>
+
+        <li>
+            Add the following lines right before <i>"\begin{paper}"</i>:
+            <blockquote>
+                \VOLUME{<volume number>}
+                \YEAR{<volume year>}
+                \NUMBER{<issue number>}
+                \firstpage{<first page of the paper: odd>}
+                \DOI{https://doi.org/10.????/cm.<id of the paper>}
+            </blockquote>
+        </li>
+
+        <li>
+            Add the following line right before <i>"\end{paper}"</i>:
+            <blockquote>
+                \EditInfo{<received date>}{<acceptance date>}{<handling editor>}
+            </blockquote>
+        </li>
+    </ul>
+
+    <p> 
+        As soon as you are done reviewing the author's manuscript send it back
+        to the author (Step 3). 
+    </p>
+
+
+<h3> Step 3 </h3>
+
+    <p> 
+        As soon as you are done reviewing the author's manuscript send it back to
+        the author, asking if there is any further changes they would like you to
+        make.  Here is a template email that you can use:
+        <blockqute>
+            Dear author,
+
+            Thank you for sending your manuscript.
+
+            I am attaching to this email an updated version of your it.  If there is 
+            anything you would like us to change, please let us know.  
+
+            Best regards,
+
+            <your name>
+            Technical editor of Communications in Mathematics
+        </bockquote>
+    </p>
+
+    <p>
+        Make sure you attach the pdf file of their manuscript to this email.
+    </p>
+
+
+<h3> Step 4 </h3>
+
+    <p>
+        When the author and you agree with all the edition of their article, send 
+        the source files that you used to compile the final version of their 
+        article to them.  Here is a template email that you can use:
+    </p>
+
+    <blockquote>
+        Dear author,
+
+        Thank you for your response.
+
+        In that case, I would like to ask you to *update* your posting on ArXiv/HAL 
+        to its final version (see attached files).  Please, do not make a new 
+        posting, as EpiSciences uses the id of the posting in the open repository 
+        that was informed during submission.
+
+        As soon as your article is updated, please, let me know.
+
+        Best regards,
+
+        <your name>
+        Technical editor of Communications in Mathematics
+    </blockquote>
+
+    <p>
+        Make sure you attach the tex file of the final version, together with:
+        commat.cls, episciences.png and any other file (figures, etc) that the 
+        author may need to successifully compile the tex file.
+    </p>
+
+
+<h3> Step 5 </h3>
+
+    <p>
+        As soon as the author updates their posting on the open repository (ArXiv or
+        HAL), check on the Episciences platform if there is a new version available
+        and publish the paper:
+    </p>
+
+
+
+<h3> General suggestions </h3>
+    <ul>
+        <li>
+            Be kind and patient.
+        </li>
+
+        <li>
+            Try to perform all the steps within 24hs.  In the beginning, Step 2 may take
+            a little longer.  But it gets easier and faster with time.
+        </li>
+
+        <li>
+            Never change the file commat.cls.
+        </li>
+
+        <li>
+            Do not ask the authors to perform more than one action in the same email.
+        </li>
+    </ul>
