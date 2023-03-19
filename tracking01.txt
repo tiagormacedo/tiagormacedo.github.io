@@ -1,3 +1,10 @@
+<html>
+<META HTTP-EQUIV="refresh" CONTENT="5">
+	<head>
+		<title>IWG1</title>
+	</head>
+	<body>
+<pre>
 2023-01-06T16:39:07,4.396556,-48.48381,11299.099609,None,35076.0,None,248.0,None,None,None,0.2,53.0,None,None,None,None,None,None,-43.400002,None,None,251.369995,68.099998,None,7.8,-161.0,None,None,None,None,None
 2023-01-06T16:39:27,4.423903,-48.44838,11298.400391,None,35083.0,None,249.0,None,None,None,0.3,54.0,None,None,None,None,None,None,-43.700001,None,None,251.330002,68.080002,None,9.3,-162.0,None,None,None,None,None
 2023-01-06T16:39:47,4.451331,-48.412865,11297.900391,None,35086.0,None,250.0,None,None,None,0.0,54.0,None,None,None,None,None,None,-43.900002,None,None,251.289993,68.080002,None,10.6,-164.0,None,None,None,None,None
@@ -8,3 +15,6 @@
 2023-01-06T16:41:27,4.589086,-48.234386,11295.799805,None,35068.0,None,249.0,None,None,None,-0.1,55.0,None,None,None,None,None,None,-43.799999,None,None,251.399994,67.660004,None,9.9,-170.0,None,None,None,None,None
 2023-01-06T16:41:47,4.611928,-48.196087,11292.900391,None,35067.0,None,247.0,None,None,None,-0.1,69.0,None,None,None,None,None,None,-44.0,None,None,251.559998,67.449997,None,10.6,-169.0,None,None,None,None,None
 2023-01-06T16:42:07,4.626105,-48.154079,11293.299805,None,35069.0,None,245.0,None,None,None,0.5,81.0,None,None,None,None,None,None,-44.099998,None,None,251.320007,67.629997,None,10.2,-167.0,None,None,None,None,None
+</pre>
+	</body>
+</html>
