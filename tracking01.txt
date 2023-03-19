@@ -5,13 +5,6 @@
 <head>
 <body>
 <pre>
-2023-03-19T14:45:27,4.491147,-47.75,11293.400391,None,35075.0,None,241.0,None,None,None,-0.1,117.0,None,None,None,None,None,None,-43.900002,None,None,251.669998,66.669998,None,9.9,-167.0,None,None,None,None,None
-2023-03-19T14:45:47,4.473124,-47.710625,11292.599609,None,35067.0,None,240.0,None,None,None,-0.1,117.0,None,None,None,None,None,None,-43.900002,None,None,251.619995,66.650002,None,9.2,-167.0,None,None,None,None,None
-2023-03-19T14:46:07,4.455123,-47.671299,11293.099609,None,35077.0,None,239.0,None,None,None,-0.1,117.0,None,None,None,None,None,None,-44.0,None,None,251.679993,66.540001,None,11.1,-173.0,None,None,None,None,None
-2023-03-19T14:46:27,4.43716,-47.632069,11293.599609,None,35066.0,None,239.0,None,None,None,-0.4,117.0,None,None,None,None,None,None,-43.799999,None,None,251.350006,66.839996,None,9.6,-170.0,None,None,None,None,None
-2023-03-19T14:46:47,4.419245,-47.592964,11290.299805,None,35065.0,None,239.0,None,None,None,0.1,117.0,None,None,None,None,None,None,-43.700001,None,None,251.5,66.620003,None,11.1,-169.0,None,None,None,None,None
-2023-03-19T14:47:07,4.401316,-47.553856,11293.099609,None,35072.0,None,239.0,None,None,None,0.1,117.0,None,None,None,None,None,None,-43.599998,None,None,251.320007,66.709999,None,11.3,-169.0,None,None,None,None,None
-2023-03-19T14:47:27,4.383393,-47.514774,11293.200195,None,35073.0,None,239.0,None,None,None,-0.1,117.0,None,None,None,None,None,None,-43.900002,None,None,251.550003,66.419998,None,12.0,-173.0,None,None,None,None,None
 2023-03-19T14:47:47,4.365484,-47.475704,11293.799805,None,35073.0,None,238.0,None,None,None,-0.2,117.0,None,None,None,None,None,None,-43.799999,None,None,251.449997,66.470001,None,10.1,-177.0,None,None,None,None,None
 2023-03-19T14:48:07,4.347573,-47.436653,11291.799805,None,35078.0,None,238.0,None,None,None,0.2,116.0,None,None,None,None,None,None,-43.799999,None,None,251.350006,66.580002,None,7.9,-177.0,None,None,None,None,None
 2023-03-19T14:48:27,4.329748,-47.397758,11292.0,None,35072.0,None,238.0,None,None,None,0.4,116.0,None,None,None,None,None,None,-43.799999,None,None,251.190002,66.629997,None,6.9,-175.0,None,None,None,None,None
@@ -21,6 +14,13 @@
 2023-03-19T14:49:47,4.257587,-47.240433,11295.400391,None,35076.0,None,242.0,None,None,None,-0.2,117.0,None,None,None,None,None,None,-43.700001,None,None,251.559998,66.07,None,10.8,-161.0,None,None,None,None,None
 2023-03-19T14:50:07,4.239417,-47.200829,11291.700195,None,35071.0,None,242.0,None,None,None,0.3,117.0,None,None,None,None,None,None,-43.599998,None,None,251.740005,65.900002,None,12.1,-161.0,None,None,None,None,None
 2023-03-19T14:50:27,4.22126,-47.161255,11292.599609,None,35076.0,None,241.0,None,None,None,0.2,117.0,None,None,None,None,None,None,-43.400002,None,None,251.580002,65.980003,None,12.2,-162.0,None,None,None,None,None
+2023-03-19T14:50:47,4.203173,-47.121845,11291.200195,None,35066.0,None,240.0,None,None,None,0.4,118.0,None,None,None,None,None,None,-43.400002,None,None,251.600006,65.919998,None,13.6,-166.0,None,None,None,None,None
+2023-03-19T14:51:07,4.185162,-47.082603,11293.5,None,35070.0,None,239.0,None,None,None,-0.3,118.0,None,None,None,None,None,None,-43.299999,None,None,251.389999,66.080002,None,13.1,-164.0,None,None,None,None,None
+2023-03-19T14:51:27,4.167152,-47.04343,11293.799805,None,35077.0,None,239.0,None,None,None,0.2,117.0,None,None,None,None,None,None,-43.400002,None,None,251.309998,66.110001,None,12.2,-163.0,None,None,None,None,None
+2023-03-19T14:51:47,4.149218,-47.004349,11295.099609,None,35076.0,None,239.0,None,None,None,-0.3,117.0,None,None,None,None,None,None,-43.5,None,None,251.259995,66.129997,None,12.0,-164.0,None,None,None,None,None
+2023-03-19T14:52:07,4.131228,-46.965183,11295.0,None,35076.0,None,240.0,None,None,None,-0.2,117.0,None,None,None,None,None,None,-43.5,None,None,251.229996,66.129997,None,11.5,-160.0,None,None,None,None,None
+2023-03-19T14:52:27,4.113147,-46.925835,11293.400391,None,35073.0,None,240.0,None,None,None,0.3,117.0,None,None,None,None,None,None,-43.799999,None,None,251.289993,66.019997,None,11.1,-156.0,None,None,None,None,None
+2023-03-19T14:52:47,4.095037,-46.886383,11293.200195,None,35076.0,None,242.0,None,None,None,0.2,117.0,None,None,None,None,None,None,-43.799999,None,None,251.520004,65.739998,None,11.4,-154.0,None,None,None,None,None
 </pre>
 </body>
 </html>
