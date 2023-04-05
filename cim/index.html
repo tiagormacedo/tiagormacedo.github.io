@@ -25,8 +25,8 @@
 <h3 style="font-weight: bold"> Step 1 </h3>
 
     <p> 
-        As soon as an author sends their manuscript, ask the author to send 
-        their manuscript using the journal's format.
+        As soon an article is accepted in the Episciences platform, ask the author to send 
+        their manuscript using the journal's format ('Request for author's sources').
     </p>
 
     <p>
@@ -38,10 +38,10 @@
             Thank you for your response.<br>
             <br>
             The template we use to publish articles in Communications in Mathematics can<br>
-            be downloaded from ... .  Notice that there are 4 files.  The only files that you will need<br>
-            to edit are commat.tex and commat.bib.  However, you will need to have all<br>
-            of these 4 files inside the same folder in order to successfully compile<br>
-            file commat.tex.<br>
+            be downloaded from www.overleaf.com/read/hxycsnytwjcm.  Notice that there are<br>
+            4 files.  The only files that you will need to edit are commat.tex and<br>
+            commat.bib.  However, you will need to have all of these 4 files inside the<br>
+            same folder in order to successfully compile commat.tex.<br>
             <br>
             Please, send us the edited commat.tex and commat.bib file together with any<br>
             other source file that may be necessary to successfully compile your article<br>
@@ -55,8 +55,9 @@
     </p>
 
     <p> 
-        Once you receive the manuscript is in the format of the journal, proceed with its 
-        revision (Step 2). 
+        Once you receive the manuscript is in the format of the journal, first make
+        sure that the authors have also responded through the Episciences platform,
+        and then, proceed with its revision (Step 2). 
     </p>
 </section>
 
@@ -186,7 +187,9 @@
         </li>
 
         <li>
-            Lastly, copy the contents of the .bbl file ... into the .tex file ...
+            Lastly, replace "\bibliography{commat}" in the tex file by
+            the contents of the .bbl file that is created during compilation.  (This is
+            important in order to avoid problems when ArXiv compiles the tex file.)
         </li>
     </ul>
 </section>
