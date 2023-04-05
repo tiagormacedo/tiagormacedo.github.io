@@ -7,6 +7,8 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+
 <script src="../assets/js/hyphenate.js"></script>
 </head>
 
@@ -23,41 +25,39 @@
 <h3 style="font-weight: bold"> Step 1 </h3>
 
     <p> 
-        As soon as an author sends their manuscript, verify if the manuscript is
-        in the format of the journal. 
+        As soon as an author sends their manuscript, ask the author to send 
+        their manuscript using the journal's format.
     </p>
 
-    <ul>
-        <li> 
-            If it is not, then ask the author to edit their manuscript using the 
-            format of the journal.  Here is a template email that you can use:
-            <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
-                Dear author, <br>
-                <br>
-                Thank you for your response.<br>
-                <br>
-                The template we use to publish articles in Communications in Mathematics is<br>
-                attached.  Notice that there are 3 files.  The only file you will need to<br>
-                edit is commat.tex.  However, you will need to have all of these 3 files<br>
-                inside the same folder in order to successfully compile file commat.tex.<br>
-                <br>
-                Please, send us the edited commat.tex file together with any other source<br>
-                file that is necessary to successfully compile your article as soon as<br>
-                possible.<br>
-                <br>
-                Best regards,<br>
-                <br>
-                &lt;your name&gt;<br>
-                Technical editor of Communications in Mathematics
-            </blockquote>
-            Remeber to attach: commat.tex, commat.cls and episciences.png.
-        </li>
+    <p>
+        Here is a template email that you can use:
 
-        <li> 
-            If the manuscript is in the format of the journal, proceed with its 
-            revision (Step 2). 
-        </li>
-    </ul>
+        <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
+            Dear author, <br>
+            <br>
+            Thank you for your response.<br>
+            <br>
+            The template we use to publish articles in Communications in Mathematics is<br>
+            attached.  Notice that there are 4 files.  The only files that you will need<br>
+            to edit are commat.tex and commat.bib.  However, you will need to have all<br>
+            of these 4 files inside the same folder in order to successfully compile<br>
+            file commat.tex.<br>
+            <br>
+            Please, send us the edited commat.tex and commat.bib file together with any<br>
+            other source file that may be necessary to successfully compile your article<br>
+            as soon as possible.<br>
+            <br>
+            Best regards,<br>
+            <br>
+            &lt;your name&gt;<br>
+            Technical editor of Communications in Mathematics
+        </blockquote>
+    </p>
+
+    <p> 
+        Once you receive the manuscript is in the format of the journal, proceed with its 
+        revision (Step 2). 
+    </p>
 </section>
 
 
@@ -83,8 +83,13 @@
         </li>
 
         <li>
+            Mathematical formulas that break between two lines.  My suggestion is that
+            you: either use a display (\[ ... \]), or reorder, or rephrase the sentence.
+        </li>
+
+        <li>
             Avoid inline formulas longer than half of a line. Use math displays
-            <i>\[...\]</i> instead. 
+            <i>\[ ... \]</i> instead. 
         </li>
 
         <li>
@@ -111,26 +116,6 @@
             The references contain: authors' names, title, no empty fields (such as
             empty parenthesis), the page numbers are not followed by a dash (replace
             "--" by "-" between the pages' numbers).
-        </li>
-
-        <li>
-            Add the following lines right before <i>"\begin{paper}"</i>:
-            <blockquote style="background-color: white; font-family: Courier new, Courier, monospace; font-size: 10pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex">
-                \VOLUME{&lt;volume number&gt;}<br>
-                \YEAR{&lt;volume year&gt;}<br>
-                \NUMBER{&lt;issue number&gt;}<br>
-                \firstpage{&lt;first page of the paper: odd&gt;}<br>
-                \DOI{https://doi.org/10.46298/cm.&lt;id of the paper&gt;}
-            </blockquote>
-            <img src="../images/cim-paper_data.png" width="750"></img>
-        </li>
-
-        <li>
-            Add the following line right before <i>"\end{paper}"</i>:
-            <blockquote style="background-color: white; font-family: Courier new, Courier, monospace; font-size: 10pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
-                \EditInfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editor&gt;}
-            </blockquote>
-            You can ask me and I can send you this information, when necessary.
         </li>
     </ul>
 
@@ -165,7 +150,7 @@
     </p>
 
     <p>
-        Make sure you attach the pdf file of their manuscript to this email.
+        Make sure you attach (only) the pdf file of their manuscript to this email.
     </p>
 </section>
 
@@ -175,33 +160,64 @@
 <h3 style="font-weight: bold"> Step 4 </h3>
 
     <p>
-        When the author and you agree with all the edition of their article, send 
-        the source files that you used to compile the final version of their 
-        article to them.  Here is a template email that you can use:
+        When the author and you agree with all the edition of their article, it is
+        time to do the final editing and then send the final version of the
+        manuscript to the author.
     </p>
 
-    <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex">
-        Dear author,<br>
-        <br>
-        Thank you for your response.<br>
-        <br>
-        In that case, I would like to ask you to <b>update</b> your posting on ArXiv/HAL<br>
-        to its final version (see attached files).  Please, do not make a new<br>
-        posting, as EpiSciences uses the id of the posting in the open repository<br> 
-        that was informed during submission.<br>
-        <br>
-        As soon as your article is updated, please, let me know.<br>
-        <br>
-        Best regards,<br>
-        <br>
-        &lt;your name&gt;<br>
-        Technical editor of Communications in Mathematics
-    </blockquote>
+    <ul>
+        <li>
+            First, add the following lines right before <i>"\begin{paper}"</i>:
+            <blockquote style="background-color: white; font-family: Courier new, Courier, monospace; font-size: 10pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex">
+                \VOLUME{&lt;volume number&gt;}<br>
+                \YEAR{&lt;volume year&gt;}<br>
+                \NUMBER{&lt;issue number&gt;}<br>
+                \firstpage{&lt;first page of the paper: odd&gt;}<br>
+                \DOI{https://doi.org/10.46298/cm.&lt;id of the paper&gt;}
+            </blockquote>
+            <img src="../images/cim-paper_data.png" width="750"></img>
+        </li>
+
+        <li>
+            Then, add the following line right before <i>"\end{paper}"</i>:
+            <blockquote style="background-color: white; font-family: Courier new, Courier, monospace; font-size: 10pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
+                \EditInfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editor&gt;}
+            </blockquote>
+            <img src="../images/cim-paper_data2.png" width="750"></img>
+        </li>
+
+        <li>
+            Then, copy the contents of the .bbl file ...
+        </li>
+
+        <li>
+            Lastly, send the source files that you used to compile the final version of
+            the manuscript to the authors.  Here is a template email that you can use:
+
+            <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex">
+                Dear author,<br>
+                <br>
+                Thank you for your response.<br>
+                <br>
+                In that case, I would like to ask you to <b>update</b> your posting on ArXiv/HAL<br>
+                to its final version (see attached files).  Please, do not make a new<br>
+                posting, as EpiSciences uses the id of the posting in the open repository<br> 
+                that was informed during submission.<br>
+                <br>
+                As soon as your article is updated, please, let me know.<br>
+                <br>
+                Best regards,<br>
+                <br>
+                &lt;your name&gt;<br>
+                Technical editor of Communications in Mathematics
+            </blockquote>
+        </li>
+    </ul>
 
     <p>
         Make sure you attach the tex file of the final version, together with:
         commat.cls, episciences.png and any other file (figures, etc) that the 
-        author may need to successifully compile the tex file.
+        author (and ArXiv) may need to successfully compile the tex file.
     </p>
 </section>
 
@@ -211,8 +227,8 @@
 <h3 style="font-weight: bold"> Step 5 </h3>
 
     <p>
-        As soon as the author updates their posting on the open repository (ArXiv or
-        HAL), check on the Episciences platform if there is a new version available
+        As soon as the author updates their posting on the open repository (ArXiv),
+        check on the Episciences platform if there is a new version available
         and publish the paper:
     </p>
     <div style="text-align:center">
@@ -227,11 +243,6 @@
     <ul>
         <li>
             Be kind and patient.
-        </li>
-
-        <li>
-            Try to perform all the steps within 24hs.  In the beginning, Step 2 may take
-            a little longer.  But it gets easier and faster with time.
         </li>
 
         <li>
