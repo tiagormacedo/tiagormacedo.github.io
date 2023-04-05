@@ -25,7 +25,7 @@
 <h3 style="font-weight: bold"> Step 1 </h3>
 
     <p> 
-        As soon an article is accepted in the Episciences platform, ask the authors to send 
+        As soon as an article is accepted in the Episciences platform, ask the authors to send 
         their manuscript using the journal's format ('Request for author's sources').
     </p>
 
@@ -43,8 +43,8 @@
             commat.bib.  However, you will need to have all of these 4 files inside the<br>
             same folder in order to successfully compile commat.tex.<br>
             <br>
-            Please, send us the edited commat.tex and commat.bib file together with any<br>
-            other source file that may be necessary to successfully compile your article<br>
+            Please, send us the edited commat.tex and commat.bib files together with any<br>
+            other source file that may be necessary to successfully compile your article,<br>
             as soon as possible.<br>
             <br>
             Best regards,<br>
@@ -57,6 +57,7 @@
     <p> 
         Once you receive the manuscript in the format of the journal, make sure
         that the authors have also responded through the Episciences platform.
+        (Otherwise, you will not be able to proceed with the editorial process.)
     </p>
 </section>
 
@@ -127,8 +128,13 @@
 
     <p> 
         As soon as you are done reviewing the author's manuscript send it back to
-        the author, asking if there is any further changes they would like you to
-        make.  Here is a template email that you can use:
+        the author, asking if there are any further changes that they would like you to
+        make.
+    </p>
+
+    <p>
+        Here is a template email that you can use:
+
         <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
             Dear author,<br>
             <br>
@@ -161,7 +167,7 @@
 
     <ul>
         <li>
-            First, add the following lines right before <i>"\begin{paper}"</i>:
+            First, add the following lines right before "\begin{document}":
             <blockquote style="background-color: white; font-family: Courier new, Courier, monospace; font-size: 10pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex">
                 \VOLUME{&lt;volume number&gt;}<br>
                 \YEAR{&lt;volume year&gt;}<br>
@@ -173,7 +179,7 @@
         </li>
 
         <li>
-            Then, add the following line right before <i>"\end{paper}"</i>:
+            Then, add the following line right before "\end{document}":
             <blockquote style="background-color: white; font-family: Courier new, Courier, monospace; font-size: 10pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
                 \EditInfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editor&gt;}
             </blockquote>
@@ -181,9 +187,10 @@
         </li>
 
         <li>
-            Lastly, replace "\bibliography{commat}" in the tex file by
-            the contents of the .bbl file that is created during compilation.  (This is
-            important in order to avoid problems when ArXiv compiles the tex file.)
+            Lastly, replace "\bibliography{commat}" in the tex file by the contents of 
+            the .bbl file (\begin{thebibliography} ... \end{thebibliography}) that is
+            created during compilation.  (This is important in order to avoid problems
+            when ArXiv compiles the tex file.)
         </li>
     </ul>
 </section>
@@ -194,9 +201,12 @@
 <h3 style="font-weight: bold"> Step 5 </h3>
 
     <p>
-        Once you have finished editing the author's manuscript, send the source
-        files that you used to compile the final version to the authors.  Here is a
-        template email that you can use:
+        Once you have finished editing the authors' manuscript, send the source
+        files that you used to compile the final version to the authors.
+    </p>
+
+    <p>
+        Here is a template email that you can use:
 
         <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex">
             Dear author,<br>
