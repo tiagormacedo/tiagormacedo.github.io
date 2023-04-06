@@ -14,7 +14,7 @@
                 var baseurl = "https://tmacedo.pythonanywhere.com/uploads/";
                 var filename = baseurl + document.querySelector('input[type=file]').files[0].name;
                 document.getElementById("raw_outfile").innerHTML = "<a href=" + filename + "> raw file </a>";
-                var edited_filename = filename.slice(0, -4) + "-body" + filename.slice(-4);
+                var edited_filename = filename.slice(0, -4) + "-edited" + filename.slice(-4);
                 document.getElementById("edited_outfile").innerHTML = "<a href="+edited_filename+"> edited file </a>";
                 }
         </script>
