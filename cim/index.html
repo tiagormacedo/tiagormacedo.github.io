@@ -1,16 +1,26 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 
-<head>
-<title> Communications in Mathematics </title>
+    <head>
+        <title> Communications in Mathematics </title>
 
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-<script src="../assets/js/hyphenate.js"></script>
-</head>
+        <script>
+            function displayLink() {
+                var baseurl = "https://tmacedo.pythonanywhere.com/uploads/";
+                var filename = baseurl + document.querySelector('input[type=file]').files[0].name;
+                document.getElementById("raw_outfile").innerHTML = "<a href=" + filename + "> raw file </a>";
+                var edited_filename = filename.slice(0, -4) + "-body" + filename.slice(-4);
+                document.getElementById("edited_outfile").innerHTML = "<a href="+edited_filename+"> edited file </a>";
+                }
+        </script>
+
+        <script src="../assets/js/hyphenate.js"></script>
+    </head>
 
 <body style="font-family: 'Source Sans Pro', sans-serif; font-size: 16pt; font-weight: 300; line-height: 1.5em; color: #777; margin: 0; padding: 0; border: 0;">
 
@@ -80,7 +90,7 @@
 
         <li>
             Sentences starting with a mathematical formula.  My suggestion is that
-            you search for <i>". $"</i> in the content of the paper.
+            you search for ". $" in the content of the paper.
         </li>
 
         <li>
@@ -90,7 +100,7 @@
 
         <li>
             Avoid inline formulas longer than half of a line. Use math displays
-            <i>\[ ... \]</i> instead. 
+            (\[ ... \]) instead. 
         </li>
 
         <li>
@@ -108,16 +118,16 @@
             parenthesis or brackets), always use \cite, \ref and \eqref.
         </li>
 
-        <li>
+        <!--<li>
             Delete all horizontal or vertical spacing, such as \hskip, \vskip, 
             \smallskip, \medskip, \bigskip, \\, \newpage and \clearpage.
-        </li>
+        </li>-->
 
-        <li>
+        <!--<li>
             The references contain: authors' names, title, no empty fields (such as
             empty parenthesis), the page numbers are not followed by a dash (replace
             "--" by "-" between the pages' numbers).
-        </li>
+        </li>-->
     </ul>
 </section>
 
@@ -268,5 +278,18 @@
     </ul>
 </section>
 
+<section style="background-color: #e8edec; padding: 2em 375px 3em 375px; margin: 0px auto; text-align: justify;">
+    <form action="https://tmacedo.pythonanywhere.com/cim/editex" method="post" enctype="multipart/form-data" target="invisible_iframe">
+        <label for="infile"> Raw tex file: </label>
+        <input type="file" name="infile" />
+        <input type="submit" value="process" onclick=displayLink() />
+    </form>
+
+    <iframe name="invisible_iframe" style="display: none;"></iframe>
+        
+    <p id="raw_outfile"></p>
+    <p id="edited_outfile"></p>
+</section>
+    
 </body>
 </html>
