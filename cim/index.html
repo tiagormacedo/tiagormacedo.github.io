@@ -39,7 +39,7 @@
         their manuscript using the journal's format ('Request for author's sources').
     </p>
 
-    <p>
+    <!--<p>
         Here is a template email that you can use:
 
         <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
@@ -62,7 +62,7 @@
             &lt;your name&gt;<br>
             Technical editor of Communications in Mathematics
         </blockquote>
-    </p>
+    </p>-->
 
     <p> 
         Once you receive the manuscript in the format of the journal, make sure
@@ -107,11 +107,11 @@
             Always use the enumerate and itemize environments for lists.
         </li>
 
-        <li>
+        <!--<li>
             Always use \dots, \ldots, \dotsc, \cdot, etc, instead of "..." or ".".
             My suggestion is that you search for <i>"..."</i> in the content of the 
             paper.
-        </li>
+        </li>-->
 
         <li>
             Instead of numbering equations or citing a reference by hand (using 
@@ -279,16 +279,18 @@
 </section>
 
 <section style="background-color: #e8edec; padding: 2em 375px 3em 375px; margin: 0px auto; text-align: justify;">
-    <form action="https://tmacedo.pythonanywhere.com/cim/editex" method="post" enctype="multipart/form-data" target="invisible_iframe">
+    <form action="https://tmacedo.pythonanywhere.com/cim/editex" method="post" enctype="multipart/form-data" target="invisible_iframe" onsubmit="this.reset();">
         <label for="infile"> Upload tex: </label>
-        <input type="file" name="infile" value="tex file" />
+        <input type="file" name="infile" required />
         <input type="submit" value="ok" onclick=displayLink() />
     </form>
 
     <iframe name="invisible_iframe" style="display: none;"></iframe>
         
     <p>
-        <span id="raw_outfile"></span> &nbsp; <span id="edited_outfile"></span>
+        <span id="raw_outfile"></span>
+        &nbsp; &nbsp;
+        <span id="edited_outfile"></span>
     </p>
 </section>
     
