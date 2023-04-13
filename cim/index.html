@@ -13,7 +13,7 @@
             function displayLink() {
                 var baseurl = "https://tmacedo.pythonanywhere.com/uploads/";
                 var infilename = document.querySelector('input[type=file]').files[0].name;
-                infilename = infilename.raplace(/ /g, "_");
+                infilename = infilename.replace(/ /g, "_");
 
                 var infilepath = baseurl + infilename;
                 document.getElementById("raw_outfile").innerHTML = "<a href=" + infilepath + " target='_blank'> raw file </a>";
