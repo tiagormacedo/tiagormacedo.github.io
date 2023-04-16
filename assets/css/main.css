@@ -1524,6 +1524,7 @@ ol, ul {
 	}
 
 
+
 /* Basic */
 
 body {
@@ -1531,7 +1532,7 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 18pt;
 	font-weight: 300;
-	line-height: 1.75rem;
+	line-height: 1.75em;
 	color: #6a6b6c;
 	}
 
@@ -1622,9 +1623,14 @@ section {
 	border: 0;
 	}
 
+.image:hover {
+    transform: scale(1.1, 1.1);
+}
+
 .image img {
 	display: block;
 	width: 100%;
+    transition: all 2s ease-in-out;
 	}
 
 .image.avatar70 {
@@ -1643,6 +1649,7 @@ section {
 	width: 100%;
 	margin: 0 0 2em 0;
 	}
+
 
 
 /* List */
