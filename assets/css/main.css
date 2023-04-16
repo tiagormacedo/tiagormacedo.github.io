@@ -1528,7 +1528,7 @@ ol, ul {
 /* Basic */
 
 body {
-	background: #fff;
+	background: #fafbfc;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 18pt;
 	font-weight: 300;
@@ -1692,7 +1692,7 @@ ul.ample li {
 	color: #fafbfc;
 	background: #202730;
 	text-align: right;
-    transition: all 1.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 #header .top {
