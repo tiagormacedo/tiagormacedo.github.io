@@ -352,10 +352,6 @@ section {
     margin-bottom: 3em;
 }
 
-section.p {
-    width: 75%;
-}
-
 section > :last-child,
 section > .container, section:last-child, article > :last-child,
 article > .container, article:last-child {
@@ -376,8 +372,7 @@ article > .container, article:last-child {
 
 .image img {
 	display: block;
-	width: 75%;
-    border-radius: 1px;
+    border-radius: 2px;
     transition: transform 1s ease-in-out;
 	}
 
