@@ -1600,19 +1600,20 @@ br.clear {
 
 /* Section */
 
-	section {
-		margin-bottom: 3em;
-	}
+section {
+    margin-bottom: 3em;
+}
 
-		section > :last-child,
-		section > .container, section:last-child, article > :last-child,
-		article > .container, article:last-child {
-			margin-bottom: 0;
-		}
+    section > :last-child,
+    section > .container, section:last-child, article > :last-child,
+    article > .container, article:last-child {
+        margin-bottom: 0;
+    }
 
-		.row > section, .row > article {
-			margin-bottom: 0;
-		}
+    .row > section, .row > article {
+        margin-bottom: 0;
+    }
+
 
 /* Image */
 
@@ -1626,13 +1627,12 @@ br.clear {
 	width: 100%;
 	}
 
-.image.avatar60 {
+.image.avatar70 {
 	width: 70px;
 	height: 70px;
-	/* background: rgb(34,39,41); */
 	}
 
-.image.avatar60 img {
+.image.avatar70 img {
 	width: 70px;
 	height: 70px;
     border-radius: 100%;
@@ -1655,7 +1655,7 @@ ul p {
 
 ul.default {
 	list-style: circle;
-    padding: 1em 0 0 0;
+    padding: 1rem 0 0 0;
 	}
 
 ul.default li {
@@ -1664,7 +1664,7 @@ ul.default li {
 
 ul.ample {
 	list-style: circle;
-    padding: 1em 0 0 0;
+    padding: 1rem 0 0 0;
 	}
 
 ul.ample li {
@@ -1755,7 +1755,7 @@ ul.ample li {
 	font-size: 0.7em;
 	color: rgba(255, 255, 255, 0.5);
 	line-height: 1.25em;
-	margin: 0.5em 40px 0 20px;
+	margin: 0.5rem 20px 0 20px;
 	font-weight: 300;
     width: 200px;
 	}
