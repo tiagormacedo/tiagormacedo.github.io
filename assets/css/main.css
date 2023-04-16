@@ -1687,13 +1687,12 @@ ul.ample li {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 450px;
+	width: 600px;
 	height: 100%;
 	color: #fafbfc;
 	background: #202730;
-	box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 	text-align: right;
-    animation: fadeInRight 1s ease-in forwards;
+    transition: fadeInRight 1s ease-in forwards;
 	}
 
 #header .top {
@@ -1713,16 +1712,16 @@ ul.ample li {
 	}
 
 #header .icons a {
-	color: #a1a8ac;
+	color: #81888c;
     padding: 0 1ex 0 1ex;
-	-moz-transition: color 0.5s ease-in-out;
-	-webkit-transition: color 0.5s ease-in-out;
-	-ms-transition: color 0.5s ease-in-out;
-	transition: color 0.5s ease-in-out;
+	-moz-transition: color 0.4s ease-in-out;
+	-webkit-transition: color 0.4s ease-in-out;
+	-ms-transition: color 0.4s ease-in-out;
+	transition: color 0.4s ease-in-out;
 	}
 
 #header .icons a:hover {
-	color: #fff;
+	color: #f0f0f0;
 	}
 
 #logo {
@@ -1758,6 +1757,11 @@ ul.ample li {
 	left: 0;
 	top: 0;
 	}
+
+#nav {
+    display: block;
+    padding: 1em 0 0 0;
+}
 
 #nav ul li a {
 	display: block;
