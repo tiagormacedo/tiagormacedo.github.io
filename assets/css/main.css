@@ -1703,7 +1703,7 @@ ul.ample li {
 	width: 375px;
 	height: 100%;
 	color: #fff;
-	background: #202730
+	background: #202730;
 	box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 	text-align: right;
 	}
@@ -1755,8 +1755,9 @@ ul.ample li {
 	font-size: 0.7em;
 	color: rgba(255, 255, 255, 0.5);
 	line-height: 1.25em;
-	margin: 0.5em 0 0 0;
+	margin: 0.5em 40px 0 20px;
 	font-weight: 300;
+    width: 200px;
 	}
 
 #logo .image {
