@@ -1691,8 +1691,8 @@ ul.ample li {
 	color: #fafbfc;
 	background: #202730;
 	text-align: right;
-    animation: fadeInRight 2s ease-in forward;
-	}
+    transition: opacity 1s ease 0.5s, transform 1s ease 0.5s;
+}
 
 @keyframes fadeInRight {
   0% {
