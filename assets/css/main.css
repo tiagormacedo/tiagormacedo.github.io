@@ -1624,10 +1624,6 @@ section {
     overflow: hidden;
 	}
 
-.image:hover {
-    transition: all 5s ease-in-out;
-}
-
 .image img {
 	display: block;
 	width: 100%;
@@ -1649,6 +1645,10 @@ section {
 	width: 100%;
 	margin: 0 0 2em 0;
 	}
+
+.image.featured:hover {
+    transition: all 5s fade-in-out;
+}
 
 
 
@@ -1687,7 +1687,7 @@ ul.ample li {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 375px;
+	width: 450px;
 	height: 100%;
 	color: #fafbfc;
 	background: #202730;
@@ -1729,7 +1729,7 @@ ul.ample li {
 
 #logo h1 {
 	position: relative;
-	color: #fff;
+	color: rgba(255, 255, 255, 0.86);
 	font-weight: 600;
 	font-size: 1em;
 	line-height: 1em;
@@ -1740,7 +1740,7 @@ ul.ample li {
 	position: relative;
 	display: block;
 	font-size: 0.7em;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.75);
 	line-height: 1.25em;
 	margin: 0.5em 0 0 30px;
 	font-weight: 300;
@@ -1755,8 +1755,8 @@ ul.ample li {
 
 #nav ul li a {
 	display: block;
-	padding: 0.5em 1.5em 0.5em 1.5em;
-	color: rgba(255, 255, 255, 0.5);
+	padding: 1.5em 1.5em 0.5em 1.5em;
+	color: rgba(255, 255, 255, 0.75);
 	text-decoration: none;
 	font-weight: 300;
 	outline: 0;
@@ -1816,7 +1816,7 @@ ul.ample li {
 /* Main */
 
 #main {
-    margin-left: 375px;
+    margin-left: 450px;
 	}
 
 #main > section {
