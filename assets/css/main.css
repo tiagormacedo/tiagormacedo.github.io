@@ -1699,24 +1699,26 @@ ul.ample li {
 #header .top {
 	position: absolute;
 	left: 0;
-	top: 1em;
+	top: 1ex;
 	width: 100%;
 	}
 
 #header .icons {
     position: absolute;
     bottom: 1ex;
+    width: 100%;
 	font-size: 1em;
 	margin: 0 0 1em 0;
 	text-align: center;
 	}
 
 #header .icons a {
-	color: #41484c;
-	-moz-transition: color 0.35s ease-in-out;
-	-webkit-transition: color 0.35s ease-in-out;
-	-ms-transition: color 0.35s ease-in-out;
-	transition: color 0.35s ease-in-out;
+	color: #a1a8ac;
+    padding: 0 1ex 0 1ex;
+	-moz-transition: color 0.5s ease-in-out;
+	-webkit-transition: color 0.5s ease-in-out;
+	-ms-transition: color 0.5s ease-in-out;
+	transition: color 0.5s ease-in-out;
 	}
 
 #header .icons a:hover {
@@ -1741,10 +1743,11 @@ ul.ample li {
 
 #logo p {
 	position: relative;
+    text-align: right;
 	display: block;
 	font-size: 0.7em;
 	color: rgba(255, 255, 255, 0.75);
-	line-height: 1.25em;
+	line-height: 1.33em;
 	margin: 0.5em 0 0 30px;
 	font-weight: 300;
     width: 200px;
@@ -1759,7 +1762,7 @@ ul.ample li {
 #nav ul li a {
 	display: block;
 	padding: 0.5em 1.5em 0.5em 1.5em;
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.66);
 	text-decoration: none;
 	font-weight: 300;
 	outline: 0;
