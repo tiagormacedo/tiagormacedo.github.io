@@ -368,6 +368,7 @@ article > .container, article:last-child {
 .image {
 	display: inline-block;
 	border: 0;
+    width: 100%;
 	}
 
 .image img {
