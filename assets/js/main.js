@@ -1,119 +1,87 @@
-/*
-	Prologue by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+// Wait for the document to be ready before executing the script.
+$(function() {
+  // Set up responsive breakpoints.
+  skel.breakpoints({
+    wide: "(min-width: 961px) and (max-width: 1880px)",
+    normal: "(min-width: 961px) and (max-width: 1620px)",
+    narrow: "(min-width: 961px) and (max-width: 1320px)",
+    narrower: "(max-width: 960px)",
+    mobile: "(max-width: 736px)"
+  });
 
-(function($) {
+  // Disable animations/transitions until the page has loaded.
+  $("body").addClass("is-loading");
+  $(window).on("load", function() {
+    $("body").removeClass("is-loading");
+  });
 
-	skel.breakpoints({
-		wide: '(min-width: 961px) and (max-width: 1880px)',
-		normal: '(min-width: 961px) and (max-width: 1620px)',
-		narrow: '(min-width: 961px) and (max-width: 1320px)',
-		narrower: '(max-width: 960px)',
-		mobile: '(max-width: 736px)'
-	});
+  // Apply CSS polyfills (IE<9).
+  if (skel.vars.IEVersion < 9) {
+    $("*:last-child").addClass("last-child");
+  }
 
-	$(function() {
+  // Apply the placeholder polyfill.
+  $("form").placeholder();
 
-		var	$window = $(window),
-			$body = $('body');
+  // Prioritize "important" elements on mobile.
+  skel.on("+mobile -mobile", function() {
+    $.prioritize(".important\\28 mobile\\29", skel.breakpoint("mobile").active);
+  });
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+  // Initialize scrolly links.
+  $(".scrolly").scrolly();
 
-			$window.on('load', function() {
-				$body.removeClass('is-loading');
-			});
+  // Set up the navigation bar to scroll to sections within the page.
+  var $nav_a = $("#nav a");
 
-		// CSS polyfills (IE<9).
-			if (skel.vars.IEVersion < 9)
-				$(':last-child').addClass('last-child');
+  $nav_a.scrolly().on("click", function(e) {
+    var $this = $(this),
+      href = $this.attr("href");
 
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
+    if (href[0] !== "#") {
+      return;
+    }
 
-		// Prioritize "important" elements on mobile.
-			skel.on('+mobile -mobile', function() {
-				$.prioritize(
-					'.important\\28 mobile\\29',
-					skel.breakpoint('mobile').active
-				);
-			});
+    e.preventDefault();
 
-		// Scrolly links.
-			$('.scrolly').scrolly();
+    // Clear active and lock scrollzer until scrolling has stopped.
+    $nav_a.removeClass("active").addClass("scrollzer-locked");
 
-		// Nav.
-			var $nav_a = $('#nav a');
+    // Set this link to active.
+    $this.addClass("active");
+  });
 
-			// Scrolly-fy links.
-				$nav_a
-					.scrolly()
-					.on('click', function(e) {
+  // Initialize scrollzer.
+  var ids = [];
 
-						var t = $(this),
-							href = t.attr('href');
+  $nav_a.each(function() {
+    var href = $(this).attr("href");
 
-						if (href[0] != '#')
-							return;
+    if (href[0] !== "#") {
+      return;
+    }
 
-						e.preventDefault();
+    ids.push(href.substring(1));
+  });
 
-						// Clear active and lock scrollzer until scrolling has stopped
-							$nav_a
-								.removeClass('active')
-								.addClass('scrollzer-locked');
+  $.scrollzer(ids, { pad: 200, lastHack: true });
 
-						// Set this link to active
-							t.addClass('active');
+  // Set up the header toggle and panel for mobile devices.
+  $("<div id='headerToggle'><a href='#header' class='toggle'></a></div>").appendTo("body");
 
-					});
+  $("#header").panel({
+    delay: 500,
+    hideOnClick: true,
+    hideOnSwipe: true,
+    resetScroll: true,
+    resetForms: true,
+    side: "left",
+    target: $("body"),
+    visibleClass: "header-visible"
+  });
 
-			// Initialize scrollzer.
-				var ids = [];
-
-				$nav_a.each(function() {
-
-					var href = $(this).attr('href');
-
-					if (href[0] != '#')
-						return;
-
-					ids.push(href.substring(1));
-
-				});
-
-				$.scrollzer(ids, { pad: 200, lastHack: true });
-
-		// Header (narrower + mobile).
-
-			// Toggle.
-				$(
-					'<div id="headerToggle">' +
-						'<a href="#header" class="toggle"></a>' +
-					'</div>'
-				)
-					.appendTo($body);
-
-			// Header.
-				$('#header')
-					.panel({
-						delay: 500,
-						hideOnClick: true,
-						hideOnSwipe: true,
-						resetScroll: true,
-						resetForms: true,
-						side: 'left',
-						target: $body,
-						visibleClass: 'header-visible'
-					});
-
-			// Fix: Remove transitions on WP<10 (poor/buggy performance).
-				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
-					$('#headerToggle, #header, #main')
-						.css('transition', 'none');
-
-	});
-
-})(jQuery);
+  // Disable transitions on WP<10 (poor/buggy performance).
+  if (skel.vars.os === "wp" && skel.vars.osVersion < 10) {
+    $("#headerToggle, #header, #main").css("transition", "none");
+  }
+});
