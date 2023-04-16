@@ -373,6 +373,7 @@ article > .container, article:last-child {
 
 .image img {
 	display: block;
+    width: 100%;
     border-radius: 2px;
     transition: transform 1s ease-in-out;
 	}
