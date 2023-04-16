@@ -367,12 +367,12 @@ article > .container, article:last-child {
 
 .image {
 	display: inline-block;
+    text-align: center;
 	border: 0;
 	}
 
 .image img {
 	display: block;
-    text-align: center;
     width: 87%;
     border-radius: 2px;
     transition: transform 1s ease-in-out;
