@@ -1687,7 +1687,7 @@ ul.ample li {
 #header {
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: -350px;
 	height: 100%;
 	color: #fafbfc;
 	background: #202730;
