@@ -1659,7 +1659,8 @@ ul.default {
 	}
 
 ul.default li {
-	padding: 0 0 0.17em 0;
+	padding: 0 0 0.5rem 0;
+    margin-left: 1em;
 	}
 
 ul.ample {
@@ -1668,7 +1669,8 @@ ul.ample {
 	}
 
 ul.ample li {
-	padding: 0 0 0.5em 0;
+	padding: 0 0 0.5rem 0;
+    margin-left: 1em;
 	}
 
 
@@ -1755,7 +1757,7 @@ ul.ample li {
 	font-size: 0.7em;
 	color: rgba(255, 255, 255, 0.5);
 	line-height: 1.25em;
-	margin: 0.5rem 20px 0 20px;
+	margin: 0.5rem 0 0 30px;
 	font-weight: 300;
     width: 200px;
 	}
