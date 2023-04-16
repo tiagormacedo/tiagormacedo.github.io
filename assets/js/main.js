@@ -88,6 +88,6 @@ $(function() {
 
 
 window.onload = function() {
-    var header = document.querySelector('.header');
+    var header = document.getElementById('header');
     header.style.left = "0";
 }
