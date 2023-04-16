@@ -1657,27 +1657,27 @@ section {
 
 ul p {
 	margin-bottom: 0.75em;
-    font-size: 1.1rem;
+    font-size: 1.1em;
 	color: #555;
 	}
 
 ul.default {
 	list-style: circle;
-    padding: 1rem 0 0 0;
+    padding: 1em 0 0 0;
 	}
 
 ul.default li {
-	padding: 0 0 0.5rem 0;
+	padding: 0 0 0.5em 0;
     margin-left: 1em;
 	}
 
 ul.ample {
 	list-style: circle;
-    padding: 1rem 0 0 0;
+    padding: 1em 0 0 0;
 	}
 
 ul.ample li {
-	padding: 0 0 0.5rem 0;
+	padding: 0 0 0.5em 0;
     margin-left: 1em;
 	}
 
@@ -1743,7 +1743,7 @@ ul.ample li {
 	font-size: 0.7em;
 	color: rgba(255, 255, 255, 0.5);
 	line-height: 1.25em;
-	margin: 0.5rem 0 0 30px;
+	margin: 0.5em 0 0 30px;
 	font-weight: 300;
     width: 200px;
 	}
@@ -1800,7 +1800,7 @@ ul.ample li {
     .icon:before {
         display: inline-block;
         font-family: FontAwesome;
-        font-size: 1.1rem;
+        font-size: 1.1em;
         text-decoration: none;
         font-style: normal;
         font-weight: normal;
@@ -1858,7 +1858,7 @@ ul.ample li {
 	margin-left: 375px;
 	text-align: left;
 	background-color: #202730;
-	padding: 1rem 1rem .5rem 1rem;
+	padding: 1em 1em .5em 1em;
 	font-size: 0.65em;
 	}
 
