@@ -1691,7 +1691,7 @@ ul.ample li {
 	color: #fafbfc;
 	background: #202730;
 	text-align: right;
-    animation: fadeInRight 1s ease-in forwards;
+    animation: fadeInRight 2s ease-in right;
 	}
 
 @keyframes fadeInRight {
@@ -1751,8 +1751,8 @@ ul.ample li {
 	}
 
 #logo p {
-	position: relative;
-    text-align: right;
+	position: absolute;
+    right: 1ex;
 	display: block;
 	font-size: 0.7em;
 	color: rgba(255, 255, 255, 0.75);
