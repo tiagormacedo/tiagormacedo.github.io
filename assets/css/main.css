@@ -338,12 +338,10 @@ ul.ample li {
 	}
 
 #main > section.odd {
-    width: 75%;
 	background-color: #fafbfc;
 	}
 
 #main > section.even {
-    width: 75%;
 	background-color: #f5f6f7;
 	}
 
@@ -354,15 +352,19 @@ section {
     margin-bottom: 3em;
 }
 
-    section > :last-child,
-    section > .container, section:last-child, article > :last-child,
-    article > .container, article:last-child {
-        margin-bottom: 0;
-    }
+section.p {
+    width: 75%;
+}
 
-    .row > section, .row > article {
-        margin-bottom: 0;
-    }
+section > :last-child,
+section > .container, section:last-child, article > :last-child,
+article > .container, article:last-child {
+    margin-bottom: 0;
+}
+
+.row > section, .row > article {
+    margin-bottom: 0;
+}
 
 
 /* Image */
