@@ -1691,7 +1691,7 @@ ul.ample li {
 	color: #fafbfc;
 	background: #202730;
 	text-align: right;
-    transition: opacity 1s ease 0.5s, transform 1s ease 0.5s;
+    animation: fadeInRight 1.5s ease-in forward;
 }
 
 @keyframes fadeInRight {
@@ -1770,7 +1770,7 @@ ul.ample li {
 
 #nav {
     display: block;
-    padding: 2em 0 0 0;
+    padding: 1.75em 0 0 0;
 }
 
 #nav ul li a {
@@ -1781,10 +1781,10 @@ ul.ample li {
 	font-weight: 300;
 	outline: 0;
 	border: 0;
-	-moz-transition: none;
-	-webkit-transition: none;
-	-ms-transition: none;
-	transition: none;
+	-moz-transition: color 0.4s ease-in-out;
+	-webkit-transition: color 0.4s ease-in-out;
+	-ms-transition: color 0.4s ease-in-out;
+	transition: color 0.4s ease-in-out;
 	}
 
 #nav ul li a span {
@@ -1915,13 +1915,13 @@ ul.ample li {
 		/* Footer */
 
 			#footer {
-				margin-left: 350px;
+				margin-left: 375px;
 			}
 
 		/* Main */
 
 			#main {
-				margin-left: 350px;
+				margin-left: 375px;
 			}
 
 	}
