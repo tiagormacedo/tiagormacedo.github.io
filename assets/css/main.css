@@ -1687,12 +1687,11 @@ ul.ample li {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 600px;
 	height: 100%;
 	color: #fafbfc;
 	background: #202730;
 	text-align: right;
-    transition: fadeInRight 1s ease-in forwards;
+    animation: fadeInRight 1s ease-in forwards;
 	}
 
 @keyframes fadeInRight {
@@ -1836,10 +1835,6 @@ ul.ample li {
 
 /* Main */
 
-#main {
-    margin-left: 600px;
-	}
-
 #main > section {
 	margin: 0;
 	overflow: hidden;
@@ -1875,7 +1870,6 @@ ul.ample li {
 /* Footer */
 
 #footer {
-	margin-left: 600px;
 	text-align: left;
 	background-color: #202730;
 	padding: 1em 1em .5em 1em;
@@ -1901,6 +1895,7 @@ ul.ample li {
     }
 
 
+
 /* Wide */
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -1914,19 +1909,19 @@ ul.ample li {
 		/* Header */
 
 			#header {
-				width: 600px;
+				width: 350px;
 			}
 
 		/* Footer */
 
 			#footer {
-				margin-left: 300px;
+				margin-left: 350px;
 			}
 
 		/* Main */
 
 			#main {
-				margin-left: 300px;
+				margin-left: 350px;
 			}
 
 	}
@@ -1938,11 +1933,11 @@ ul.ample li {
 		/* Main */
 
 			#main > section {
-				padding: 2em 2em 3em 2em;
+				padding: 2em 2em 2em 2em;
 			}
 
 			#main section.cover {
-				padding: 2em 2em 3em 2em;
+				padding: 2em 2em 2em 2em;
 			}
 
 	}
