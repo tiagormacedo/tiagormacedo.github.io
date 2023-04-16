@@ -1770,7 +1770,7 @@ ul.ample li {
 
 #nav {
     display: block;
-    padding: 1rem 0 0 0;
+    padding: 2em 0 0 0;
 }
 
 #nav ul li a {
@@ -1933,11 +1933,11 @@ ul.ample li {
 		/* Main */
 
 			#main > section {
-				padding: 2em 2em 2em 2em;
+				padding: 3em 3em 3em 3em;
 			}
 
 			#main section.cover {
-				padding: 2em 2em 2em 2em;
+				padding: 3em 3em 3em 3em;
 			}
 
 	}
