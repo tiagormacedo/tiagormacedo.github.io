@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset everything */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -23,6 +23,7 @@ ol, ul {
 	}
 
 
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -30,6 +31,8 @@ ol, ul {
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
+
+
 
 /* Containers */
 
@@ -60,139 +63,9 @@ ol, ul {
 		width: 1400px;
 	}
 
-	@media screen and (min-width: 961px) and (max-width: 1880px) {
-
-		.container.\31 25\25 {
-			width: 100%;
-			max-width: 1500px;
-			min-width: 1200px;
-		}
-
-		.container.\37 5\25 {
-			width: 900px;
-		}
-
-		.container.\35 0\25 {
-			width: 600px;
-		}
-
-		.container.\32 5\25 {
-			width: 300px;
-		}
-
-		.container {
-			width: 1200px;
-		}
-
-	}
-
-	@media screen and (min-width: 961px) and (max-width: 1620px) {
-
-		.container.\31 25\25 {
-			width: 100%;
-			max-width: 1200px;
-			min-width: 960px;
-		}
-
-		.container.\37 5\25 {
-			width: 720px;
-		}
-
-		.container.\35 0\25 {
-			width: 480px;
-		}
-
-		.container.\32 5\25 {
-			width: 240px;
-		}
-
-		.container {
-			width: 960px;
-		}
-
-	}
-
-	@media screen and (min-width: 961px) and (max-width: 1320px) {
-
-		.container.\31 25\25 {
-			width: 100%;
-			max-width: 125%;
-			min-width: 100%;
-		}
-
-		.container.\37 5\25 {
-			width: 75%;
-		}
-
-		.container.\35 0\25 {
-			width: 50%;
-		}
-
-		.container.\32 5\25 {
-			width: 25%;
-		}
-
-		.container {
-			width: 100%;
-		}
-
-	}
-
-	@media screen and (max-width: 960px) {
-
-		.container.\31 25\25 {
-			width: 100%;
-			max-width: 125%;
-			min-width: 100%;
-		}
-
-		.container.\37 5\25 {
-			width: 75%;
-		}
-
-		.container.\35 0\25 {
-			width: 50%;
-		}
-
-		.container.\32 5\25 {
-			width: 25%;
-		}
-
-		.container {
-			width: 100%;
-		}
-
-	}
-
-	@media screen and (max-width: 736px) {
-
-		.container.\31 25\25 {
-			width: 100%;
-			max-width: 125%;
-			min-width: 100%;
-		}
-
-		.container.\37 5\25 {
-			width: 75%;
-		}
-
-		.container.\35 0\25 {
-			width: 50%;
-		}
-
-		.container.\32 5\25 {
-			width: 25%;
-		}
-
-		.container {
-			width: 100% !important;
-		}
-
-	}
 
 
-
-/* Basic */
+/* General setup */
 
 body {
 	background: #f5f6f7;
@@ -265,63 +138,6 @@ br.clear {
 	clear: both;
 	}
 
-
-/* Section */
-
-section {
-    margin-bottom: 3em;
-}
-
-    section > :last-child,
-    section > .container, section:last-child, article > :last-child,
-    article > .container, article:last-child {
-        margin-bottom: 0;
-    }
-
-    .row > section, .row > article {
-        margin-bottom: 0;
-    }
-
-
-/* Image */
-
-.image {
-	display: inline-block;
-	border: 0;
-	}
-
-.image img {
-	display: block;
-	width: 100%;
-    transition: transform 1s ease-in-out;
-	}
-
-.image:hover img {
-    transform: scale(1.02);
-}
-
-.image.avatar70 {
-	width: 70px;
-	height: 70px;
-	}
-
-.image.avatar70 img {
-	width: 70px;
-	height: 70px;
-    border-radius: 100%;
-	}
-
-.image.featured {
-	display: block;
-	width: 100%;
-	margin: 0 0 2em 0;
-    overflow: hidden;
-	}
-
-
-
-/* List */
-
 ul p {
 	margin-bottom: 0.75em;
     font-size: 1.1em;
@@ -349,7 +165,8 @@ ul.ample li {
 	}
 
 
-/* Header */
+
+/* Side bar */
 
 #header {
 	position: fixed;
@@ -490,6 +307,7 @@ ul.ample li {
     }
 
 
+
 /* Main */
 
 #main > section {
@@ -528,6 +346,60 @@ ul.ample li {
 	}
 
 
+/* Section */
+
+section {
+    margin-bottom: 3em;
+}
+
+    section > :last-child,
+    section > .container, section:last-child, article > :last-child,
+    article > .container, article:last-child {
+        margin-bottom: 0;
+    }
+
+    .row > section, .row > article {
+        margin-bottom: 0;
+    }
+
+
+/* Image */
+
+.image {
+	display: inline-block;
+	border: 0;
+	}
+
+.image img {
+	display: block;
+	width: 100%;
+    transition: transform 1s ease-in-out;
+	}
+
+.image:hover img {
+    transform: scale(1.02);
+}
+
+.image.avatar70 {
+	width: 70px;
+	height: 70px;
+	}
+
+.image.avatar70 img {
+	width: 70px;
+	height: 70px;
+    border-radius: 100%;
+	}
+
+.image.featured {
+	display: block;
+	width: 100%;
+	margin: 0 0 2em 0;
+    overflow: hidden;
+	}
+
+
+
 /* Footer */
 
 #footer {
@@ -555,6 +427,139 @@ ul.ample li {
     font-weight: 500;
     }
 
+
+
+/* Responsiveness */
+
+	@media screen and (min-width: 961px) and (max-width: 1880px) {
+
+		.container.\31 25\25 {
+			width: 100%;
+			max-width: 1500px;
+			min-width: 1200px;
+		}
+
+		.container.\37 5\25 {
+			width: 900px;
+		}
+
+		.container.\35 0\25 {
+			width: 600px;
+		}
+
+		.container.\32 5\25 {
+			width: 300px;
+		}
+
+		.container {
+			width: 1200px;
+		}
+
+	}
+
+	@media screen and (min-width: 961px) and (max-width: 1620px) {
+
+		.container.\31 25\25 {
+			width: 100%;
+			max-width: 1200px;
+			min-width: 960px;
+		}
+
+		.container.\37 5\25 {
+			width: 720px;
+		}
+
+		.container.\35 0\25 {
+			width: 480px;
+		}
+
+		.container.\32 5\25 {
+			width: 240px;
+		}
+
+		.container {
+			width: 960px;
+		}
+
+	}
+
+	@media screen and (min-width: 961px) and (max-width: 1320px) {
+
+		.container.\31 25\25 {
+			width: 100%;
+			max-width: 125%;
+			min-width: 100%;
+		}
+
+		.container.\37 5\25 {
+			width: 75%;
+		}
+
+		.container.\35 0\25 {
+			width: 50%;
+		}
+
+		.container.\32 5\25 {
+			width: 25%;
+		}
+
+		.container {
+			width: 100%;
+		}
+
+	}
+
+	@media screen and (max-width: 960px) {
+
+		.container.\31 25\25 {
+			width: 100%;
+			max-width: 125%;
+			min-width: 100%;
+		}
+
+		.container.\37 5\25 {
+			width: 75%;
+		}
+
+		.container.\35 0\25 {
+			width: 50%;
+		}
+
+		.container.\32 5\25 {
+			width: 25%;
+		}
+
+		.container {
+			width: 100%;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.container.\31 25\25 {
+			width: 100%;
+			max-width: 125%;
+			min-width: 100%;
+		}
+
+		.container.\37 5\25 {
+			width: 75%;
+		}
+
+		.container.\35 0\25 {
+			width: 50%;
+		}
+
+		.container.\32 5\25 {
+			width: 25%;
+		}
+
+		.container {
+			width: 100% !important;
+		}
+
+	}
 
 
 /* Wide */
