@@ -372,6 +372,7 @@ article > .container, article:last-child {
 
 .image img {
 	display: block;
+    text-align: center;
     width: 87%;
     border-radius: 2px;
     transition: transform 1s ease-in-out;
