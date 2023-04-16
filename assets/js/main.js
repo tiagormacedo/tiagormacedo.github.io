@@ -85,3 +85,9 @@ $(function() {
     $("#headerToggle, #header, #main").css("transition", "none");
   }
 });
+
+
+window.onload = function() {
+    var sidebar = document.querySelector('.sidebar');
+    sidebar.style.left = "0";
+}
