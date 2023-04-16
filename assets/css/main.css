@@ -1531,7 +1531,7 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 18pt;
 	font-weight: 300;
-	line-height: 1.75em;
+	line-height: 1.75rem;
 	color: #6a6b6c;
 	}
 
@@ -1649,7 +1649,7 @@ section {
 
 ul p {
 	margin-bottom: 0.75em;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 	color: #555;
 	}
 
@@ -1673,28 +1673,6 @@ ul.ample li {
     margin-left: 1em;
 	}
 
-
-/* Icons */
-
-	.icon {
-		text-decoration: none;
-	}
-
-		.icon:before {
-			display: inline-block;
-			font-family: FontAwesome;
-			font-size: 1.25em;
-			text-decoration: none;
-			font-style: normal;
-			font-weight: normal;
-			line-height: 1;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
-
-		.icon > .label {
-			display: none;
-		}
 
 /* Header */
 
@@ -1807,33 +1785,24 @@ ul.ample li {
 	color: #286ea0;
 	}
 
-
-/* Footer */
-
-#footer {
-	margin-left: 375px;
-	text-align: left;
-	background-color: #202730;
-	padding: 1rem 1rem .5rem 1rem;
-	font-size: 0.65em;
-	}
-
-#footer p {
-	line-height: 1em;
-	}
-
-#footer .right {
-    background: inherit;
-    float: right;
-    width: 50%;
-    text-align: right;
-    color: #b0b0b0;
+.icon {
+    text-decoration: none;
 }
 
-#footer .right a {
-    color: #b0b0b0;
-    text-decoration: none;
-    font-weight: 500;
+    .icon:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: 1.1rem;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .icon > .label {
+        display: none;
     }
 
 
@@ -1875,6 +1844,34 @@ ul.ample li {
 	}
 
 
+/* Footer */
+
+#footer {
+	margin-left: 375px;
+	text-align: left;
+	background-color: #202730;
+	padding: 1rem 1rem .5rem 1rem;
+	font-size: 0.65em;
+	}
+
+#footer p {
+	line-height: 1em;
+	}
+
+#footer .right {
+    background: inherit;
+    float: right;
+    width: 50%;
+    text-align: right;
+    color: #b0b0b0;
+}
+
+#footer .right a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-weight: 500;
+    }
+
 
 /* Wide */
 
@@ -1883,7 +1880,7 @@ ul.ample li {
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 17pt;
+				font-size: 16pt;
 			}
 
 		/* Header */
@@ -1929,7 +1926,7 @@ ul.ample li {
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 16pt;
+				font-size: 14pt;
 			}
 
 			.container {
