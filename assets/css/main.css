@@ -1,12 +1,3 @@
-@import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-
-/*
-	Prologue by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /* Reset */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1538,10 +1529,10 @@ ol, ul {
 body {
 	background: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 20pt;
+	font-size: 18pt;
 	font-weight: 300;
 	line-height: 1.75em;
-	color: #777;
+	color: #6a6b6c;
 	}
 
 body.is-loading * {
@@ -1557,7 +1548,7 @@ body.is-loading * {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
-	color: #666;
+	color: #606162;
 	line-height: 1.75em;
 	}
 
@@ -1566,7 +1557,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	text-decoration: none;
 	}
 
-h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {color: #333;}
+h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
+    color: #333;
+    }
 
 h2 {
 	font-size: 2em;
@@ -1585,7 +1578,6 @@ em, i {
 a {
 	text-decoration: none;
 	color: #286ea0;
-	/*border-bottom: dotted 1px rgba(128, 128, 128, 0.5);*/
 	-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 	-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 	-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -1635,14 +1627,14 @@ br.clear {
 	}
 
 .image.avatar60 {
-	width: 60px;
-	height: 60px;
-	background: rgb(34,39,41);
+	width: 70px;
+	height: 70px;
+	/* background: rgb(34,39,41); */
 	}
 
 .image.avatar60 img {
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
     border-radius: 100%;
 	}
 
@@ -1711,7 +1703,7 @@ ul.ample li {
 	width: 375px;
 	height: 100%;
 	color: #fff;
-	background: #222629 /*url("images/overlay.png")*/;
+	background: #202730
 	box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 	text-align: right;
 	}
@@ -1722,13 +1714,6 @@ ul.ample li {
 	top: 0;
 	width: 100%;
 	}
-
-/*#header .bottom {*/
-/*	position: absolute;*/
-/*	left: 0;*/
-/*	bottom: 0;*/
-/*	width: 100%;*/
-/*	}*/
 
 #header .icons {
 	font-size: 0.8em;
@@ -1761,6 +1746,7 @@ ul.ample li {
 	font-weight: 600;
 	font-size: 1em;
 	line-height: 1em;
+	text-align: right;
 	}
 
 #logo p {
@@ -1824,8 +1810,8 @@ ul.ample li {
 #footer {
 	margin-left: 375px;
 	text-align: left;
-	background-color: #dce3e2;
-	padding: 3em 2em 1em 2em;
+	background-color: #202730;
+	padding: 1rem 1rem .5rem 1rem;
 	font-size: 0.65em;
 	}
 
@@ -1833,9 +1819,19 @@ ul.ample li {
 	line-height: 1em;
 	}
 
-#footer .right {background:inherit; float:right; width:50%; text-align:right; color:#b0b0b0}
+#footer .right {
+    background: inherit;
+    float: right;
+    width: 50%;
+    text-align: right;
+    color: #b0b0b0;
+}
 
-#footer .right a {color: #b0b0b0; text-decoration:none; font-weight:500;}
+#footer .right a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-weight: 500;
+    }
 
 
 /* Main */
@@ -1867,21 +1863,14 @@ ul.ample li {
 	background-position: center center;
 	}
 
-#main > section.one {
-	background-color: #e8edec;
+#main > section.odd {
+	background-color: #fafbfc;
 	}
 
-#main > section.two {
-	background-color: #f5fafa;
+#main > section.even {
+	background-color: #f0f1f2;
 	}
 
-#main > section.three {
-	background-color: #ecf1f1;
-	}
-
-#main > section.four {
-	background-color: #e8edec;
-	}
 
 
 /* Wide */
@@ -2179,7 +2168,7 @@ ul.ample li {
 				transition: transform 0.5s ease;
 				padding-bottom: 1px;
 				margin-left: 0;
-			}
+            }
 
 				#main > section {
 					padding: 2em 2em 3em 2em;
@@ -2231,19 +2220,4 @@ ul.ample li {
 				#main section.cover header {
 					padding: 0 1em;
 				}
-
-/*		/* Footer */*/
-
-/*			#footer .copyright li {*/
-/*				display: block;*/
-/*				line-height: 1.25em;*/
-/*				border: 0;*/
-/*				padding: 0;*/
-/*				margin: 1em 0 0 0;*/
-/*			}*/
-
-/*				#footer .copyright li:first-child {*/
-/*					margin-top: 0;*/
-/*				}*/
-
 	}
