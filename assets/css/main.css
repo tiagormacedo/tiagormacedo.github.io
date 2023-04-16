@@ -1691,7 +1691,7 @@ ul.ample li {
 	color: #fafbfc;
 	background: #202730;
 	text-align: right;
-    animation: fadeInRight 2s ease-in right;
+    animation: fadeInRight 2s ease-in forward;
 	}
 
 @keyframes fadeInRight {
@@ -1933,11 +1933,11 @@ ul.ample li {
 		/* Main */
 
 			#main > section {
-				padding: 2em 4em 2em 4em;
+				padding: 2em 3em 2em 3em;
 			}
 
 			#main section.cover {
-				padding: 2em 4em 2em 4em;
+				padding: 2em 3em 2em 3em;
 			}
 
 	}
