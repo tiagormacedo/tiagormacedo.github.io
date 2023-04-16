@@ -1625,7 +1625,7 @@ section {
 
 .image:hover {
     transition: all 5s ease-in-out;
-    transform: scale(1.01, 1.01);
+    transform: scale(1.05, 1.05);
 }
 
 .image img {
@@ -1648,7 +1648,7 @@ section {
 	display: block;
 	width: 100%;
 	margin: 0 0 2em 0;
-    border-radius: 1ex;
+    border-radius: 5%;
 	}
 
 
