@@ -88,6 +88,6 @@ $(function() {
 
 
 window.onload = function() {
-    var sidebar = document.querySelector('.sidebar');
-    sidebar.style.left = "0";
+    var header = document.querySelector('.header');
+    header.style.left = "0";
 }
