@@ -1755,7 +1755,7 @@ ul.ample li {
 
 #nav ul li a {
 	display: block;
-	padding: 1.5em 1.5em 0.5em 1.5em;
+	padding: 0.5em 1.5em 0.5em 1.5em;
 	color: rgba(255, 255, 255, 0.75);
 	text-decoration: none;
 	font-weight: 300;
@@ -1816,7 +1816,7 @@ ul.ample li {
 /* Main */
 
 #main {
-    margin-left: 450px;
+    margin-left: 600px;
 	}
 
 #main > section {
