@@ -378,7 +378,7 @@ article > .container, article:last-child {
 	text-align: left;
 	background-color: #202730;
 	padding: 1em 1em .5em 1em;
-	font-size: 0.65em;
+	font-size: 0.66em;
 	}
 
 #footer p {
@@ -446,7 +446,7 @@ article > .container, article:last-child {
     }
 
     #footer {
-        margin-left: 350px;
+        margin-left: 349px;
     }
 
     #main {
@@ -516,6 +516,7 @@ article > .container, article:last-child {
 
     #footer {
         margin-left: 20%;
+        font-size: 0.5em;
     }
 
     #main {
@@ -682,6 +683,7 @@ article > .container, article:last-child {
 
     #footer {
         margin-left: 0;
+        font-size: 0.5em;
     }
 
     #main {
@@ -739,6 +741,10 @@ article > .container, article:last-child {
 
     #main section.cover header {
         padding: 0 1em;
+    }
+
+    #footer {
+        font-size: 0.5em;
     }
 
 }
