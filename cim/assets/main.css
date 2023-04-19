@@ -30,7 +30,8 @@ body {
         position: relative;
         left: 17%;
         width: 66%;
-    }
+        box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, .25); 
+   }
 
 ul {
     display: block;
@@ -107,6 +108,15 @@ img {
         }
 
 
+.button {
+    background-color: rgb(255, 220, 120);
+    font-family: inherit;
+    font-color: inherit;
+    padding: .5ex 1ex .5ex 1ex;
+    border: solid 1pt rgb(255, 200, 20);
+    border-radius: 5px;
+}
+
 .latex {
     display: inline;
     background-color: #eee;
@@ -124,6 +134,7 @@ blocktex {
     background-color: #fff;
     font-family: Courier, monospace;
     font-size: 11pt;
+    line-height: 1.25em;
     }
 
 
