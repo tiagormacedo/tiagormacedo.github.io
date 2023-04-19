@@ -6,9 +6,9 @@
 	 */
 	$.fn.navList = function() {
 
-		var	$this = $(this);
-			$a = $this.find('a'),
-			b = [];
+		var $this = $(this);
+		var $a = $this.find('a');
+		var b = [];
 
 		$a.each(function() {
 
@@ -95,8 +95,9 @@
 			}, userConfig);
 
 			// Expand "target" if it's not a jQuery object already.
-				if (typeof config.target != 'jQuery')
-					config.target = $(config.target);
+                if (!(config.target instanceof jQuery)) {
+                  config.target = $(config.target);
+                }
 
 		// Panel.
 
@@ -183,12 +184,11 @@
 					$this.touchPosX = event.originalEvent.touches[0].pageX;
 					$this.touchPosY = event.originalEvent.touches[0].pageY;
 
-				})
+				});
 
 				$this.on('touchmove', function(event) {
 
-					if ($this.touchPosX === null
-					||	$this.touchPosY === null)
+					if ($this.touchPosX === null || $this.touchPosY === null)
 						return;
 
 					var	diffX = $this.touchPosX - event.originalEvent.touches[0].pageX,
@@ -239,8 +239,7 @@
 						}
 
 					// Prevent vertical scrolling past the top or bottom.
-						if (($this.scrollTop() < 0 && diffY < 0)
-						|| (ts > (th - 2) && ts < (th + 2) && diffY > 0)) {
+						if (($this.scrollTop() < 0 && diffY < 0) || (ts > (th - 2) && ts < (th + 2) && diffY > 0)) {
 
 							event.preventDefault();
 							event.stopPropagation();
@@ -329,8 +328,7 @@
 
 					var i = $(this);
 
-					if (i.val() == ''
-					||  i.val() == i.attr('placeholder'))
+					if (i.val() == '' || i.val() == i.attr('placeholder'))
 						i
 							.addClass('polyfill-placeholder')
 							.val(i.attr('placeholder'));
@@ -528,8 +526,9 @@
 		var key = '__prioritize';
 
 		// Expand $elements if it's not already a jQuery object.
-			if (typeof $elements != 'jQuery')
-				$elements = $($elements);
+            if (!$.fn.jquery || !($elements instanceof jQuery)) {
+              $elements = $($elements);
+            }
 
 		// Step through elements.
 			$elements.each(function() {
