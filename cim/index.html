@@ -4,303 +4,274 @@
     <head>
         <title> Communications in Mathematics </title>
 
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <link href="assets/main.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet" />
 
-        <script>
-            function displayLink() {
-                var baseurl = "https://tmacedo.pythonanywhere.com/uploads/";
-                var infilename = document.querySelector('input[type=file]').files[0].name;
-                infilename = infilename.replace(/ /g, "_");
-
-                var infilepath = baseurl + infilename;
-                document.getElementById("raw_outfile").innerHTML = "<a href=" + infilepath + " target='_blank'> raw file </a>";
-
-                var edited_filepath = infilepath.slice(0, -4) + "-edited" + infilepath.slice(-4);
-                document.getElementById("edited_outfile").innerHTML = "<a href="+edited_filepath+" download> edited file </a>";
-                }
-        </script>
-
-        <script src="../assets/js/hyphenate.js"></script>
+        <script type="text/javascript" src="assets/main.js"></script>
     </head>
 
-<body style="font-family: 'Source Sans Pro', sans-serif; font-size: 16pt; font-weight: 300; line-height: 1.5em; color: #777; margin: 0; padding: 0; border: 0;">
+    <body>
+        <div class="container">
+            <div class="topmatter">
+                <h1> Communications in Mathematics </h1>
+                <h2> Technical editing process </h2>
+            </div>
 
-<section style="background-color: #ff9c10; padding: 2em 4em 3em 4em; margin: 0px auto; text-align: center; font-family: 'Source Sans Pro';">
-<p style="font-size: 150%; color: black"> Communications in Mathematics </p>
-<p style="font-size: 125%; color:black"> Technical editing process </p>
-</section>
+            <div class="step">
+                <h3> Step 1: request authors' source files </h3>
 
+                <p> 
+                    As soon as an article is accepted in the Episciences platform, ask the authors to send their manuscript using the journal's format ('Request for author's sources').
+                </p>
 
-<section style="background-color: #f5fafa; padding: 2em 375px 3em 375px; margin: 0px auto; text-align: justify;">
+                <!--<p>
+                    Here is a template email that you can use:
 
-<h3> Step 1: request authors' source files </h3>
+                    <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
+                        Dear author, <br>
+                        <br>
+                        Thank you for your response.<br>
+                        <br>
+                        The template we use to publish articles in Communications in Mathematics can<br>
+                        be downloaded from www.overleaf.com/read/hxycsnytwjcm.  Notice that there are<br>
+                        4 files.  The only files that you will need to edit are commat.tex and<br>
+                        commat.bib.  However, you will need to have all of these 4 files inside the<br>
+                        same folder in order to successfully compile commat.tex.<br>
+                        <br>
+                        Please, send us the edited commat.tex and commat.bib files together with any<br>
+                        other source file that may be necessary to successfully compile your article,<br>
+                        as soon as possible.<br>
+                        <br>
+                        Best regards,<br>
+                        <br>
+                        &lt;your name&gt;<br>
+                        Technical editor of Communications in Mathematics
+                    </blockquote>
+                </p>-->
 
-    <p> 
-        As soon as an article is accepted in the Episciences platform, ask the authors to send 
-        their manuscript using the journal's format ('Request for author's sources').
-    </p>
-
-    <!--<p>
-        Here is a template email that you can use:
-
-        <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
-            Dear author, <br>
-            <br>
-            Thank you for your response.<br>
-            <br>
-            The template we use to publish articles in Communications in Mathematics can<br>
-            be downloaded from www.overleaf.com/read/hxycsnytwjcm.  Notice that there are<br>
-            4 files.  The only files that you will need to edit are commat.tex and<br>
-            commat.bib.  However, you will need to have all of these 4 files inside the<br>
-            same folder in order to successfully compile commat.tex.<br>
-            <br>
-            Please, send us the edited commat.tex and commat.bib files together with any<br>
-            other source file that may be necessary to successfully compile your article,<br>
-            as soon as possible.<br>
-            <br>
-            Best regards,<br>
-            <br>
-            &lt;your name&gt;<br>
-            Technical editor of Communications in Mathematics
-        </blockquote>
-    </p>-->
-
-    <p> 
-        Once you receive the manuscript in the format of the journal, make sure
-        that the authors have also responded through the Episciences platform.
-        (Otherwise, you will not be able to proceed with the editorial process.)
-    </p>
-</section>
+                <p> 
+                    Once you receive the manuscript in the format of the journal, make sure
+                    that the authors have also responded through the Episciences platform.
+                    (Otherwise, you will not be able to proceed with the editorial process.)
+                </p>
+            </div>
 
 
-<section style="background-color: #e8edec; padding: 2em 375px 3em 375px; margin: 0px auto; text-align: justify;">
+            <div class="step">
 
-<h3> Step 2: revision of the manuscript </h3>
+                <h3> Step 2: revision of the manuscript </h3>
 
-    <p>
-        First, process the tex file sent by the author using the following form:
-    </p>
+                <p>
+                    First, process the tex file sent by the author using the following form:
+                </p>
 
-    <div style="text-align: center">
-        <form action="https://tmacedo.pythonanywhere.com/cim/editex" method="post" enctype="multipart/form-data" target="invisible_iframe">
-            <label for="infile"> Upload tex: </label>
-            <input type="file" name="infile" required />
-            <input type="submit" value="ok" onclick=displayLink() />
-        </form>
+                <div style="text-align: center">
+                    <form action="https://tmacedo.pythonanywhere.com/cim/editex" method="post" enctype="multipart/form-data" target="invisible_iframe">
+                        <label for="infile"> Upload tex: </label>
+                        <input type="file" name="infile" required />
+                        <input type="submit" value="ok" onclick=displayLink() />
+                    </form>
 
-        <iframe name="invisible_iframe" style="display: none;"></iframe>
-        
-        <p>
-            <span id="raw_outfile"></span>
-            &nbsp; &nbsp;
-            <span id="edited_outfile"></span>
-        </p>
-    </div>
+                    <iframe name="invisible_iframe" style="display: none;"></iframe>
+                    
+                    <p>
+                        <span id="raw_outfile"></span>
+                        &nbsp; &nbsp;
+                        <span id="edited_outfile"></span>
+                    </p>
+                </div>
 
-    <p>
-        Next, double-check the following: 
-    </p>
+                <p>
+                    Next, double-check the following: 
+                </p>
 
-    <ul>
-        <li>
-            Spell and grammar.  My suggestion is that you copy the content of the 
-            paper, open Google Mail, create a new email, and paste the content of the
-            paper in the content are of the new email.  Google should automatically
-            check both spelling and grammar. 
-        </li>
+                <ul>
+                    <li>
+                        Spell and grammar.  My suggestion is that you copy the content of the 
+                        paper, open Google Mail, create a new email, and paste the content of the
+                        paper in the content are of the new email.  Google should automatically
+                        check both spelling and grammar. 
+                    </li>
 
-        <li>
-            Sentences starting with a mathematical formula.  My suggestion is that
-            you search for ". $" in the tex file and rephrase those sentences.
-        </li>
+                    <li>
+                        Sentences starting with a mathematical formula.  My suggestion is that
+                        you search for <span class="latex">. $</span> in the tex file and rephrase those sentences.
+                    </li>
 
-        <li>
-            Mathematical formulas that break between two lines.  My suggestion is that
-            you: either use a display (\[ ... \]), or reorder, or rephrase the sentence.
-        </li>
+                    <li>
+                        Mathematical formulas that break between two lines.  My suggestion is that
+                        you: either use a display <span class="latex">\[ ... \]</span>, or reorder, or rephrase the sentence.
+                    </li>
 
-        <li>
-            Avoid inline formulas longer than half of a line; use math displays
-            (\[ ... \]) instead. 
-        </li>
+                    <li>
+                        Avoid inline formulas longer than half of a line; use math displays
+                        <span class="latex">\[ ... \]</span> instead. 
+                    </li>
 
-        <li>
-            Always use the enumerate and itemize environments for lists.
-        </li>
+                    <li>
+                        Always use the enumerate and itemize environments for lists.
+                    </li>
 
-        <!--<li>
-            Always use \dots, \ldots, \dotsc, \cdot, etc, instead of "..." or ".".
-            My suggestion is that you search for <i>"..."</i> in the content of the 
-            paper.
-        </li>-->
-
-        <li>
-            Instead of numbering equations or citing a reference by hand (using 
-            parenthesis or brackets), use \cite, \ref and \eqref.
-        </li>
-
-        <!--<li>
-            Delete all horizontal or vertical spacing, such as \hskip, \vskip, 
-            \smallskip, \medskip, \bigskip, \\, \newpage and \clearpage.
-        </li>-->
-
-        <!--<li>
-            The references contain: authors' names, title, no empty fields (such as
-            empty parenthesis), the page numbers are not followed by a dash (replace
-            "--" by "-" between the pages' numbers).
-        </li>-->
-    </ul>
-</section>
+                    <li>
+                        Instead of numbering equations or citing a reference by hand (using 
+                        parenthesis or brackets), use <span class="latex">\cite</span>, <span class="latex">\ref</span> and <span class="latex">\eqref</span>.
+                    </li>
+                </ul>
+            </div>
 
 
-<section style="background-color: #f5fafa; padding: 2em 375px 3em 375px; margin: 0px auto; text-align: justify;">
+            <div class="step">
+                <h3> Step 3: send pdf to the authors </h3>
 
-<h3> Step 3: send pdf to the authors </h3>
+                <p> 
+                    As soon as you are done reviewing the authors' manuscript send it back to
+                    the authors, asking if there are any further changes that they would like
+                    you to make.
+                </p>
 
-    <p> 
-        As soon as you are done reviewing the authors' manuscript send it back to
-        the authors, asking if there are any further changes that they would like
-        you to make.
-    </p>
+                <p>
+                    Here is a template email that you can use:
 
-    <p>
-        Here is a template email that you can use:
+                    <blockquote>
+                        Dear author,<br>
+                        <br>
+                        Thank you for sending your manuscript.<br>
+                        <br>
+                        I am attaching to this email an updated version of your it.  If there is<br>
+                        anything you would like us to change, please let us know.<br>
+                        <br>
+                        Best regards,<br>
+                        <br>
+                        &lt;your name&gt;<br>
+                        Technical editor of Communications in Mathematics
+                    </blockquote>
+                </p>
 
-        <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
-            Dear author,<br>
-            <br>
-            Thank you for sending your manuscript.<br>
-            <br>
-            I am attaching to this email an updated version of your it.  If there is<br>
-            anything you would like us to change, please let us know.<br>
-            <br>
-            Best regards,<br>
-            <br>
-            &lt;your name&gt;<br>
-            Technical editor of Communications in Mathematics
-        </blockquote>
-    </p>
-
-    <p>
-        Make sure you attach (only) the pdf file of their manuscript to this email.
-    </p>
-</section>
-
-
-<section style="background-color: #e8edec; padding: 2em 375px 3em 375px; margin: 0px auto; text-align: justify;">
-
-<h3> Step 4: final edits </h3>
-
-    <p>
-        When the authors and you agree with all the edition of their article, it is
-        time to do the final editing of their manuscript.
-    </p>
-
-    <ul>
-        <li>
-            First, add the following lines right before "\begin{document}":
-            <blockquote style="background-color: white; font-family: Courier new, Courier, monospace; font-size: 10pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex">
-                \VOLUME{&lt;volume number&gt;}<br>
-                \YEAR{&lt;volume year&gt;}<br>
-                \NUMBER{&lt;issue number&gt;}<br>
-                \firstpage{&lt;first page of the paper: odd&gt;}<br>
-                \DOI{https://doi.org/10.46298/cm.&lt;id of the paper&gt;}
-            </blockquote>
-            <img src="images/cim-paper_data.png" width="750"></img>
-        </li>
-
-        <li>
-            Then, add the following line right before "\end{document}":
-            <blockquote style="background-color: white; font-family: Courier new, Courier, monospace; font-size: 10pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
-                \EditInfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editor&gt;}
-            </blockquote>
-            <img src="images/cim-paper_data2.png" width="750"></img>
-        </li>
-
-        <li>
-            Lastly, replace "\bibliography{commat}" in the tex file by the contents of 
-            the .bbl file (\begin{thebibliography} ... \end{thebibliography}) that is
-            created during compilation.  (This is important in order to avoid problems
-            when ArXiv compiles the tex file.)
-        </li>
-    </ul>
-</section>
+                <p>
+                    Make sure you attach (only) the pdf file of their manuscript to this email.
+                </p>
+            </div>
 
 
-<section style="background-color: #f5fafa; padding: 2em 375px 3em 375px; margin: 0px auto; text-align: justify;">
+            <div class="step">
 
-<h3> Step 5: send source files to the authors </h3>
+                <h3> Step 4: final edits </h3>
 
-    <p>
-        Once you have finished editing the authors' manuscript, send the source
-        files that you used to compile the final version to the authors.
-    </p>
+                <p>
+                    When the authors and you agree with all the edition of their article, it is
+                    time to do the final editing of their manuscript.
+                </p>
 
-    <p>
-        Here is a template email that you can use:
+                <p>
+                    First, add the following lines right before <span class="latex">\begin{document}</span>:
+                </p>
 
-        <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex">
-            Dear author,<br>
-            <br>
-            Thank you for your response.<br>
-            <br>
-            In that case, I would like to ask you to <b>update</b> your posting on ArXiv<br>
-            to its final version (see attached files).  Please, do not make a new<br>
-            posting, as Episciences uses the id of the posting in the open repository<br> 
-            that was informed during submission.<br>
-            <br>
-            As soon as your article is updated, please, let me know.<br>
-            <br>
-            Best regards,<br>
-            <br>
-            &lt;your name&gt;<br>
-            Technical editor of Communications in Mathematics
-        </blockquote>
-    </p>
+                <blocktex>
+                    \VOLUME{&lt;volume number&gt;}<br>
+                    \YEAR{&lt;volume year&gt;}<br>
+                    \NUMBER{&lt;issue number&gt;}<br>
+                    \firstpage{&lt;first page of the paper: odd&gt;}<br>
+                    \DOI{https://doi.org/10.46298/cm.&lt;id of the paper&gt;}
+                </blocktex>
 
-    <p>
-        Make sure you attach the tex file of the final version, together with:
-        commat.cls, episciences.png and any other file (figures, etc) that the 
-        authors (and ArXiv) may need to successfully compile the tex file.
-    </p>
-</section>
+                <img src="images/cim-paper_data.png"></img>
 
+                <p>
+                    Then, add the following line right before "\end{document}":
+                </p>
 
-<section style="background-color: #e8edec; padding: 2em 375px 3em 375px; margin: 0px auto; text-align: justify;">
+                <blocktex>
+                    \EditInfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editor&gt;}
+                </blocktex>
 
-<h3> Step 6: publish paper </h3>
-
-    <p>
-        As soon as the authors update their posting on the open repository (ArXiv),
-        check on the Episciences platform if there is a new version available
-        and publish the paper:
-    </p>
-    <div style="text-align:center">
-        <img src="images/cim-version_update.png" width = 750 style="border: 1px solid #aaa"></img>
-    </div>
-</section>
+                <img src="images/cim-paper_data2.png"></img>
+                
+                <p>
+                    Lastly, replace <span class="latex">\bibliography{commat}</span> in the tex file by the contents of the .bbl file <span class="latex">\begin{thebibliography}...\end{thebibliography}</span> that is created during compilation.  (This is important in order to avoid problems when ArXiv compiles the tex file.)
+                </p>
+            </div>
 
 
-<section style="background-color: #f5fafa; padding: 2em 375px 3em 375px; margin: 0px auto; text-align: justify;">
+            <div class="step">
 
-<h3> General suggestions </h3>
-    <ul>
-        <li>
-            Be kind and patient.
-        </li>
+                <h3> Step 5: send source files to the authors </h3>
 
-        <li>
-            Never change the file commat.cls.
-        </li>
+                <p>
+                    Once you have finished editing the authors' manuscript, send the source
+                    files that you used to compile the final version to the authors.
+                </p>
 
-        <li>
-            Do not ask the authors to perform more than one action in the same email.
-        </li>
-    </ul>
-</section>
+                <p>
+                    Here is a template email that you can use:
 
-</body>
+                    <blockquote>
+                        Dear author,<br>
+                        <br>
+                        Thank you for your response.<br>
+                        <br>
+                        In that case, I would like to ask you to <b>update</b> your posting on ArXiv<br>
+                        to its final version (see attached files).  Please, do not make a new<br>
+                        posting, as Episciences uses the id of the posting in the open repository<br> 
+                        that was informed during submission.<br>
+                        <br>
+                        As soon as your article is updated, please, let me know.<br>
+                        <br>
+                        Best regards,<br>
+                        <br>
+                        &lt;your name&gt;<br>
+                        Technical editor of Communications in Mathematics
+                    </blockquote>
+                </p>
+
+                <p>
+                    Make sure you attach the tex file of the final version, together with:
+                    commat.cls, episciences.png and any other file (figures, etc) that the 
+                    authors (and ArXiv) may need to successfully compile the tex file.
+                </p>
+            </div>
+
+
+            <div class="step">
+
+                <h3> Step 6: publish paper </h3>
+
+                <p>
+                    As soon as the authors update their posting on the open repository (ArXiv),
+                    check on the Episciences platform if there is a new version available
+                    and publish the paper:
+                </p>
+                
+                <img src="images/cim-version_update.png"></img>
+            </div>
+
+
+            <div class="step">
+
+                <h3> General suggestions </h3>
+                
+                <ul>
+                    <li>
+                        Be kind and patient.
+                    </li>
+
+                    <li>
+                        Never change the file commat.cls.
+                    </li>
+
+                    <li>
+                        Do not ask the authors to perform more than one action in the same email.
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="footer">
+                <p> 
+                     The content and opinions on this webpage do not necessarily reflect the view of nor are they endorsed by Communications in Mathematics.
+                </p>
+            </div>
+    </body>
 </html>
