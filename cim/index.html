@@ -20,6 +20,7 @@
                 <h2> Technical editing process </h2>
             </div>
 
+
             <div class="step">
                 <h3> Step 1: request authors' source files </h3>
 
@@ -31,23 +32,23 @@
                     Here is a template email that you can use:
 
                     <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
-                        Dear author, <br>
-                        <br>
-                        Thank you for your response.<br>
-                        <br>
-                        The template we use to publish articles in Communications in Mathematics can<br>
-                        be downloaded from www.overleaf.com/read/hxycsnytwjcm.  Notice that there are<br>
-                        4 files.  The only files that you will need to edit are commat.tex and<br>
-                        commat.bib.  However, you will need to have all of these 4 files inside the<br>
-                        same folder in order to successfully compile commat.tex.<br>
-                        <br>
-                        Please, send us the edited commat.tex and commat.bib files together with any<br>
-                        other source file that may be necessary to successfully compile your article,<br>
-                        as soon as possible.<br>
-                        <br>
-                        Best regards,<br>
-                        <br>
-                        &lt;your name&gt;<br>
+                        Dear author, <br />
+                        <br />
+                        Thank you for your response.<br />
+                        <br />
+                        The template we use to publish articles in Communications in Mathematics can<br />
+                        be downloaded from www.overleaf.com/read/hxycsnytwjcm.  Notice that there are<br />
+                        4 files.  The only files that you will need to edit are commat.tex and<br />
+                        commat.bib.  However, you will need to have all of these 4 files inside the<br />
+                        same folder in order to successfully compile commat.tex.<br />
+                        <br />
+                        Please, send us the edited commat.tex and commat.bib files together with any<br />
+                        other source file that may be necessary to successfully compile your article,<br />
+                        as soon as possible.<br />
+                        <br />
+                        Best regards,<br />
+                        <br />
+                        &lt;your name&gt;<br />
                         Technical editor of Communications in Mathematics
                     </blockquote>
                 </p>-->
@@ -72,7 +73,7 @@
                     <form action="https://tmacedo.pythonanywhere.com/cim/editex" method="post" enctype="multipart/form-data" target="invisible_iframe">
                         <label for="infile"> Upload tex: </label>
                         <input type="file" name="infile" required />
-                        <input type="submit" value="ok" onclick=displayLink() />
+                        <input type="submit" value="process" class="button" onclick=displayLink() />
                     </form>
 
                     <iframe name="invisible_iframe" style="display: none;"></iframe>
@@ -136,16 +137,16 @@
                     Here is a template email that you can use:
 
                     <blockquote>
-                        Dear author,<br>
-                        <br>
-                        Thank you for sending your manuscript.<br>
-                        <br>
-                        I am attaching to this email an updated version of your it.  If there is<br>
-                        anything you would like us to change, please let us know.<br>
-                        <br>
-                        Best regards,<br>
-                        <br>
-                        &lt;your name&gt;<br>
+                        Dear author,<br />
+                        <br />
+                        Thank you for sending your manuscript.<br />
+                        <br />
+                        I am attaching to this email an updated version of your it.  If there is<br />
+                        anything you would like us to change, please let us know.<br />
+                        <br />
+                        Best regards,<br />
+                        <br />
+                        &lt;your name&gt;<br />
                         Technical editor of Communications in Mathematics
                     </blockquote>
                 </p>
@@ -170,10 +171,10 @@
                 </p>
 
                 <blocktex>
-                    \VOLUME{&lt;volume number&gt;}<br>
-                    \YEAR{&lt;volume year&gt;}<br>
-                    \NUMBER{&lt;issue number&gt;}<br>
-                    \firstpage{&lt;first page of the paper: odd&gt;}<br>
+                    \VOLUME{&lt;volume number&gt;}<br />
+                    \YEAR{&lt;volume year&gt;}<br />
+                    \NUMBER{&lt;issue number&gt;}<br />
+                    \firstpage{&lt;first page of the paper: odd&gt;}<br />
                     \DOI{https://doi.org/10.46298/cm.&lt;id of the paper&gt;}
                 </blocktex>
 
@@ -208,20 +209,20 @@
                     Here is a template email that you can use:
 
                     <blockquote>
-                        Dear author,<br>
-                        <br>
-                        Thank you for your response.<br>
-                        <br>
-                        In that case, I would like to ask you to <b>update</b> your posting on ArXiv<br>
-                        to its final version (see attached files).  Please, do not make a new<br>
-                        posting, as Episciences uses the id of the posting in the open repository<br> 
-                        that was informed during submission.<br>
-                        <br>
-                        As soon as your article is updated, please, let me know.<br>
-                        <br>
-                        Best regards,<br>
-                        <br>
-                        &lt;your name&gt;<br>
+                        Dear author,<br />
+                        <br />
+                        Thank you for your response.<br />
+                        <br />
+                        In that case, I would like to ask you to <b>update</b> your posting on ArXiv<br />
+                        to its final version (see attached files).  Please, do not make a new<br />
+                        posting, as Episciences uses the id of the posting in the open repository<br /> 
+                        that was informed during submission.<br />
+                        <br />
+                        As soon as your article is updated, please, let me know.<br />
+                        <br />
+                        Best regards,<br />
+                        <br />
+                        &lt;your name&gt;<br />
                         Technical editor of Communications in Mathematics
                     </blockquote>
                 </p>
@@ -236,7 +237,7 @@
 
             <div class="step">
 
-                <h3> Step 6: publish paper </h3>
+                <h3> Step 6: publish the paper </h3>
 
                 <p>
                     As soon as the authors update their posting on the open repository (ArXiv),
@@ -250,7 +251,7 @@
 
             <div class="step">
 
-                <h3> General suggestions </h3>
+                <h3> General suggestions: </h3>
                 
                 <ul>
                     <li>
@@ -273,5 +274,6 @@
                      The content and opinions on this webpage do not necessarily reflect the view of nor are they endorsed by Communications in Mathematics.
                 </p>
             </div>
+        </div>
     </body>
 </html>
