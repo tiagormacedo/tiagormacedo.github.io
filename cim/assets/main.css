@@ -111,12 +111,27 @@ img {
 .button {
     background-color: rgb(255, 220, 120);
     font-family: inherit;
-    font-color: inherit;
+    color: inherit;
     padding: .5ex 1ex .5ex 1ex;
     border: solid 1pt rgb(255, 200, 20);
     border-radius: 5px;
 }
 
+input[type=file] {
+    font-family: inherit;
+    color: inherit;
+}
+
+    input[type=file]::file-selector-button {
+        font-family: inherit;
+        color: inherit;
+        background-color: rgb(255, 220, 120);
+        padding: .5ex 1ex .5ex 1ex;
+        border: solid 1pt rgb(255, 200, 20);
+        border-radius: 5px;
+    }
+
+    
 .latex {
     display: inline;
     background-color: #eee;
