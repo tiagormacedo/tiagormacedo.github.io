@@ -25,6 +25,9 @@ ol, ul {
 
 
 /* General setup */
+html {
+	scroll-behavior: smooth;
+	}
 
 body {
 	background: #f5f6f7;
