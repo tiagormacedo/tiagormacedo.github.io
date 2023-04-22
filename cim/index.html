@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html>
 
     <head>
         <title> Communications in Mathematics </title>
@@ -13,7 +13,18 @@
         <script type="text/javascript" src="assets/main.js"></script>
     </head>
 
-    <body>
+    <body onload="sidemenuHighlight()">
+        <div class="sidemenu">
+            <ul>
+                <li> <a href="#step1" class="indicator" onclick="swapActiveIndicator(this)"> Request source files </a> </li>
+                <li> <a href="#step2" class="indicator" onclick="swapActiveIndicator(this)"> Review manuscript </a> </li>
+                <li> <a href="#step3" class="indicator" onclick="swapActiveIndicator(this)"> Send pdf to authors </a> </li>
+                <li> <a href="#step4" class="indicator" onclick="swapActiveIndicator(this)"> Make final edits </a> </li>
+                <li> <a href="#step5" class="indicator" onclick="swapActiveIndicator(this)"> Send source files </a> </li>
+                <li> <a href="#step6" class="indicator" onclick="swapActiveIndicator(this)"> Publish article </a> </li>
+            </ul>
+        </div>
+
         <div class="container">
             <div class="topmatter">
                 <h1> Communications in Mathematics </h1>
@@ -21,8 +32,8 @@
             </div>
 
 
-            <div class="step">
-                <h3> Step 1: request authors' source files </h3>
+            <section class="step" id="step1">
+                <h3> Step 1: request source files </h3>
 
                 <p> 
                     As soon as an article is accepted in the Episciences platform, ask the authors to send their manuscript using the journal's format ('Request for author's sources').
@@ -58,12 +69,12 @@
                     that the authors have also responded through the Episciences platform.
                     (Otherwise, you will not be able to proceed with the editorial process.)
                 </p>
-            </div>
+            </section>
 
 
-            <div class="step">
+            <section class="step" id="step2">
 
-                <h3> Step 2: revision of the manuscript </h3>
+                <h3> Step 2: review the manuscript </h3>
 
                 <p>
                     First, process the tex file sent by the author using the following form:
@@ -121,10 +132,10 @@
                         parenthesis or brackets), use <span class="latex">\cite</span>, <span class="latex">\ref</span> and <span class="latex">\eqref</span>.
                     </li>
                 </ul>
-            </div>
+            </section>
 
 
-            <div class="step">
+            <section class="step" id="step3">
                 <h3> Step 3: send pdf to the authors </h3>
 
                 <p> 
@@ -154,12 +165,12 @@
                 <p>
                     Make sure you attach (only) the pdf file of their manuscript to this email.
                 </p>
-            </div>
+            </section>
 
 
-            <div class="step">
+            <section class="step" id="step4">
 
-                <h3> Step 4: final edits </h3>
+                <h3> Step 4: make final edits </h3>
 
                 <p>
                     When the authors and you agree with all the edition of their article, it is
@@ -193,10 +204,10 @@
                 <p>
                     Lastly, replace <span class="latex">\bibliography{commat}</span> in the tex file by the contents of the .bbl file that is created during compilation <span class="latex">\begin{thebibliography}...\end{thebibliography}</span>.  (This is important in order to avoid problems when ArXiv compiles the tex file.)
                 </p>
-            </div>
+            </section>
 
 
-            <div class="step">
+            <section class="step" id="step5">
 
                 <h3> Step 5: send source files to the authors </h3>
 
@@ -232,10 +243,10 @@
                     commat.cls, episciences.png and any other file (figures, etc) that the 
                     authors (and ArXiv) may need to successfully compile the tex file.
                 </p>
-            </div>
+            </section>
 
 
-            <div class="step">
+            <section class="step" id="step6">
 
                 <h3> Step 6: publish the paper </h3>
 
@@ -246,7 +257,7 @@
                 </p>
                 
                 <img src="images/cim-version_update.png"></img>
-            </div>
+            </section>
 
 
             <div class="step">
