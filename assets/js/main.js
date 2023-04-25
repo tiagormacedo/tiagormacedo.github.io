@@ -1,93 +1,121 @@
-// Wait for the document to be ready before executing the script.
-$(function() {
-  // Set up responsive breakpoints.
-  skel.breakpoints({
-    wide: "(min-width: 961px) and (max-width: 1880px)",
-    normal: "(min-width: 961px) and (max-width: 1620px)",
-    narrow: "(min-width: 961px) and (max-width: 1320px)",
-    narrower: "(max-width: 960px)",
-    mobile: "(max-width: 736px)"
-  });
+// Sidebar button: show sidebar when button is clicked
+function showSidebar () {
+    var state = [];
+    var botao = document.querySelector(".sidebarButton");
+    var menu = document.querySelector("#sidebar");
+    var core = document.querySelector("#main");
 
-  // Disable animations/transitions until the page has loaded.
-  $("body").addClass("is-loading");
-  $(window).on("load", function() {
-    $("body").removeClass("is-loading");
-  });
+    state[0] = window.getComputedStyle(botao, null).display;
+    state[1] = window.getComputedStyle(menu, null).transform;
 
-  // Apply CSS polyfills (IE<9).
-  if (skel.vars.IEVersion < 9) {
-    $("*:last-child").addClass("last-child");
-  }
+    if (state[0] == "block" && state[1] != "") {
+        botao.style.display = "none";
+        menu.style.transform = "translateX(0)";
+        core.style.transform = "translate(275px)";
+    }
+}
 
-  // Apply the placeholder polyfill.
-  $("form").placeholder();
 
-  // Prioritize "important" elements on mobile.
-  skel.on("+mobile -mobile", function() {
-    $.prioritize(".important\\28 mobile\\29", skel.breakpoint("mobile").active);
-  });
+// Sidebar: show button when any item is clicked
+function showButton () {
+    var state = [];
+    var botao = document.querySelector(".sidebarButton");
+    var menu = document.querySelector("#sidebar");
+    var core = document.querySelector("#main");
 
-  // Initialize scrolly links.
-  $(".scrolly").scrolly();
+    state[0] = window.getComputedStyle(botao, null).display;
+    state[1] = window.getComputedStyle(menu, null).transform;
 
-  // Set up the navigation bar to scroll to sections within the page.
-  var $nav_a = $("#nav a");
+    if (state[0] == "none" && state[1] != "") {
+        botao.style.display = "block";
+        menu.style.transform = "translateX(-275px)";
+        core.style.transform = "translate(0)";
+    }
+}
 
-  $nav_a.scrolly().on("click", function(e) {
-    var $this = $(this),
-      href = $this.attr("href");
 
-    if (href[0] !== "#") {
-      return;
+// Sidebar: swap active (darker) item
+function swapActiveIndicator(item) {
+    var indicators = document.getElementsByClassName("indicator");
+    for (ind of indicators) {
+        ind.classList.remove("active");
+    }
+    item.classList.add("active");
+}
+
+// Sidebar: function that highlights the item corresponding to active section
+function highlightItem(section) {
+    // Create observer callback
+    function ioCallBack (entries) {
+        for (entry of entries) {
+            if (entry.isIntersecting) {
+                var link = "#" + entry.target.id;
+                var indicator = document.querySelector('[href*="' + link + '"]');
+                swapActiveIndicator(indicator);
+            }
+        }
+    }
+    // Set observer options
+    let ioOptions = {root: null, rootMargin: "0px", threshold: 0.25};
+    // Create observer
+    let ioObserver = new IntersectionObserver(ioCallBack, ioOptions);
+    // Apply observer to section
+    ioObserver.observe(section);
+}
+
+
+// Tabs: show and hide tabs within the same section
+function openTab(tabId, tabParent) {
+    // Hide all elements with class="tabcontent" by default
+    var tabcontent = document.getElementsByClassName("tabcontent");
+    for (let tab of tabcontent) {
+        if (tab.parentNode == tabParent) {
+            tab.style.display = "none";
+        }
     }
 
-    e.preventDefault();
-
-    // Clear active and lock scrollzer until scrolling has stopped.
-    $nav_a.removeClass("active").addClass("scrollzer-locked");
-
-    // Set this link to active.
-    $this.addClass("active");
-  });
-
-  // Initialize scrollzer.
-  var ids = [];
-
-  $nav_a.each(function() {
-    var href = $(this).attr("href");
-
-    if (href[0] !== "#") {
-      return;
+    // Set all buttons as in-active by default
+    var tabbuttons = document.getElementsByClassName("tablink");
+    for (button of tabbuttons) {
+        if (button.parentNode == tabParent) {
+            button.classList.remove("active");
+        }
     }
 
-    ids.push(href.substring(1));
-  });
+    // Show a specific tab content
+    var element = document.getElementById(tabId);
+    if (element.parentNode == tabParent) {
+        element.style.display = "block";
+    }
 
-  $.scrollzer(ids, { pad: 200, lastHack: true });
-
-  // Set up the header toggle and panel for mobile devices.
-  $("<div id='headerToggle'><a href='#header' class='toggle'></a></div>").appendTo("body");
-
-  $("#header").panel({
-    delay: 500,
-    hideOnClick: true,
-    hideOnSwipe: true,
-    resetScroll: true,
-    resetForms: true,
-    side: "left",
-    target: $("body"),
-    visibleClass: "header-visible"
-  });
-
-  // Disable transitions on WP<10 (poor/buggy performance).
-  if (skel.vars.os === "wp" && skel.vars.osVersion < 10) {
-    $("#headerToggle, #header, #main").css("transition", "none");
-  }
-});
+    // Set a specific button as active
+    var tabButton = tabId + 'Button';
+    document.getElementById(tabButton).classList.add("active");
+}
 
 
+// When the page is done loading, do:
 window.onload = function() {
-    var header = document.getElementById('header');
-    header.style.left = "0";
+    // Sidebar: show, i.e. slide right
+    var sidebar = document.getElementById('sidebar');
+    sidebar.style.left = "0";
+
+    // Sidebar button: add an event listener to the button
+    var botao = document.querySelector(".sidebarButton");
+    botao.addEventListener("click", showSidebar);
+
+    // Sidebar: add event listeners to each item
+    var indicators = document.querySelectorAll(".indicator");
+    for (item of indicators) {
+        item.addEventListener("click", function () {
+            swapActiveIndicator(this);
+            showButton();
+        });
+    }
+
+    // Sidebar: highlight item corresponding to the section I am reading
+    let sections = document.querySelectorAll("section");
+    for (section of sections) {
+        highlightItem(section);
+    }
 };
