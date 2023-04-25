@@ -15,8 +15,7 @@ function showSidebar () {
     }
 }
 
-
-// Sidebar: show button when any item is clicked
+// Sidebar: show hamburger button when an item is clicked (and the screen is small)
 function showButton () {
     var state = [];
     var botao = document.querySelector(".sidebarButton");
@@ -32,7 +31,6 @@ function showButton () {
         core.style.transform = "translate(0)";
     }
 }
-
 
 // Sidebar: swap active (darker) item
 function swapActiveIndicator(item) {
@@ -62,7 +60,6 @@ function highlightItem(section) {
     // Apply observer to section
     ioObserver.observe(section);
 }
-
 
 // Tabs: show and hide tabs within the same section
 function openTab(tabId, tabParent) {
@@ -108,7 +105,6 @@ window.onload = function() {
     var indicators = document.querySelectorAll(".indicator");
     for (item of indicators) {
         item.addEventListener("click", function () {
-            swapActiveIndicator(this);
             showButton();
         });
     }
