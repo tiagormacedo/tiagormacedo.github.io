@@ -16,12 +16,12 @@
     <body onload="sidemenuHighlight()">
         <div class="sidemenu">
             <ul>
-                <li> <a href="#step1" class="indicator" onclick="swapActiveIndicator(this)"> Request source files </a> </li>
-                <li> <a href="#step2" class="indicator" onclick="swapActiveIndicator(this)"> Review manuscript </a> </li>
-                <li> <a href="#step3" class="indicator" onclick="swapActiveIndicator(this)"> Send pdf to authors </a> </li>
-                <li> <a href="#step4" class="indicator" onclick="swapActiveIndicator(this)"> Make final edits </a> </li>
-                <li> <a href="#step5" class="indicator" onclick="swapActiveIndicator(this)"> Send source files </a> </li>
-                <li> <a href="#step6" class="indicator" onclick="swapActiveIndicator(this)"> Publish article </a> </li>
+                <li> <a href="#intro" class="indicator" onclick="swapActiveIndicator(this)"> Request source files </a> </li>
+                <li> <a href="#step1" class="indicator" onclick="swapActiveIndicator(this)"> Review manuscript </a> </li>
+                <li> <a href="#step2" class="indicator" onclick="swapActiveIndicator(this)"> Send pdf to authors </a> </li>
+                <li> <a href="#step3" class="indicator" onclick="swapActiveIndicator(this)"> Make final edits </a> </li>
+                <li> <a href="#step4" class="indicator" onclick="swapActiveIndicator(this)"> Send source files </a> </li>
+                <li> <a href="#step5" class="indicator" onclick="swapActiveIndicator(this)"> Publish article </a> </li>
             </ul>
         </div>
 
@@ -32,49 +32,55 @@
             </div>
 
 
-            <section class="step" id="step1">
-                <h3> Step 1: request source files </h3>
+            <section class="step" id="intro">
+                <h3> Intro </h3>
 
-                <p> 
-                    As soon as an article is accepted in the Episciences platform, ask the authors to send their manuscript using the journal's format ('Request for author's sources').
+                <p>
+                    The main goal of the technical editorial process is to fit all the articles that are published by Communications in Mathematics into a uniform template.  To do that the technical editors will edit the source files sent by the authors and modifying the parts that do not adhere to the standards of the journal.  More details about this process are contained in the steps below.
                 </p>
-
-                <!--<p>
-                    Here is a template email that you can use:
-
-                    <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
-                        Dear author, <br />
-                        <br />
-                        Thank you for your response.<br />
-                        <br />
-                        The template we use to publish articles in Communications in Mathematics can<br />
-                        be downloaded from www.overleaf.com/read/hxycsnytwjcm.  Notice that there are<br />
-                        4 files.  The only files that you will need to edit are commat.tex and<br />
-                        commat.bib.  However, you will need to have all of these 4 files inside the<br />
-                        same folder in order to successfully compile commat.tex.<br />
-                        <br />
-                        Please, send us the edited commat.tex and commat.bib files together with any<br />
-                        other source file that may be necessary to successfully compile your article,<br />
-                        as soon as possible.<br />
-                        <br />
-                        Best regards,<br />
-                        <br />
-                        &lt;your name&gt;<br />
-                        Technical editor of Communications in Mathematics
-                    </blockquote>
-                </p>-->
-
-                <p> 
-                    Once you receive the manuscript in the format of the journal, make sure
-                    that the authors have also responded through the Episciences platform.
-                    (Otherwise, you will not be able to proceed with the editorial process.)
-                </p>
+                
+                <!--
+                    <p> 
+                        As soon as an article is accepted in the Episciences platform, ask the authors to send their manuscript using the journal's format ('Request for author's sources').
+                    </p>
+    
+                    <p>
+                        Here is a template email that you can use:
+    
+                        <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
+                            Dear author, <br />
+                            <br />
+                            Thank you for your response.<br />
+                            <br />
+                            The template we use to publish articles in Communications in Mathematics can<br />
+                            be downloaded from www.overleaf.com/read/hxycsnytwjcm.  Notice that there are<br />
+                            4 files.  The only files that you will need to edit are commat.tex and<br />
+                            commat.bib.  However, you will need to have all of these 4 files inside the<br />
+                            same folder in order to successfully compile commat.tex.<br />
+                            <br />
+                            Please, send us the edited commat.tex and commat.bib files together with any<br />
+                            other source file that may be necessary to successfully compile your article,<br />
+                            as soon as possible.<br />
+                            <br />
+                            Best regards,<br />
+                            <br />
+                            &lt;your name&gt;<br />
+                            Technical editor of Communications in Mathematics
+                        </blockquote>
+                    </p>
+    
+                    <p> 
+                        Once you receive the manuscript in the format of the journal, make sure
+                        that the authors have also responded through the Episciences platform.
+                        (Otherwise, you will not be able to proceed with the editorial process.)
+                    </p>
+                -->
             </section>
 
 
-            <section class="step" id="step2">
+            <section class="step" id="step1">
 
-                <h3> Step 2: review the manuscript </h3>
+                <h3> Step 1: review the manuscript </h3>
 
                 <!--
                     <p>
@@ -137,8 +143,8 @@
             </section>
 
 
-            <section class="step" id="step3">
-                <h3> Step 3: send pdf to the authors </h3>
+            <section class="step" id="step2">
+                <h3> Step 2: send pdf to the authors </h3>
 
                 <p> 
                     As soon as you are done reviewing the authors' manuscript send it back to
@@ -170,9 +176,9 @@
             </section>
 
 
-            <section class="step" id="step4">
+            <section class="step" id="step3">
 
-                <h3> Step 4: make final edits </h3>
+                <h3> Step 3: make final edits </h3>
 
                 <p>
                     When the authors and you agree with all the edition of their article, it is
@@ -209,9 +215,9 @@
             </section>
 
 
-            <section class="step" id="step5">
+            <section class="step" id="step4">
 
-                <h3> Step 5: send source files to the authors </h3>
+                <h3> Step 4: send source files to the authors </h3>
 
                 <p>
                     Once you have finished editing the authors' manuscript, send the source
@@ -248,9 +254,9 @@
             </section>
 
 
-            <section class="step" id="step6">
+            <section class="step" id="step5">
 
-                <h3> Step 6: publish the paper </h3>
+                <h3> Step 5: publish the paper </h3>
 
                 <p>
                     As soon as the authors update their posting on the open repository (ArXiv),
