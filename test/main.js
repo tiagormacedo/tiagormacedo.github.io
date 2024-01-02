@@ -5,8 +5,8 @@ function displayLink() {
     infilename = infilename.replace(/ /g, "_");
 
     var infilepath = baseurl + infilename;
-    document.getElementById("raw_outfile").innerHTML = "<a href=" + infilepath + " target='_blank'> raw file </a>";
+    document.getElementById("raw_infile").innerHTML = "<a href=" + infilepath + " target='_blank'> unedited file </a>";
 
-    var edited_filepath = infilepath.slice(0, -4) + "-edited" + infilepath.slice(-4);
-    document.getElementById("edited_outfile").innerHTML = "<a href="+edited_filepath+" download> edited file </a>";
+    var edited_filepath = infilepath + "not the commat.bib";
+    document.getElementById("bib_outfile").innerHTML = "<a href="+edited_filepath+" download> bib file </a>";
     }
