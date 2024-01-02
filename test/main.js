@@ -7,6 +7,6 @@ function displayLink() {
     var infilepath = baseurl + infilename;
     document.getElementById("raw_infile").innerHTML = "<a href=" + infilepath + " target='_blank'> unedited file </a>";
 
-    var edited_filepath = infilepath + "not_the_commat.bib";
+    var edited_filepath = infilepath.split("\\\\").slice(0, -1).join("\\\\") + "\\not_the_commat.bib";
     document.getElementById("bib_outfile").innerHTML = "<a href="+edited_filepath+" download> bib file </a>";
     }
