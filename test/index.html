@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title> Communications in Mathematics </title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+
+    <body>
+        <p>
+            First, process the tex file sent by the author using the following form:
+        </p>
+    
+        <div style="text-align: center">
+            <form action="https://tmacedo.pythonanywhere.com/cim/editex" method="post" enctype="multipart/form-data" target="invisible_iframe">
+                <label for="infile"> Upload tex: </label>
+                <input type="file" name="infile" required />
+                <input type="submit" value="process" class="button" onclick=displayLink() />
+            </form>
+    
+            <iframe name="invisible_iframe" style="display: none;"></iframe>
+            
+            <p>
+                <span id="raw_outfile"></span>
+                &nbsp; &nbsp;
+                <span id="edited_outfile"></span>
+            </p>
+        </div>
+    </body>
+</html>
