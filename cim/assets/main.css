@@ -127,6 +127,7 @@ img {
 
     .step > p {
         padding: 1ex 0 1ex 0;
+        hyphen: auto;
         }
 
     .step > blockquote {
