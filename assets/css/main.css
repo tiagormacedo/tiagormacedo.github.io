@@ -85,6 +85,7 @@ a:hover {
 
 p, ul, ol, dl, table {
 	margin-bottom: 1em;
+    hyphens: auto;
 	}
 
 br.clear {
