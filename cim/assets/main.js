@@ -35,9 +35,11 @@ function displayLinks() {
     var infilename = document.querySelector('input[type=file]').files[0].name;
     infilename = infilename.replace(/ /g, "_");
 
+    document.getElementById("raw_outfile").setHTML = "raw file";
     var infilepath = baseurl + infilename;
-    document.getElementById("raw_outfile").innerHTML = "<a href=" + infilepath + " target='_blank'> raw file </a>";
+    document.getElementById("raw_outfile").href = infilepath;
 
+    document.getElementById("edited_outfile").setHTML = "edited file";
     var edited_filepath = infilepath.slice(0, -4) + "-edited" + infilepath.slice(-4);
-    document.getElementById("edited_outfile").innerHTML = "<a href="+edited_filepath+" download> edited file </a>";
+    document.getElementById("edited_outfile").href = edited_filepath;
     }
