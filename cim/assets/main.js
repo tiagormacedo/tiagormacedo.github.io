@@ -36,8 +36,8 @@ function displayLinks() {
     infilename = infilename.replace(/ /g, "_");
 
     var infilepath = baseurl + infilename;
-    document.getElementById("raw_outfile").setHTML = "<a href=" + infilepath + " target='_blank'> raw file </a>";
+    document.getElementById("raw_outfile").innerHTML = "<a href=" + infilepath + " target='_blank'> raw file </a>";
 
     var edited_filepath = infilepath.slice(0, -4) + "-edited" + infilepath.slice(-4);
-    document.getElementById("edited_outfile").setHTML = "<a href="+edited_filepath+" download> edited file </a>";
+    document.getElementById("edited_outfile").innerHTML = "<a href="+edited_filepath+" download> edited file </a>";
     }
