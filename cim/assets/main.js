@@ -30,7 +30,7 @@ function sidemenuHighlight() {
 }
 
 // Function to process a tex file via a form
-function displayLink() {
+function displayLinks() {
     var baseurl = "https://tmacedo.pythonanywhere.com/uploads/";
     var infilename = document.querySelector('input[type=file]').files[0].name;
     infilename = infilename.replace(/ /g, "_");
