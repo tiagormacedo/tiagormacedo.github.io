@@ -167,6 +167,17 @@ input[type=file] {
     border-radius: 1px;
 }
 
+blocktex {
+    background: white;
+    display: block;
+    font-family: Courier, monospace;
+    font-size: 11pt;
+    line-height: 1.25em;
+    margin: 0 auto;
+    padding: 1em;
+    width: fit-content;
+}
+
 
 .footer {
     background: #ff9c10;
