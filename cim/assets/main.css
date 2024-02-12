@@ -1,75 +1,66 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, img, strong, sub, sup, ul, li, form, label {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
-	}
-
-
-html {
     scroll-behavior: smooth;
+	vertical-align: baseline;
 }
 
 
 body {
+	color: #6a6b6c;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 16pt;
 	font-weight: 300;
 	line-height: 1.5em;
-	color: #6a6b6c;
 	-webkit-text-size-adjust: none;
-	}
-
-    body > .container {
-        position: relative;
-        left: 17%;
-        width: 66%;
-        box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, .25); 
-   }
-
-ul {
-    display: block;
-	padding: 0.5em 1em 0.5em 1em;
-    list-style: circle;
-    }
-
-li {
-	padding: 0.5ex 0.5ex 0.5ex 0.5ex;
 }
 
 img {
-    width: 90%;
-    margin: 1em 1em 1em 1em;
     border: 2px solid #ff9c10;
+    margin: 1em;
+    width: 90%;
+}
+
+
+.container {
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, .25); 
+    padding: 0 17%;
+    width: 66%;
+}
+
+    .container ul {
+        display: block;
+        list-style: circle;
+    	padding: 0.5em 1em;
+    }
+    
+    .container li {
+    	padding: 0.5ex;
     }
 
 
 .sidemenu {
+    background: #fefefe;
     display: inline;
-    width: fit-content;
     position: fixed;
     top: 10px;
     left: 10px;
-    background: #fefefe;
+    width: fit-content;
     overflow-x: hidden;
 }
 
     .sidemenu ul {
-      padding: 1ex 0ex 1ex 1em;
       list-style: none;
+      padding: 1ex 0ex 1ex 1em;
     }
 
     .sidemenu li {
-        list-style: none;
-        padding: 0 0 0 0;
-        font-size: 10pt;
         color: #aaa;
+        font-size: 10pt;
+        padding: 0;
         transition: all 0.5s ease;
     }
 
@@ -78,117 +69,107 @@ img {
         text-decoration: none;
     }
 
-        .sidemenu a:hover, a.active {
-          color: #ff9c10;
+        .sidemenu a:hover,
+        .sidemenu a.active {
+            color: #ff9c10;
         }
 
 
 .topmatter {
-    background-color: #ff9c10;
+    background: #ff9c10;
     padding: 3em 0 2em 0;
     text-align: center;
-    }
+}
 
-    .topmatter > h1 {
-        font-size: 150%;
+    .topmatter h1 {
         color: #555;
+        font-size: 150%;
         font-weight: 600;
         padding: 0 0 1em 0;
-        }
+    }
 
-    .topmatter > h2 {
-        font-size: 125%;
+    .topmatter h2 {
         color: #555;
+        font-size: 125%;
         font-weight: 500;
         padding: 0 0 1em 0;
-        }
+    }
 
 
 .step {
-    text-align: justify;
-    padding: 1em 6em 2em 6em;
     border-bottom: 1px solid #ddd;
-    }
+    padding: 1em 6em 2em 6em;
+    text-align: justify;
+}
 
     .step:nth-child(odd) {
-        background-color: #f5f7f9;
-        }
-
-    .step:nth-child(even) {
-        background-color: #f0f2f4;
+        background: #f5f7f9;
     }
 
-    .step > h3 {
-        font-size: 110%;
+    .step:nth-child(even) {
+        background: #f0f2f4;
+    }
+
+    .step h3 {
         color: #555;
+        font-size: 110%;
         font-weight: 400;
         padding: 1ex 0 2ex 0;
-        }
+    }
 
-    .step > p {
-        padding: 1ex 0 1ex 0;
+    .step p {
         hyphen: auto;
-        }
+        padding: 1ex 0;
+    }
 
-    .step > blockquote {
+    .step blockquote {
+        background: white;
         display: block;
-        width: fit-content;
         margin: 0 auto;
-        padding: 1em 1em 1em 1em;
-        background-color: white;
+        padding: 1em;
         font-family: Sans Serif, Open Serif, Arial;
         font-size: 11pt;
         line-height: 3ex;
-        }
+        width: fit-content;
+    }
 
 
 .button {
-    background-color: rgb(255, 220, 120);
-    font-family: inherit;
+    background: rgb(255, 220, 120);
     color: inherit;
-    padding: .5ex 1ex .5ex 1ex;
+    font-family: inherit;
     border: solid 1pt rgb(255, 200, 20);
     border-radius: 5px;
+    padding: .5ex 1ex;
 }
 
 input[type=file] {
-    font-family: inherit;
     color: inherit;
+    font-family: inherit;
 }
 
     input[type=file]::file-selector-button {
-        font-family: inherit;
         color: inherit;
-        background-color: rgb(255, 220, 120);
-        padding: .5ex 1ex .5ex 1ex;
+        background: rgb(255, 220, 120);
         border: solid 1pt rgb(255, 200, 20);
         border-radius: 5px;
+        font-family: inherit;
+        padding: .5ex 1ex;
     }
 
     
 .latex {
-    display: inline;
-    background-color: #eee;
+    background: #eee;
     font-family: Courier, monospace;
     font-size: 12pt;
-    padding: 1px 1px 1px 1px;
+    display: inline;
+    padding: 1px;
     border-radius: 1px;
-    }
-
-blocktex {
-    display: block;
-    margin: 0 auto;
-    width: fit-content;
-    padding: 1em 1em 1em 1em;
-    background-color: #fff;
-    font-family: Courier, monospace;
-    font-size: 11pt;
-    line-height: 1.25em;
-    }
+}
 
 
 .footer {
+    background: #ff9c10;
     font-size: 66%;
-    padding: 0.5ex 1em 0.5ex 1em;
-    background-color: #ff9c10;
+    padding: 0.5ex 1em;
 }
