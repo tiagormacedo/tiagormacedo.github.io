@@ -1,6 +1,6 @@
 // Swap the active (darker) side bar item
-function swapActiveIndicator(item) {
-    var indicators = document.getElementsByClassName("indicator");
+function swapActiveIndicator(item=this) {
+    const indicators = document.querySelectorAll(".indicator");
     for (ind of indicators) {
         ind.classList.remove("active");
     }
@@ -13,8 +13,8 @@ function sidemenuHighlight() {
     function ioCallBack (entries) {
         for (entry of entries) {
             if (entry.isIntersecting) {
-                var link = "#" + entry.target.id;
-                var indicator = document.querySelector('[href*="' + link + '"]');
+                let link = "#" + entry.target.id;
+                let indicator = document.querySelector(`[href*= "${link}"]`);
                 swapActiveIndicator(indicator);
             }
         }
@@ -31,15 +31,26 @@ function sidemenuHighlight() {
 
 // Function to process a tex file via a form
 function displayLinks() {
-    var baseurl = "https://tmacedo.pythonanywhere.com/uploads/";
-    var infilename = document.querySelector('input[type=file]').files[0].name;
+    const baseurl = "https://tmacedo.pythonanywhere.com/uploads/";
+    const infilename = document.querySelector('input[type=file]').files[0].name;
     infilename = infilename.replace(/ /g, "_");
 
-    document.getElementById("raw_outfile").innerHTML = "raw file";
-    var infilepath = baseurl + infilename;
-    document.getElementById("raw_outfile").setAttribute("href", infilepath);
+    document.querySelector("#raw_outfile").textContent = "raw file";
+    const infilepath = baseurl + infilename;
+    document.querySelector("#raw_outfile").setAttribute("href", infilepath);
 
-    document.getElementById("edited_outfile").innerHTML = "edited file";
-    var edited_filepath = infilepath.slice(0, -4) + "-edited" + infilepath.slice(-4);
-    document.getElementById("edited_outfile").setAttribute("href", edited_filepath);
+    document.querySelector("#edited_outfile").textContent = "edited file";
+    const edited_filepath = infilepath.slice(0, -4) + "-edited" + infilepath.slice(-4);
+    document.querySelector("#edited_outfile").setAttribute("href", edited_filepath);
+}
+
+// Add several event listeners when the page loads //
+window.onload = function() {
+    const sideBarItems = document.querySelectorAll(".indicator");
+    for (item of sideBarItems) {
+        item.addEventListener("click", swapActiveIndicator);
     }
+
+    const btn = document.querySelector("input#displaylinks");
+    btn.addEventListener("click", displayLinks);
+}

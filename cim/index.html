@@ -1,5 +1,5 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
     <head>
         <title> Communications in Mathematics </title>
@@ -16,12 +16,12 @@
     <body onload="sidemenuHighlight()">
         <div class="sidemenu">
             <ul>
-                <li> <a href="#intro" class="indicator" onclick="swapActiveIndicator(this)"> Intro </a> </li>
-                <li> <a href="#step1" class="indicator" onclick="swapActiveIndicator(this)"> Review manuscript </a> </li>
-                <li> <a href="#step2" class="indicator" onclick="swapActiveIndicator(this)"> Send pdf to authors </a> </li>
-                <li> <a href="#step3" class="indicator" onclick="swapActiveIndicator(this)"> Make final edits </a> </li>
-                <li> <a href="#step4" class="indicator" onclick="swapActiveIndicator(this)"> Send source files </a> </li>
-                <li> <a href="#step5" class="indicator" onclick="swapActiveIndicator(this)"> Publish article </a> </li>
+                <li> <a href="#intro" class="indicator"> Intro </a> </li>
+                <li> <a href="#step1" class="indicator"> Review manuscript </a> </li>
+                <li> <a href="#step2" class="indicator"> Send pdf to authors </a> </li>
+                <li> <a href="#step3" class="indicator"> Make final edits </a> </li>
+                <li> <a href="#step4" class="indicator"> Send source files </a> </li>
+                <li> <a href="#step5" class="indicator"> Publish article </a> </li>
             </ul>
         </div>
 
@@ -38,48 +38,10 @@
                 <p>
                     The main goal of the technical editorial process is to fit all the articles that are published by Communications in Mathematics into the same standards.  To do that the technical editors will edit the source files sent by the authors and modify the parts that do not adhere to the format of the journal.  More details about this process are contained in the steps below.
                 </p>
-                
-                <!--
-                    <p> 
-                        As soon as an article is accepted in the Episciences platform, ask the authors to send their manuscript using the journal's format ('Request for author's sources').
-                    </p>
-    
-                    <p>
-                        Here is a template email that you can use:
-    
-                        <blockquote style="background-color: white; font-family: Sans Serif, Open Serif, Arial; font-size: 11pt; padding: 20px 20px 20px 20px; margin: 25px 75px 25px 75px; line-height: 3ex;">
-                            Dear author, <br />
-                            <br />
-                            Thank you for your response.<br />
-                            <br />
-                            The template we use to publish articles in Communications in Mathematics can<br />
-                            be downloaded from www.overleaf.com/read/hxycsnytwjcm.  Notice that there are<br />
-                            4 files.  The only files that you will need to edit are commat.tex and<br />
-                            commat.bib.  However, you will need to have all of these 4 files inside the<br />
-                            same folder in order to successfully compile commat.tex.<br />
-                            <br />
-                            Please, send us the edited commat.tex and commat.bib files together with any<br />
-                            other source file that may be necessary to successfully compile your article,<br />
-                            as soon as possible.<br />
-                            <br />
-                            Best regards,<br />
-                            <br />
-                            &lt;your name&gt;<br />
-                            Technical editor of Communications in Mathematics
-                        </blockquote>
-                    </p>
-    
-                    <p> 
-                        Once you receive the manuscript in the format of the journal, make sure
-                        that the authors have also responded through the Episciences platform.
-                        (Otherwise, you will not be able to proceed with the editorial process.)
-                    </p>
-                -->
             </section>
 
 
             <section class="step" id="step1">
-
                 <h3> Step 1: review the manuscript </h3>
                 
                 <p>
@@ -90,7 +52,7 @@
                     <form action="https://tmacedo.pythonanywhere.com/cim/" method="post" enctype="multipart/form-data" target="invisible_iframe">
                         <label for="infile"> Upload tex: </label>
                         <input type="file" name="infile" required />
-                        <input type="submit" value="process" class="button" onclick=displayLinks() />
+                        <input type="submit" value="process" class="button" id="displaylinks" />
                     </form>
 
                     <iframe name="invisible_iframe" style="display: none;"></iframe>
@@ -180,7 +142,6 @@
 
 
             <section class="step" id="step3">
-
                 <h3> Step 3: make final edits </h3>
 
                 <p>
@@ -200,7 +161,7 @@
                     \DOI{https://doi.org/10.46298/cm.&lt;id of the paper&gt;}
                 </blocktex>
 
-                <img src="images/cim-paper_data.png"></img>
+                <img src="images/cim-paper_data.png" />
 
                 <p>
                     Then, add the following line right before <span class="latex">\end{document}</span>:
@@ -210,7 +171,7 @@
                     \EditInfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editor&gt;}
                 </blocktex>
 
-                <img src="images/cim-paper_data2.png"></img>
+                <img src="images/cim-paper_data2.png" />
                 
                 <p>
                     Lastly, replace <span class="latex">\bibliography{commat}</span> in the tex file by the contents of the .bbl file that is created during compilation.  (This is important in order to avoid problems when ArXiv compiles the tex file.)
@@ -219,7 +180,6 @@
 
 
             <section class="step" id="step4">
-
                 <h3> Step 4: send source files to the authors </h3>
 
                 <p>
@@ -258,7 +218,6 @@
 
 
             <section class="step" id="step5">
-
                 <h3> Step 5: publish the paper </h3>
 
                 <p>
@@ -267,12 +226,11 @@
                     and ask the Head Technical Editor to publish the paper:
                 </p>
                 
-                <img src="images/cim-version_update.png"></img>
+                <img src="images/cim-version_update.png" />
             </section>
 
 
             <div class="step">
-
                 <h3> General suggestions: </h3>
                 
                 <ul>
@@ -302,4 +260,5 @@
             </div>
         </div>
     </body>
+
 </html>

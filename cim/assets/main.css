@@ -15,10 +15,13 @@ body {
 	font-size: 16pt;
 	font-weight: 300;
 	line-height: 1.5em;
-	-webkit-text-size-adjust: none;
 }
 
-img {
+body a {
+    text-decoration: none;
+}
+
+body img {
     border: 2px solid #ff9c10;
     margin: 1em;
     width: 90%;
@@ -66,7 +69,6 @@ img {
 
     .sidemenu a {
         color: #bbb;
-        text-decoration: none;
     }
 
         .sidemenu a:hover,
