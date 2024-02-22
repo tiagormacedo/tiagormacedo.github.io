@@ -1,20 +1,20 @@
 body {
-    background: #5ebec4;
+    background: #5EBEC4;
     font-family: Verdana, Helvetica, sans-serif;
     padding: 10px 19%;
     width: 62%;
 }
 
-h1 {
-    color: #5ebec4;
+h1, h2 {
+    color: #5EBEC4;
     text-align: center;
     text-transform: uppercase;
 }
 
 #container {
-    background: #fdf5df;
+    background: #FDF5DF;
     border-radius: 5px;
-    box-shadow: 0 0 5px #F92C85;
+    box-shadow: 0 0 10px #F92C85;
     padding: 25px;
 }
 
@@ -67,7 +67,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    background: #f92c85; 
+    background: #F92C85; 
     transform: translateX(32px);
 }
 
@@ -91,4 +91,3 @@ input:checked + .slider:before {
     height: 4px;
     width: 4px;
 }
-

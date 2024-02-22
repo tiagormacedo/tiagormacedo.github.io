@@ -44,13 +44,18 @@ for (let i = 0; i < 10000; i++) {
     square.classList = "square"; 
     square.id = `square${i}`;
     square.draggable = false;
-    square.addEventListener("mouseover", changeColor);
+    window.addEventListener("mousedown", () => {
+        square.addEventListener("mouseover", changeColor);
+    });
+    window.addEventListener("mouseup", () => {
+        square.removeEventListener("mouseover", changeColor);
+    });
     
     const board = document.querySelector("div.board");
     board.appendChild(square);
 }
 
-function changeColor (e) {
+function changeColor () {
     if (colorSwitchSlider.textContent === "b & w") {
         const oldColor = this.style.background;
         if (oldColor === "" || oldColor === "white") {
@@ -70,4 +75,3 @@ function changeColor (e) {
         this.style.background = randomColor;
     }
 }
-
