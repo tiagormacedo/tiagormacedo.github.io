@@ -43,35 +43,55 @@ for (let i = 0; i < 10000; i++) {
     const square = document.createElement("div");
     square.classList = "square"; 
     square.id = `square${i}`;
+    
+    // Add event listener to change color when the mouse is clicked and over //
     square.draggable = false;
     window.addEventListener("mousedown", () => {
-        square.addEventListener("mouseover", changeColor);
+        square.addEventListener("mouseover", findElement);
     });
     window.addEventListener("mouseup", () => {
-        square.removeEventListener("mouseover", changeColor);
+        square.removeEventListener("mouseover", findElement);
     });
     
     const board = document.querySelector("div.board");
     board.appendChild(square);
 }
 
-function changeColor () {
+// Add event listener to change color when touch over a pixel square //
+window.addEventListener("touchmove", (ev) => findElement(ev), {passive: false});
+
+function findElement (evento) {
+    if (!evento) { evento = this };
+    evento.preventDefault();
+    
+    let x = evento.pageX ? evento.pageX : evento.changedTouches[0].pageX;
+    let y = evento.pageY ? evento.pageY : evento.changedTouches[0].pageY;
+    
+    let pixel = document.elementFromPoint(x, y);
+    let classes = Array.from(pixel.classList);
+    
+    if (classes.includes("square")) {
+        changeColor(pixel);
+    }
+};
+
+function changeColor (pixel) {
     if (colorSwitchSlider.textContent === "b & w") {
-        const oldColor = this.style.background;
+        const oldColor = pixel.style.background;
         if (oldColor === "" || oldColor === "white") {
-            this.style.background = "lightgray";
+            pixel.style.background = "lightgray";
         } else if (oldColor === "lightgray") {
-            this.style.background = "gray";
+            pixel.style.background = "gray";
         } else if (oldColor === "gray") {
-            this.style.background = "black";
+            pixel.style.background = "black";
         } else {
-            this.style.background = "white";
+            pixel.style.background = "white";
         }
     } else {
         randomRedComponent = Math.floor(256 * Math.random());
         randomGreenComponent = Math.floor(256 * Math.random());
         randomBlueComponent = Math.floor(256 * Math.random());
         randomColor = `rgb(${randomRedComponent}, ${randomGreenComponent}, ${randomBlueComponent})`;
-        this.style.background = randomColor;
+        pixel.style.background = randomColor;
     }
 }
