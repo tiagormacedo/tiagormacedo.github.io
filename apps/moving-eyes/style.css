@@ -1,0 +1,77 @@
+
+body {
+    background: #D1FAE5;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    align-self: center;
+    color: #6EE7B7;
+    font-family: Guinerin, Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+div#content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#face {
+    background: gold;
+    border-radius: 50%;
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+div#eyes {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+div.eye-socle {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.eye {
+    background: white;
+    border-radius: 50%;
+    height: 120px;
+    width: 100px;
+}
+
+div.iris {
+    background: black;
+    border-radius: 50%;
+    height: 60px;
+    width: 50px;
+    position: absolute;
+    transition: 0.1s;
+}
+
+div#mouth {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#smile {
+    background: white;
+    height: 200px;
+    width: 400px;
+    border: 0px solid black;
+    border-radius: 0 0 200px 200px;
+}
