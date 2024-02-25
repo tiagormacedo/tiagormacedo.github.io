@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <title> Guess The Number </title>
+    </head>
+    
+    <body>
+        <div id="container">
+            <h1> Guess the number </h1>
+            
+            <div id="intro">
+                <p> I am thinking of an integer number between 1 and 1000. </p>
+                <p> Can you guess which number I am thinking of? </p>
+                <p> You have <b>10</b> chances to get it right. </p>
+            </div>
+            
+            <form>
+                <input type="number" min="0" max="1000" pattern="\d{1:4}" name="userGuess" id="userGuess" required />
+                <button type="submit" id="tryButton"> try </button>
+                <div class="error-message"> &nbsp; </div>
+            </form>
+            
+            <div class="display">
+                <div id="attempts">
+                    <div> <b>Chances</b> </div>
+                </div>
+                
+                <div id="goal-number">
+                    <div>???</div>
+                </div>
+
+                <div id="guessed-number">
+                    <div id="info"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>

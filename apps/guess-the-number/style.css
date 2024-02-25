@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background: #F5F3FF;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px #EFE;
+    color: #7E22CE;
+    font-family: verdana, arial, sans-serif;
+    font-size: 115%;
+    margin: 0 19.1%;
+    height: 100vh;
+    width: 61.8%;
+}
+
+h1 {
+    background: #581C87;
+    color: #E9D5FF;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div#intro {
+    margin: 40px auto;
+    text-align: center;
+}
+
+form {
+    margin: 40px auto;
+    text-align: center;
+}
+
+form > input {
+    border: 2px solid #D8B4FE;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50px;
+    color: #7E22CE;
+    font-size: 115%;
+    text-align: center;
+}
+
+form > button {
+    background: #E9D5FF;
+    color: #7E22CE;
+    border: 2px solid #7E22CE;
+    border-radius: 50%;
+    font-size: 120%;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+form > div.error-message {
+    color: red;
+    font-size: 50%;
+    margin-top: 5px;
+}
+
+div.display {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+div.display > div#attempts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.display > div#attempts > div.attempt {
+    background: #0F0;
+    border: 1px solid purple;
+    border-radius: 2px;
+    height: 10px;
+    width: 25px;
+}
+
+div.display > div#goal-number {
+    background: #BABCBF;
+    color: white;
+    border-radius: 50%;
+    flex: 0 0 250px;
+    font-size: 64px;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.display > div#guessed-number {
+    color: #7E22CE;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
