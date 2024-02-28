@@ -62,7 +62,6 @@ window.addEventListener("touchmove", (ev) => findElement(ev), {passive: false});
 
 function findElement (evento) {
     if (!evento) { evento = this };
-    evento.preventDefault();
     
     let x = evento.pageX ? evento.pageX : evento.changedTouches[0].pageX;
     let y = evento.pageY ? evento.pageY : evento.changedTouches[0].pageY;

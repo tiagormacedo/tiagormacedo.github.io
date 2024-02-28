@@ -11,7 +11,7 @@ const IRIS_DIAMETER = 50;
 
 //  Add event listeners to the movements of the mouse and of touch  //
 window.addEventListener("mousemove", evento => moveEyes(evento));
-window.addEventListener("touchmove", evento => moveEyes(evento));
+window.addEventListener("touchmove", evento => moveEyes(evento), {passive: false});
 
 //  The iris circle will follow the mouse/touch //
 function moveEyes (evento) {
