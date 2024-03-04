@@ -145,6 +145,14 @@ body img {
     padding: .5ex 1ex;
 }
 
+.button:hover {
+    box-shadow: 0pt 0pt 1pt 1pt lightgray;
+}
+
+.button:active {
+    transform: translateX(1pt) translateY(1pt);
+}
+
 input[type=file] {
     color: inherit;
     font-family: inherit;
@@ -178,6 +186,11 @@ blocktex {
     margin: 0 auto;
     padding: 1em;
     width: fit-content;
+}
+
+
+.invisible {
+    display: none;
 }
 
 

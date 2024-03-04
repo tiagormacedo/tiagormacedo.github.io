@@ -32,25 +32,23 @@ function sidemenuHighlight() {
 // Function to process a tex file via a form
 function displayLinks() {
     const baseurl = "https://tmacedo.pythonanywhere.com/uploads/";
-    const infilename = document.querySelector('input[type=file]').files[0].name;
+    let infilename = document.querySelector('input[type=file]').files[0].name;
     infilename = infilename.replace(/ /g, "_");
 
-    document.querySelector("#raw_outfile").textContent = "raw file";
     const infilepath = baseurl + infilename;
+    document.querySelector("#raw_outfile").classList.remove("invisible");
     document.querySelector("#raw_outfile").setAttribute("href", infilepath);
 
-    document.querySelector("#edited_outfile").textContent = "edited file";
     const edited_filepath = infilepath.slice(0, -4) + "-edited" + infilepath.slice(-4);
+    document.querySelector("#edited_outfile").classList.remove("invisible");
     document.querySelector("#edited_outfile").setAttribute("href", edited_filepath);
 }
 
 // Add several event listeners when the page loads //
-window.onload = function() {
-    const sideBarItems = document.querySelectorAll(".indicator");
-    for (item of sideBarItems) {
-        item.addEventListener("click", swapActiveIndicator);
-    }
-
-    const btn = document.querySelector("input#displaylinks");
-    btn.addEventListener("click", displayLinks);
+const sideBarItems = document.querySelectorAll(".indicator");
+for (item of sideBarItems) {
+    item.addEventListener("click", swapActiveIndicator);
 }
+
+const btn = document.querySelector("#display-links");
+btn.addEventListener("click", displayLinks);

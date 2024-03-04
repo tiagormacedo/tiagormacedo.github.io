@@ -7,10 +7,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 
-        <link href="assets/main.css" rel="stylesheet" />
+        <link href="./assets/style.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet" />
 
-        <script type="text/javascript" src="assets/main.js"></script>
+        <script type="text/javascript" src="./assets/script.js" defer></script>
     </head>
 
     <body onload="sidemenuHighlight()">
@@ -50,18 +50,20 @@
                 </p>
 
                 <div style="text-align: center">
-                    <form action="https://tmacedo.pythonanywhere.com/cim/" method="post" enctype="multipart/form-data" target="invisible_iframe">
+                    <form action="https://tmacedo.pythonanywhere.com/cim/" method="post" enctype="multipart/form-data" target="form-target">
                         <label for="infile"> Upload tex: </label>
-                        <input type="file" name="infile" required />
-                        <input type="submit" value="process" class="button" id="displaylinks" />
+                        <input type="file" name="infile" id="infile" required />
+                        <button type="submit" class="button" id="display-links">
+                            process
+                        </button>
+                        <iframe name="form-target" class="invisible"></iframe>
                     </form>
 
-                    <iframe name="invisible_iframe" style="display: none;"></iframe>
                     
                     <p>
-                        <span><a id="raw_outfile" href="" target="_blank"></a></span>
-                        &nbsp; &nbsp;
-                        <span><a id="edited_outfile" href="" download></a></span>
+                        <a id="raw_outfile" class="invisible" target="_blank">raw file</a>
+                        <span> &nbsp; &nbsp; </span>
+                        <a id="edited_outfile" class="invisible" target="_blank">edited file</a>
                     </p>
                 </div>
 
