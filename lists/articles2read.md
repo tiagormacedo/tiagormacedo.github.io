@@ -1,4 +1,4 @@
-# ARTICLES TO READ
+#     ARTICLES TO READ
 
 
 Tao, Machine assisted proofs: https://www.ams.org/journals/notices/202501/rnoti-p6.pdf
@@ -11,13 +11,17 @@ Resolution of singularities via Tannaka duality: https://arxiv.org/abs/2501.0320
 
 Hernandez, Symmetries of Grothendieck rings in representation theory: https://arxiv.org/abs/2501.03024
 
-ML and AI books:
- - https://epubs.siam.org/doi/book/10.1137/1.9781611977882
- - https://link.springer.com/book/10.1007/978-3-031-12282-8
+---
 
 IC: https://arxiv.org/pdf/0806.3881
 
 Mestrado: www.ams.org/journals/bull/2024-61-04/S0273-0979-2024-01835-7/S0273-0979-2024-01835-7.pdf
+
+---
+
+Books on ML and AI:
+ - https://epubs.siam.org/doi/book/10.1137/1.9781611977882
+ - https://link.springer.com/book/10.1007/978-3-031-12282-8
 
 Tropical geometry and ML: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
