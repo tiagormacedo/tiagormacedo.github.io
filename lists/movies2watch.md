@@ -1,20 +1,21 @@
-# MOVIES TO WATCH
+#    MOVIES TO WATCH
+
 
 
 Megalopolis - F. F. Copolla (USA)
 
 ---
 
-Dahomey - Mati Diop
+All we imagine as light - P. Kapadia (India)
 
-Anora - americano (Sean Baker)
+Anora - Sean Baker (USA)
 
-Vermiglio - Maura Delpero
+Dahomey - M. Diop (France, Senegal)
 
-All we imagine as light - Payal Kapadia
+Motel Destino - K. Ainouz (Brasil)
+
+The new year that never came - B. Muresanu (Romania)
+
+Vermiglio - M. Delpero (Italy)
 
 Fireband - Karim Ainouz
-
-Motel Destino - Karim Ainouz
-
-The new year that never came - Bogdan Muresanu
