@@ -1,295 +1,152 @@
-# BOOKS TO READ
-_(displayed by time, since 2011)_
+    BOOKS TO READ
+(displayed by time, since 2011)
 
 
 1984 - G. Orwell
-
 Crime and punishment - F. Dostoievski
-
 Alice's adventure in Worderland - L. Carrol
-
 Alice throught the looking glass - L. Carrol
-
 The catcher in the rye - J. Salinger
-
 The adventures of Huck Finn - M. Twain
-
 The color purple - A. Walker
-
 A farewell to arms - E. Hemingway
-
 The picture of Dorian Gray - O. Wilde
-
 Down and out in London and Paris - G. Orwell
-
 Azazel - I. Asimov
-
 To kill a mockingbird - H. Lee
-
 The great Gatsby - S. Fitzgerald
-
 The old man and the sea - E. Hemingway
-
 Old Yeller - F. Gipson 
-
 Watership down - R. Adams
-
 The grapes of wrath - J. Steinbeck
-
 Pudd'nhead Wilson - M. Twain
-
 The yearling - M. Rawlings
-
 Lord of the flies - W. Golding
-
 On the road - J. Kerouac
-
 Charlie and the chocolate factory - R. Dahl
-
 Going solo - R. Dahl
-
 Pride and prejudice - J. Austen
-
 The importance of being Earnest - O. Wilde
-
 The adventures of Tom Sawyer - M. Twain
-
 Seabiscuit - L. Hillenbrand
-
 Fahrenheit 451 - R. Bradbury
-
 The circle - D. Eggers
-
 A Christmas carol - C. Dickens
-
 The sun also rises - E. Hemingway
-
 Wuthering Heights - E. Bronte
-
 Jane Eyre - C. Bronte
-
 The yellow wallpaper - C. Gilman
-
 The awakening - K. Chopin
-
 Sense and sensibility - J. Austen
-
 The call of the wild - J. London
-
 The invisible man - H. Wells
-
 The help - K. Stockett
-
 Little women - L. M. Alcott
-
 The iron heel - J. London
-
 Their eyes were watching God - Z. Hurston
-
 Nectar in a Sieve - K. Markandaya
-
 Mrs. Dalloway - V. Woolf
-
 Silas Marner - G. Eliot
-
 Frankenstein; Or the modern Prometheus - M. Shelley
-
 Outlander - D. Gabaldon
-
 The pillars of the Earth - K. Follett
-
 Grothendieck-Serre correspondence
-
 The scarlet letter - N. Hawthorne 
-
 The hobbit - J. R. R. Tolkien
-
 The lord of the rings: The Fellowship of the Ring - J. R. R. Tolkien
-
 Great short works of Jack London
-
 Catch-22 - J. Heller
-
 Jazz - T. Morrison
-
 Strange case of Dr Jekyll and Mr Hyde - R. L. Stevenson
-
 Slaughterhouse-five - K. Vonnegut
-
 The sound and the fury - W. Faulkner
-
 Go set a watchman - H. Lee
-
 Midnight's children - S. Rushie
-
 All men are mortal - S. de Beauvoir
-
 Into the magic shop - J. Doty 
-
 Ulysses - J. Joyce
-
 Jacob's room - V. Woolf
-
 Sophie's World - J. Gaarder
-
 A room of one's own - V. Woolf
-
 The bell jar - S. Plath
-
 My Antonia - W. Cather
-
 The age of innocence - E. Wharton
-
 Beloved - T. Morrison
-
 A mercy - T. Morrison
-
 The way of Zen - A. Watts
-
 Harry Potter: The philosopher's stone - J. K. Rowling
-
 Harry Potter: The chamber of secrets - J. K. Rowling
-
 A good man is hard to find - F. O'Connor
-
 The road - C. McCarthy
-
 Harry Potter: The prisoner of Azkaban - J. K. Rowling
-
 Harry Potter: The goblet of fire - J. K. Rowling
-
 Harry Potter: The order of the phoenix - J. K. Rowling
-
 The music lesson: a spiritual search for growth through music - V. Wooten
-
 Zen in the art of archery - E. Herrigel
-
 The underground railroad - C. Whitehead
-
 The sympathizer - V. T. Nguyen
-
 Herland - C. Gilman
-
 Less - A. Greer
-
 The handmaid's tale - M. Atwood
-
 El libro de arena - J. L. Borges
-
 La casa de los espiritus - I. Allende
-
 All the light we cannot see - A. Doerr
-
 Cien anos de soledad - G. G. Marquez
-
 La ciudad y los perros - M. V. Llosa
-
 La fiesta del chivo - M. V. Llosa
-
 East of Eden - J. Steinbeck
-
 2666 - R. Bolanos
-
 The overstory - R. Powers
-
 The Nickel boys - C. Whitehead
-
 Runaway - A. Munro
-
 Swann's way - M. Proust
-
 The interpretation of dreams - S. Freud
-
 Breathing lessons - A. Tyler
-
 Ficciones - J. L. Borges
-
 Como agua para chocolate - L. Esquivel
-
 Go tell it on the mountain - J. Baldwin
-
 A portrait of the artist as a young man - J. Joyce
-
 Inverting the pyramid: a history of football tactics - J. Wilson
-
 Pep Guardiola: la metamorfosis - M. Perarnau
-
 The stranger - A. Camus
-
 In persuit of the traveling salesman - W. Cook
-
 Demon Copperhead - B. Kingsolver
-
 Trust - H. Diaz
-
 Torto arado - I. Vieira Junior
-
 El ano del bufalo - J. Perez Andujar
-
 O som do rugido da onca - M. Verunschk
-
 O avesso da pele - J. Tenorio
-
 Livro do desassossego - F. Pessoa
-
 The night watchman - L. Erdrich
-
 Night watch - J. A. Phillips
-
 Corpos secos - L. Geisler
-
 Uma mulher no escuro - R. Montes
-
 A resitencia - J. Fuks
-
 O clube dos jardineiros de fumaca - C. Bensimon
-
 Machado - S. Santiago
-
 Pedro Paramo - J. Rulfo
-
 El beso de la mujer arana - M. Puig
-
 The known world - E. Jones
-
 Dom Casmurro - M. de Assis
-
 All things bright and beautiful - J. Herriot
-
 Corazon tan blanco - J. Marias
-
 Teoria geral do esquecimento - J. E. Agualusa
-
 El ruido de las cosas al caer - J. Gabriel Vasquez
-
 The brief wondrous life of Oscar Wao - J. Diaz
-
 A paixao segundo G.H. - C. Lispector
-
 Tres tristes tigres - G. Cabrera Infante
-
 A confissao da leoa - M. Couto
-
 Lolita - V. Nabokov
-
 Um copo de colera - R. Nassar
-
 The notebooks of Malte Laurids Brigge - R. M. Rilke
-
 The vegetarian - H. Kang
-
 Things fall apart - C. Achebe
-
 Invisible man - R. Ellison
-
 La familia de Pascual Duarte - C. Jose Cela
 
 ---
 
 Dona Barbara - R. Gallegos
-
 O pai da menina morta - T. Ferro
-
 Heart of darkness - Joseph Conrad
-
 Indagaciones del choteo - Jorge Manach
