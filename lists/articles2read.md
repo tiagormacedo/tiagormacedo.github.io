@@ -13,15 +13,14 @@ Hernandez, Symmetries of Grothendieck rings in representation theory: https://ar
 
 ---
 
-IC: https://arxiv.org/pdf/0806.3881
+## Students:
 
-Mestrado: www.ams.org/journals/bull/2024-61-04/S0273-0979-2024-01835-7/S0273-0979-2024-01835-7.pdf
+ * Operator theory of electrical resistance networks: http://arxiv.org/pdf/0806.3881
+ * Algorithmic mathematics in machine learning: http://epubs.siam.org/doi/book/10.1137/1.9781611977882
+ * Machine learning and artificial intelligence: http://link.springer.com/book/10.1007/978-3-031-12282-8
+ * Algebraic solutions of linear differential equations: http://www.ams.org/journals/bull/2024-61-04/S0273-0979-2024-01835-7/S0273-0979-2024-01835-7.pdf
 
 ---
-
-Books on ML and AI:
- - https://epubs.siam.org/doi/book/10.1137/1.9781611977882
- - https://link.springer.com/book/10.1007/978-3-031-12282-8
 
 Tropical geometry and ML: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
