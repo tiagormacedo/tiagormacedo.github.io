@@ -1,3 +1,5 @@
+<pre>
+
 #     ARTICLES TO READ
 
 
@@ -48,3 +50,5 @@ Tropical optimization problems: https://arxiv.org/pdf/1408.0313
 ML, math and apps: https://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
 
 Topological data analysis: https://arxiv.org/pdf/2411.00493
+
+</pre>
