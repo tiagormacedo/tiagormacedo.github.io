@@ -47,6 +47,18 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/abs/2501.00724
 
 Tropical geometry and machine learning: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
+    Conclusion. Tropical geometry and max-plus algebra offer a rich collection 
+    of ideas and tools to model and solve problems in machine learning. In this
+    work, we have surveyed the state of the art and some recent progress in 
+    three areas: 1) deep neural networks with piecewise-linear activation 
+    functions; 2) probabilistic graphical models and algorithms for weighted 
+    finite-state transducers; and 3) nonlinear regression with piecewise-linear
+    functions. Furthermore, we have introduced extensions to general max 
+    algebras that allowed us to: 1) express the optimal solutions of several of
+    the above problems as projections onto nonlinear vector spaces called 
+    weighted lattices and 2) generalize tropical geometrical objects. We 
+    conclude by outlining some future research directions.
+
 Tropical geometry and deep neural networks: http://arxiv.org/pdf/1805.07091
 
 Topology of deep neural networks: http://arxiv.org/pdf/2004.06093
