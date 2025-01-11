@@ -14,15 +14,16 @@ _Resolution of singularities via Tannaka duality_: http://arxiv.org/abs/2501.032
 
 Negut, _Category O for quantum loop algebras_: http://arxiv.org/abs/2501.00724
 
-    We generalize the Hernandez-Jimbo category O of representations of Borel 
-    subalgebras of quantum affine algebras to the case of quantum loop algebras 
-    for arbitrary Kac-Moody g (as well as related algebras, such as quantum 
-    toroidal gl(1)). Moreover, we give explicit realizations of all simple 
-    modules, and devise tools for the computation of q-characters that are new 
-    even for g of finite type. Our techniques allow us to generalize classic 
-    results of FrenkelHernandez, Frenkel-Mukhin, Hernandez-Jimbo and Hernandez-
-    -Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin and 
-    Mukhin-Young.
+    Abstract. We generalize the Hernandez-Jimbo category O of representations
+    of Borel subalgebras of quantum affine algebras to the case of quantum loop 
+    algebras for arbitrary Kac-Moody g (as well as related algebras, such as  
+    quantum toroidal gl(1)). Moreover, we give explicit realizations of all  
+    simple modules, and devise tools for the computation of q-characters that 
+    are new even for g of finite type. Our techniques allow us to generalize  
+    classic results of FrenkelHernandez, Frenkel-Mukhin, Hernandez-Jimbo and 
+    Hernandez-Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin 
+    and Mukhin-Young.
+
 
 Hernandez, Symmetries of Grothendieck rings in representation theory: https://arxiv.org/abs/2501.03024
 
