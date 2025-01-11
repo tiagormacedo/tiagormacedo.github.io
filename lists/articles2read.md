@@ -28,7 +28,7 @@ _Resolution of singularities via Tannaka duality_: http://arxiv.org/abs/2501.032
     stable loci with respect to different stability parameters, and study the 
     Kleinian An and Dn cases in detail. 
 
-Hernandez, Symmetries of Grothendieck rings in representation theory: https://arxiv.org/abs/2501.03024
+Hernandez, Symmetries of Grothendieck rings in representation theory: http://arxiv.org/abs/2501.03024
 
     A broad overview on representation theory of Lie groups, Lie algebras, 
     monoidal categories, Grothendieck rings, and categorification.
@@ -59,7 +59,7 @@ Tropical geometry and machine learning: http://ieeexplore.ieee.org/stamp/stamp.j
     weighted lattices and 2) generalize tropical geometrical objects. We 
     conclude by outlining some future research directions.
 
-Tropical geometry and deep neural networks: http://arxiv.org/pdf/1805.07091
+Tropical geometry and deep neural networks: http://arxiv.org/abs/1805.07091
 
     Abstract. We establish, for the first time, connections between feedforward
     neural networks with ReLU activation and tropical geometry - we show that
@@ -73,7 +73,30 @@ Tropical geometry and deep neural networks: http://arxiv.org/pdf/1805.07091
     rational functions. An insight from our tropical formulation is that a 
     deeper network is exponentially more expressive than a shallow network.
 
-Topology of deep neural networks: http://arxiv.org/pdf/2004.06093
+Topology of deep neural networks: http://arxiv.org/abs/2004.06093
+
+    The authors study how the topology of a data set representing two classes
+    of objects in a binary classification problem changes as it passes through 
+    the layers of a well-trained neural network. The goal is to shed light on 
+    two well-known mysteries in deep neural networks:
+    (i) a nonsmooth activation function like ReLU outperforms a smooth one 
+    like hyperbolic tangent, 
+    (ii) successful neural network architectures rely on having many layers, 
+    despite the fact that a shallow network is able to approximate any function
+    arbitrary well.
+    
+    Their results demonstrate the following: 
+    (1) Neural networks operate by changing topology, transforming a topologically 
+    complicated data set into a topologically simple one as it passes through 
+    the layers.
+    (2) the reduction in Betti numbers is significantly faster for ReLU 
+    activation compared to hyperbolic tangent activation as the former defines 
+    nonhomeomorphic maps that change topology, whereas the latter defines 
+    homeomorphic maps that preserve topology. 
+    (3) shallow and deep networks transform the same data set somewhat differently
+    - a shallow network operates mainly through changing geometry and changes
+    topology only in its final layers, a deep one spreads topological changes 
+    more evenly across all layer.
 
 Machine learning, mathematical theory and scientific applications: http://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
 
