@@ -61,6 +61,18 @@ Tropical geometry and machine learning: http://ieeexplore.ieee.org/stamp/stamp.j
 
 Tropical geometry and deep neural networks: http://arxiv.org/pdf/1805.07091
 
+    Abstract. We establish, for the first time, connections between feedforward
+    neural networks with ReLU activation and tropical geometry - we show that
+    the family of such neural networks is equivalent to the family of tropical 
+    rational maps. Among other things, we deduce that feedforward ReLU neural 
+    networks with one hidden layer can be characterized by zonotopes, which 
+    serve as building blocks for deeper networks; we relate decision boundaries 
+    of such neural networks to tropical hypersurfaces, a major object of study 
+    in tropical geometry; and we prove that linear regions of such neural 
+    networks correspond to vertices of polytopes associated with tropical 
+    rational functions. An insight from our tropical formulation is that a 
+    deeper network is exponentially more expressive than a shallow network.
+
 Topology of deep neural networks: http://arxiv.org/pdf/2004.06093
 
 Machine learning, mathematical theory and scientific applications: http://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
