@@ -12,6 +12,23 @@ Tao, _Machine assisted proofs_: http://www.ams.org/journals/notices/202501/rnoti
 
 _Resolution of singularities via Tannaka duality_: http://arxiv.org/abs/2501.03205
 
+    Abstract. Resolving finite quotient singularities is a classical problem in
+    algebraic geometry. Traditional methods of Geometric Invariant Theory (GIT)
+    translate the singularity into a quiver representation space and take the 
+    GIT quotient with respect to a generic stability parameter. While this 
+    approach easily produces smooth resolutions, it fails to produce any stacky
+    resolutions, as quiver representation spaces lack finite stabilizers. This
+    paper provides an alternative framework which produces both smooth and stacky
+    resolutions. Our framework is based on a trick of Abdelgadir and Segal, which
+    deploys Tannaka duality to describe the points of the classifying stack of a
+    finite group in terms of algebraic data. Abdelgadir and Segal successfully 
+    pursue this strategy and obtain smooth and stacky resolutions in the Kleinian
+    D4 case. We generalize this strategy to all Kleinian singularities and obtain
+    a series of varieties which we refer to as Clebsch-Gordan varieties. We 
+    provide tools to work with these Clebsch-Gordan varieties, analyze their 
+    stable loci with respect to different stability parameters, and study the 
+    Kleinian An and Dn cases in detail. 
+
 Negut, _Category O for quantum loop algebras_: http://arxiv.org/abs/2501.00724
 
     Abstract. We generalize the Hernandez-Jimbo category O of representations
@@ -26,6 +43,9 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/abs/2501.00724
 
 
 Hernandez, Symmetries of Grothendieck rings in representation theory: https://arxiv.org/abs/2501.03024
+
+    A broad overview on representation theory of Lie groups, Lie algebras, 
+    monoidal categories, Grothendieck rings, and categorification.
 
 Machine learning, mathematical theory and scientific applications: http://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
 
