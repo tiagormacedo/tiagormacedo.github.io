@@ -9,7 +9,6 @@ Tao, _Machine assisted proofs_: http://www.ams.org/journals/notices/202501/rnoti
     proof assistants and large language models have advanced mathematics, and 
     the possibilities of combining these techniques in the future.
 
-
 _Resolution of singularities via Tannaka duality_: http://arxiv.org/abs/2501.03205
 
     Abstract. Resolving finite quotient singularities is a classical problem in
@@ -29,6 +28,11 @@ _Resolution of singularities via Tannaka duality_: http://arxiv.org/abs/2501.032
     stable loci with respect to different stability parameters, and study the 
     Kleinian An and Dn cases in detail. 
 
+Hernandez, Symmetries of Grothendieck rings in representation theory: https://arxiv.org/abs/2501.03024
+
+    A broad overview on representation theory of Lie groups, Lie algebras, 
+    monoidal categories, Grothendieck rings, and categorification.
+
 Negut, _Category O for quantum loop algebras_: http://arxiv.org/abs/2501.00724
 
     Abstract. We generalize the Hernandez-Jimbo category O of representations
@@ -41,19 +45,13 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/abs/2501.00724
     Hernandez-Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin 
     and Mukhin-Young.
 
-
-Hernandez, Symmetries of Grothendieck rings in representation theory: https://arxiv.org/abs/2501.03024
-
-    A broad overview on representation theory of Lie groups, Lie algebras, 
-    monoidal categories, Grothendieck rings, and categorification.
-
-Machine learning, mathematical theory and scientific applications: http://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
-
 Tropical geometry and machine learning: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
 Tropical geometry and deep neural networks: http://arxiv.org/pdf/1805.07091
 
 Topology of deep neural networks: http://arxiv.org/pdf/2004.06093
+
+Machine learning, mathematical theory and scientific applications: http://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
 
 ---
 
