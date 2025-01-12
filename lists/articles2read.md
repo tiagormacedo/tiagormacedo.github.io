@@ -28,7 +28,7 @@ _Resolution of singularities via Tannaka duality_: http://arxiv.org/abs/2501.032
     stable loci with respect to different stability parameters, and study the 
     Kleinian An and Dn cases in detail. 
 
-Hernandez, Symmetries of Grothendieck rings in representation theory: http://arxiv.org/abs/2501.03024
+Hernandez, _Symmetries of Grothendieck rings in representation theory_: http://arxiv.org/abs/2501.03024
 
     A broad overview on representation theory of Lie groups, Lie algebras, 
     monoidal categories, Grothendieck rings, and categorification.
@@ -45,7 +45,7 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/abs/2501.00724
     Hernandez-Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin 
     and Mukhin-Young.
 
-Tropical geometry and machine learning: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
+_Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
     Conclusion. Tropical geometry and max-plus algebra offer a rich collection 
     of ideas and tools to model and solve problems in machine learning. In this
@@ -59,7 +59,7 @@ Tropical geometry and machine learning: http://ieeexplore.ieee.org/stamp/stamp.j
     weighted lattices and 2) generalize tropical geometrical objects. We 
     conclude by outlining some future research directions.
 
-Tropical geometry and deep neural networks: http://arxiv.org/abs/1805.07091
+_Tropical geometry and deep neural networks_: http://arxiv.org/abs/1805.07091
 
     Abstract. We establish, for the first time, connections between feedforward
     neural networks with ReLU activation and tropical geometry - we show that
@@ -73,7 +73,7 @@ Tropical geometry and deep neural networks: http://arxiv.org/abs/1805.07091
     rational functions. An insight from our tropical formulation is that a 
     deeper network is exponentially more expressive than a shallow network.
 
-Topology of deep neural networks: http://arxiv.org/abs/2004.06093
+_Topology of deep neural networks_: http://arxiv.org/abs/2004.06093
 
     The authors study how the topology of a data set representing two classes
     of objects in a binary classification problem changes as it passes through 
@@ -98,7 +98,7 @@ Topology of deep neural networks: http://arxiv.org/abs/2004.06093
     topology only in its final layers, a deep one spreads topological changes 
     more evenly across all layer.
 
-Machine learning, mathematical theory and scientific applications: http://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
+_Machine learning, mathematical theory and scientific applications_: http://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
 
 ---
 
