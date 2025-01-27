@@ -45,8 +45,6 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/abs/2501.00724
     Hernandez-Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin 
     and Mukhin-Young.
 
-_Real Numerical Algebraic Geometry_, http://www.ams.org/journals/notices/202502/noti3129/noti3129.html
-
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
     Conclusion. Tropical geometry and max-plus algebra offer a rich collection 
