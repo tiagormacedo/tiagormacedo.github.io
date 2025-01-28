@@ -1,13 +1,15 @@
 #     ARTICLES TO READ
 
 
-Black and Sanyal, _Underlying flag polymatroids_: http://arxiv.org/abs/2207.12221
-
 Tao, _Machine assisted proofs_: http://www.ams.org/journals/notices/202501/rnoti-p6.pdf
 
     On computer-assisted mathematics: the instances in which machine learning, 
     proof assistants and large language models have advanced mathematics, and 
     the possibilities of combining these techniques in the future.
+
+---
+
+Black and Sanyal, _Underlying flag polymatroids_: http://arxiv.org/abs/2207.12221
 
 _Resolution of singularities via Tannaka duality_: http://arxiv.org/abs/2501.03205
 
