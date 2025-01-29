@@ -11,7 +11,20 @@ Tao, _Machine assisted proofs_: http://www.ams.org/journals/notices/202501/rnoti
 
 _Machine learning, mathematical theory and scientific applications_: http://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
 
-Hernandez, _Symmetries of Grothendieck rings in representation theory_: http://arxiv.org/abs/2501.03024
+    The author begins with a summary of a few areas in which machine learning has
+    been applied in science: partial differential equations, multi-scale modeling,
+    molecular dynamics, gas dynamics, and natural language processing. Then, he
+    shortly presents the mathematical theory behind machine learning. Two 
+    important points that the author highlights:
+    
+      * "... in theoretical and computational science and engineering, a 
+        fundamental obstacle that we have encountered is our limited ability
+        to deal with problems in high dimension."
+         
+      * "To build the theoretical foundation of machine learning, we need to 
+        develop high-dimensional numerical analysis."
+
+Hernandez, _Symmetries of Grothendieck rings in representation theory_: http://arxiv.org/pdf/2501.03024
 
     A broad overview on representation theory of Lie groups, Lie algebras, 
     monoidal categories, Grothendieck rings, and categorification.
