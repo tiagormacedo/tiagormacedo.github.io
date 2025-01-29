@@ -9,6 +9,14 @@ Tao, _Machine assisted proofs_: http://www.ams.org/journals/notices/202501/rnoti
 
 ---
 
+_Machine learning, mathematical theory and scientific applications_: http://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
+
+Hernandez, _Symmetries of Grothendieck rings in representation theory_: http://arxiv.org/abs/2501.03024
+
+    A broad overview on representation theory of Lie groups, Lie algebras, 
+    monoidal categories, Grothendieck rings, and categorification.
+
+
 Black and Sanyal, _Underlying flag polymatroids_: http://arxiv.org/abs/2207.12221
 
 _Resolution of singularities via Tannaka duality_: http://arxiv.org/abs/2501.03205
@@ -28,12 +36,7 @@ _Resolution of singularities via Tannaka duality_: http://arxiv.org/abs/2501.032
     a series of varieties which we refer to as Clebsch-Gordan varieties. We 
     provide tools to work with these Clebsch-Gordan varieties, analyze their 
     stable loci with respect to different stability parameters, and study the 
-    Kleinian An and Dn cases in detail. 
-
-Hernandez, _Symmetries of Grothendieck rings in representation theory_: http://arxiv.org/abs/2501.03024
-
-    A broad overview on representation theory of Lie groups, Lie algebras, 
-    monoidal categories, Grothendieck rings, and categorification.
+    Kleinian An and Dn cases in detail.
 
 Negut, _Category O for quantum loop algebras_: http://arxiv.org/abs/2501.00724
 
@@ -99,8 +102,6 @@ _Topology of deep neural networks_: http://arxiv.org/abs/2004.06093
     - a shallow network operates mainly through changing geometry and changes
     topology only in its final layers, a deep one spreads topological changes 
     more evenly across all layer.
-
-_Machine learning, mathematical theory and scientific applications_: http://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
 
 ---
 
