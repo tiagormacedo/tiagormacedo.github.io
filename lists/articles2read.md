@@ -9,11 +9,11 @@ Tao, _Machine assisted proofs_: http://www.ams.org/journals/notices/202501/rnoti
 
 _Machine learning, mathematical theory and scientific applications_: http://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
 
-    The author begins with a summary of a few areas in which machine learning has
+    The article begins with a summary of a few areas in which machine learning has
     been applied in science: partial differential equations, multi-scale modeling,
-    molecular dynamics, gas dynamics, and natural language processing. Then, he
-    shortly presents the mathematical theory behind machine learning. Two 
-    important points that the author highlights:
+    molecular dynamics, gas dynamics, and natural language processing. Then, the
+    mathematical theory behind regression problems is shortly presented. Two 
+    important points that the article highlights:
     
       * "... in theoretical and computational science and engineering, a 
         fundamental obstacle that we have encountered is our limited ability
