@@ -22,12 +22,13 @@ _Machine learning, mathematical theory and scientific applications_: http://www.
       * "To build the theoretical foundation of machine learning, we need to 
         develop high-dimensional numerical analysis."
 
----
-
 Hernandez, _Symmetries of Grothendieck rings in representation theory_: http://arxiv.org/pdf/2501.03024
 
-    A broad overview on representation theory of Lie groups, Lie algebras, 
-    monoidal categories, Grothendieck rings, and categorification.
+    The article starts with a broad overview on representation theory, 
+    category theory, Grothendieck rings and cluster algebras in order to
+    present several instances in which Grothendieck rings admit symmetries.
+
+---
 
 Black and Sanyal, _Underlying flag polymatroids_: http://arxiv.org/abs/2207.12221
 
