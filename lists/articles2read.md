@@ -7,8 +7,6 @@ Tao, _Machine assisted proofs_: http://www.ams.org/journals/notices/202501/rnoti
     proof assistants and large language models have advanced mathematics, and 
     the possibilities of combining these techniques in the future.
 
----
-
 _Machine learning, mathematical theory and scientific applications_: http://www.ams.org/journals/notices/201911/rnoti-p1813.pdf
 
     The author begins with a summary of a few areas in which machine learning has
@@ -24,11 +22,12 @@ _Machine learning, mathematical theory and scientific applications_: http://www.
       * "To build the theoretical foundation of machine learning, we need to 
         develop high-dimensional numerical analysis."
 
+---
+
 Hernandez, _Symmetries of Grothendieck rings in representation theory_: http://arxiv.org/pdf/2501.03024
 
     A broad overview on representation theory of Lie groups, Lie algebras, 
     monoidal categories, Grothendieck rings, and categorification.
-
 
 Black and Sanyal, _Underlying flag polymatroids_: http://arxiv.org/abs/2207.12221
 
