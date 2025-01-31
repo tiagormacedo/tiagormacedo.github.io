@@ -30,39 +30,6 @@ Hernandez, _Symmetries of Grothendieck rings in representation theory_: http://a
 
 ---
 
-Black and Sanyal, _Underlying flag polymatroids_: http://arxiv.org/abs/2207.12221
-
-_Resolution of singularities via Tannaka duality_: http://arxiv.org/abs/2501.03205
-
-    Abstract. Resolving finite quotient singularities is a classical problem in
-    algebraic geometry. Traditional methods of Geometric Invariant Theory (GIT)
-    translate the singularity into a quiver representation space and take the 
-    GIT quotient with respect to a generic stability parameter. While this 
-    approach easily produces smooth resolutions, it fails to produce any stacky
-    resolutions, as quiver representation spaces lack finite stabilizers. This
-    paper provides an alternative framework which produces both smooth and stacky
-    resolutions. Our framework is based on a trick of Abdelgadir and Segal, which
-    deploys Tannaka duality to describe the points of the classifying stack of a
-    finite group in terms of algebraic data. Abdelgadir and Segal successfully 
-    pursue this strategy and obtain smooth and stacky resolutions in the Kleinian
-    D4 case. We generalize this strategy to all Kleinian singularities and obtain
-    a series of varieties which we refer to as Clebsch-Gordan varieties. We 
-    provide tools to work with these Clebsch-Gordan varieties, analyze their 
-    stable loci with respect to different stability parameters, and study the 
-    Kleinian An and Dn cases in detail.
-
-Negut, _Category O for quantum loop algebras_: http://arxiv.org/abs/2501.00724
-
-    Abstract. We generalize the Hernandez-Jimbo category O of representations
-    of Borel subalgebras of quantum affine algebras to the case of quantum loop 
-    algebras for arbitrary Kac-Moody g (as well as related algebras, such as  
-    quantum toroidal gl(1)). Moreover, we give explicit realizations of all  
-    simple modules, and devise tools for the computation of q-characters that 
-    are new even for g of finite type. Our techniques allow us to generalize  
-    classic results of FrenkelHernandez, Frenkel-Mukhin, Hernandez-Jimbo and 
-    Hernandez-Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin 
-    and Mukhin-Young.
-
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
     Conclusion. Tropical geometry and max-plus algebra offer a rich collection 
@@ -115,6 +82,20 @@ _Topology of deep neural networks_: http://arxiv.org/abs/2004.06093
     - a shallow network operates mainly through changing geometry and changes
     topology only in its final layers, a deep one spreads topological changes 
     more evenly across all layer.
+
+Black and Sanyal, _Underlying flag polymatroids_: http://arxiv.org/pdf/2207.12221
+
+Negut, _Category O for quantum loop algebras_: http://arxiv.org/pdf/2501.00724
+
+    Abstract. We generalize the Hernandez-Jimbo category O of representations
+    of Borel subalgebras of quantum affine algebras to the case of quantum loop 
+    algebras for arbitrary Kac-Moody g (as well as related algebras, such as  
+    quantum toroidal gl(1)). Moreover, we give explicit realizations of all  
+    simple modules, and devise tools for the computation of q-characters that 
+    are new even for g of finite type. Our techniques allow us to generalize  
+    classic results of FrenkelHernandez, Frenkel-Mukhin, Hernandez-Jimbo and 
+    Hernandez-Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin 
+    and Mukhin-Young.
 
 ---
 
