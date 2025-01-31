@@ -85,6 +85,19 @@ _Topology of deep neural networks_: http://arxiv.org/abs/2004.06093
 
 Black and Sanyal, _Underlying flag polymatroids_: http://arxiv.org/pdf/2207.12221
 
+    Abstract. We describe a natural geometric relationship between matroids and
+    underlying flag matroids by relating the geometry of the greedy algorithm to
+    monotone path polytopes. This perspective allows us to generalize the
+    construction of underlying flag matroids to polymatroids. We show that the
+    polytopes associated to underlying flag polymatroid are simple by proving
+    that they are normally equivalent to certain nestohedra. We use this to show
+    that polymatroids realized by subspace arrangements give rise to smooth
+    toric varieties in flag varieties and we interpret our construction in terms
+    of toric quotients. We give various examples that illustrate the rich
+    combinatorial structure of flag polymatroids. Finally, we study general
+    monotone paths on polymatroid polytopes, that relate to the enumeration of
+    certain Young tableaux.
+
 Negut, _Category O for quantum loop algebras_: http://arxiv.org/pdf/2501.00724
 
     Abstract. We generalize the Hernandez-Jimbo category O of representations
