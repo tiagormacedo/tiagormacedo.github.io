@@ -110,6 +110,8 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/pdf/2501.00724
     Hernandez-Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin 
     and Mukhin-Young.
 
+_Mathematical Data Science_: http://arxiv.org/pdf/2502.08620
+
 ---
 
 ## for students:
