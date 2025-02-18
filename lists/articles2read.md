@@ -112,6 +112,8 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/pdf/2501.00724
 
 _Mathematical Data Science_: http://arxiv.org/pdf/2502.08620
 
+_Interpretable Machine Learning for Kronecker Coefficients_: http://arxiv.org/pdf/2502.11774
+
 ---
 
 ## for students:
