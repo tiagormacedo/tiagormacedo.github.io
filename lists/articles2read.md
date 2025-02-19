@@ -114,6 +114,8 @@ _Mathematical Data Science_: http://arxiv.org/pdf/2502.08620
 
 _Interpretable Machine Learning for Kronecker Coefficients_: http://arxiv.org/pdf/2502.11774
 
+_Learning the symmetric group: large from small_: http://arxiv.org/pdf/2502.12717
+
 ---
 
 ## for students:
