@@ -110,6 +110,12 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/pdf/2501.00724
     Hernandez-Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin 
     and Mukhin-Young.
 
+_Who’s afraid of generative AI?_: http://www.ams.org/journals/notices/202503/rnoti-p292.pdf
+
+_The nearly perfect prediction theorem_: http://www.ams.org/journals/notices/202503/rnoti-p308.pdf
+
+_Combinatorial Hodge theory_: http://www.ams.org/journals/notices/202503/rnoti-p261.pdf
+
 _Mathematical Data Science_: http://arxiv.org/pdf/2502.08620
 
 _Interpretable Machine Learning for Kronecker Coefficients_: http://arxiv.org/pdf/2502.11774
