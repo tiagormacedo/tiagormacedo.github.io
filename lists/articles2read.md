@@ -30,6 +30,16 @@ Hernandez, _Symmetries of Grothendieck rings in representation theory_: http://a
 
 ---
 
+_The nearly perfect prediction theorem_: http://www.ams.org/journals/notices/202503/rnoti-p308.pdf
+
+_Combinatorial Hodge theory_: http://www.ams.org/journals/notices/202503/rnoti-p261.pdf
+
+_Mathematical Data Science_: http://arxiv.org/pdf/2502.08620
+
+_Interpretable Machine Learning for Kronecker Coefficients_: http://arxiv.org/pdf/2502.11774
+
+_Learning the symmetric group: large from small_: http://arxiv.org/pdf/2502.12717
+
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
     Conclusion. Tropical geometry and max-plus algebra offer a rich collection 
@@ -109,18 +119,6 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/pdf/2501.00724
     classic results of FrenkelHernandez, Frenkel-Mukhin, Hernandez-Jimbo and 
     Hernandez-Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin 
     and Mukhin-Young.
-
-_Who’s afraid of generative AI?_: http://www.ams.org/journals/notices/202503/rnoti-p292.pdf
-
-_The nearly perfect prediction theorem_: http://www.ams.org/journals/notices/202503/rnoti-p308.pdf
-
-_Combinatorial Hodge theory_: http://www.ams.org/journals/notices/202503/rnoti-p261.pdf
-
-_Mathematical Data Science_: http://arxiv.org/pdf/2502.08620
-
-_Interpretable Machine Learning for Kronecker Coefficients_: http://arxiv.org/pdf/2502.11774
-
-_Learning the symmetric group: large from small_: http://arxiv.org/pdf/2502.12717
 
 ---
 
