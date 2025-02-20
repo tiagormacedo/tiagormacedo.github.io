@@ -99,17 +99,6 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/pdf/2501.00724
     Hernandez-Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin 
     and Mukhin-Young.
 
-_Algebraic solutions of linear differential equations_: http://www.ams.org/journals/bull/2024-61-04/S0273-0979-2024-01835-7/S0273-0979-2024-01835-7.pdf
-
-    Abstract. Given a linear differential equation with coefficients in Q(x), an
-    important question is to know whether its full space of solutions consists
-    of algebraic functions, or at least if one of its specific solutions is
-    algebraic.  After presenting motivating examples coming from various
-    branches of mathematics, we advertise in an elementary way a beautiful
-    local-global arithmetic approach to these questions, initiated by
-    Grothendieck in the late sixties. This approach has deep ramifications and
-    leads to the still unsolved Grothendieck–Katz curvature conjecture.
-
 ---
 
 ## for students:
