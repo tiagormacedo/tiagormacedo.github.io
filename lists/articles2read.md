@@ -30,10 +30,6 @@ Hernandez, _Symmetries of Grothendieck rings in representation theory_: http://a
 
 ---
 
-_The nearly perfect prediction theorem_: http://www.ams.org/journals/notices/202503/rnoti-p308.pdf
-
-_Combinatorial Hodge theory_: http://www.ams.org/journals/notices/202503/rnoti-p261.pdf
-
 _Mathematical Data Science_: http://arxiv.org/pdf/2502.08620
 
 _Interpretable Machine Learning for Kronecker Coefficients_: http://arxiv.org/pdf/2502.11774
@@ -93,21 +89,6 @@ _Topology of deep neural networks_: http://arxiv.org/abs/2004.06093
     topology only in its final layers, a deep one spreads topological changes 
     more evenly across all layer.
 
-Black and Sanyal, _Underlying flag polymatroids_: http://arxiv.org/pdf/2207.12221
-
-    Abstract. We describe a natural geometric relationship between matroids and
-    underlying flag matroids by relating the geometry of the greedy algorithm to
-    monotone path polytopes. This perspective allows us to generalize the
-    construction of underlying flag matroids to polymatroids. We show that the
-    polytopes associated to underlying flag polymatroid are simple by proving
-    that they are normally equivalent to certain nestohedra. We use this to show
-    that polymatroids realized by subspace arrangements give rise to smooth
-    toric varieties in flag varieties and we interpret our construction in terms
-    of toric quotients. We give various examples that illustrate the rich
-    combinatorial structure of flag polymatroids. Finally, we study general
-    monotone paths on polymatroid polytopes, that relate to the enumeration of
-    certain Young tableaux.
-
 Negut, _Category O for quantum loop algebras_: http://arxiv.org/pdf/2501.00724
 
     Abstract. We generalize the Hernandez-Jimbo category O of representations
@@ -120,14 +101,25 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/pdf/2501.00724
     Hernandez-Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin 
     and Mukhin-Young.
 
+_Algebraic solutions of linear differential equations_: http://www.ams.org/journals/bull/2024-61-04/S0273-0979-2024-01835-7/S0273-0979-2024-01835-7.pdf
+
+    Abstract. Given a linear differential equation with coefficients in Q(x), an
+    important question is to know whether its full space of solutions consists of
+    algebraic functions, or at least if one of its specific solutions is algebraic. 
+    After presenting motivating examples coming from various branches of mathematics,
+    we advertise in an elementary way a beautiful local-global arithmetic approach
+    to these questions, initiated by Grothendieck in the late sixties. This approach
+    has deep ramifications and leads to the still unsolved Grothendieck–Katz curvature
+    conjecture.
+
 ---
 
 ## for students:
 
- * Operator theory of electrical resistance networks: http://arxiv.org/pdf/0806.3881
+ * _Algorithmic mathematics in machine learning_: http://epubs.siam.org/doi/book/10.1137/1.9781611977882
  
- * Algorithmic mathematics in machine learning: http://epubs.siam.org/doi/book/10.1137/1.9781611977882
+ * _Machine learning and artificial intelligence_: http://link.springer.com/book/10.1007/978-3-031-12282-8
  
- * Machine learning and artificial intelligence: http://link.springer.com/book/10.1007/978-3-031-12282-8
+ * _The nearly perfect prediction theorem_: http://www.ams.org/journals/notices/202503/rnoti-p308.pdf
  
- * Algebraic solutions of linear differential equations: http://www.ams.org/journals/bull/2024-61-04/S0273-0979-2024-01835-7/S0273-0979-2024-01835-7.pdf
+ * _Operator theory of electrical resistance networks_: http://arxiv.org/pdf/0806.3881
