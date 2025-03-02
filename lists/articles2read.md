@@ -30,8 +30,6 @@ Hernandez, _Symmetries of Grothendieck rings in representation theory_: http://a
 
 ---
 
-_Mathematical Data Science_: http://arxiv.org/pdf/2502.08620
-
 _Learning the symmetric group: large from small_: http://arxiv.org/pdf/2502.12717
 
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
@@ -102,6 +100,8 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/pdf/2501.00724
 ---
 
 ## for students:
+
+ * _Mathematical Data Science_: http://arxiv.org/pdf/2502.08620
 
  * _Algorithmic mathematics in machine learning_: http://epubs.siam.org/doi/book/10.1137/1.9781611977882
  
