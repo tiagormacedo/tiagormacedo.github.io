@@ -33,7 +33,7 @@ _Learning the symmetric group: large from small_: http://arxiv.org/pdf/2502.1271
     In this article, the authors show that a transformer neural-network trained 
     on predicting permutations in the symmetric group on 10 letters from their 
     words (either formed by general transpositions or by adjacent transpositions)
-    can generalize to bugger symmetric groups with near 100% accuracy.  They
+    can generalize to bigger symmetric groups with nearly 100% accuracy. They
     employ identity augmentation as a key tool to manage variable word lengths,
     and partitioned windows for training on the adjacent transpositions case.
 
