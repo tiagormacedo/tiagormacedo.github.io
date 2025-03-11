@@ -39,6 +39,10 @@ _Learning the symmetric group: large from small_: http://arxiv.org/pdf/2502.1271
 
 ---
 
+_Machine Learning meets Algebraic Combinatorics_: http://arxiv.org/pdf/2503.06366
+
+Jankowski, _Reduced superschemes and the combinatorics of toric supervarieties_: http://arxiv.org/pdf/2502.15977
+
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
     Conclusion. Tropical geometry and max-plus algebra offer a rich collection 
