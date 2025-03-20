@@ -39,6 +39,8 @@ _Learning the symmetric group: large from small_: http://arxiv.org/pdf/2502.1271
 
 ---
 
+_On the geometry of deep learning_: https://www.ams.org/journals/notices/202504/rnoti-p374.pdf
+
 _Machine Learning meets Algebraic Combinatorics_: http://arxiv.org/pdf/2503.06366
 
 Jankowski, _Reduced superschemes and the combinatorics of toric supervarieties_: http://arxiv.org/pdf/2502.15977
