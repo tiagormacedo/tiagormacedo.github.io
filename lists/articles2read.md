@@ -41,7 +41,7 @@ _Learning the symmetric group: large from small_: http://arxiv.org/pdf/2502.1271
 
 _On the geometry of deep learning_: https://www.ams.org/journals/notices/202504/rnoti-p374.pdf
 
-_Machine Learning meets Algebraic Combinatorics_: http://arxiv.org/pdf/2503.06366
+_Mathematical discoveries from program search with large language models_: http://www.nature.com/articles/s41586-023-06924-6.pdf
 
 Jankowski, _Reduced superschemes and the combinatorics of toric supervarieties_: http://arxiv.org/pdf/2502.15977
 
@@ -116,10 +116,10 @@ Negut, _Category O for quantum loop algebras_: http://arxiv.org/pdf/2501.00724
 
  * _Mathematical Data Science_: http://arxiv.org/pdf/2502.08620
 
+ * _Machine Learning meets Algebraic Combinatorics_: http://arxiv.org/pdf/2503.06366
+
  * _Algorithmic mathematics in machine learning_: http://epubs.siam.org/doi/book/10.1137/1.9781611977882
- 
- * _Machine learning and artificial intelligence_: http://link.springer.com/book/10.1007/978-3-031-12282-8
- 
+  
  * _The nearly perfect prediction theorem_: http://www.ams.org/journals/notices/202503/rnoti-p308.pdf
  
  * _Operator theory of electrical resistance networks_: http://arxiv.org/pdf/0806.3881
