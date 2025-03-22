@@ -42,15 +42,13 @@ _On the geometry of deep learning_: https://www.ams.org/journals/notices/202504/
     In this article, the authors describe the connection between deep neural
     networks and function approximation by affine splines (continuous piecewise
     linear functions in multiple dimensions). In particular, they describe how a
-    neural network's learning process tessellates its input space. The affine
-    spline connection and the geometrical viewpoint are powerful ways of
-    viewing, analyzing, and improving the inner workings of deep networks.
+    neural network's learning process tessellates its input space. This affine
+    spline connection and this geometrical viewpoint are promising ways of
+    viewing, analyzing and improving the inner workings of deep neural networks.
 
 ---
 
 _Mathematical discoveries from program search with large language models_: http://www.nature.com/articles/s41586-023-06924-6.pdf
-
-Jankowski, _Reduced superschemes and the combinatorics of toric supervarieties_: http://arxiv.org/pdf/2502.15977
 
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
