@@ -46,8 +46,6 @@ _On the geometry of deep learning_: https://www.ams.org/journals/notices/202504/
     spline connection and this geometrical viewpoint are promising ways of
     viewing, analyzing and improving the inner workings of deep neural networks.
 
----
-
 _Mathematical discoveries from program search with large language models_: http://www.nature.com/articles/s41586-023-06924-6.pdf
 
     This paper presents FunSearch, a method that focuses on searching for 
@@ -60,6 +58,8 @@ _Mathematical discoveries from program search with large language models_: http:
     presented in this article provide evidence that FunSearch’s outcomes are 
     genuinely original, rather than retrieved from the LLM’s training data, as 
     they surpass state-of-the-art results on certain open problems.
+
+---
 
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
