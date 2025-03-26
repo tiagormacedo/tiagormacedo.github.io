@@ -50,6 +50,17 @@ _On the geometry of deep learning_: https://www.ams.org/journals/notices/202504/
 
 _Mathematical discoveries from program search with large language models_: http://www.nature.com/articles/s41586-023-06924-6.pdf
 
+    This paper presents FunSearch, a method that focuses on searching for 
+    programs that describe how to solve a problem, rather than directly 
+    providing a solution. FunSearch not only offers an effective and scalable 
+    strategy, but the programs it discovers are often more interpretable. To 
+    achieve this, the problem should allow for an efficient 'evaluate' function 
+    that measures the quality of candidate solutions. FunSearch then combines 
+    large language models (LLMs) with evolutionary algorithms. The results 
+    presented in this article provide evidence that FunSearch’s outcomes are 
+    genuinely original, rather than retrieved from the LLM’s training data, as 
+    they surpass state-of-the-art results on certain open problems.
+
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
     Conclusion. Tropical geometry and max-plus algebra offer a rich collection 
