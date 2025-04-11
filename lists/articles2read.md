@@ -61,6 +61,8 @@ _Mathematical discoveries from program search with large language models_: http:
 
 ---
 
+Creedon and Mazorchuk, _Consecutive Patterns, Kostant's Problem and Type A6_: https://arxiv.org/pdf/2503.07809
+
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
     Conclusion. Tropical geometry and max-plus algebra offer a rich collection 
