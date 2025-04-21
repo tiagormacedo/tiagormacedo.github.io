@@ -59,9 +59,16 @@ _Mathematical discoveries from program search with large language models_: http:
     genuinely original, rather than retrieved from the LLM’s training data, as 
     they surpass state-of-the-art results on certain open problems.
 
----
-
 Creedon and Mazorchuk, _Consecutive Patterns, Kostant's Problem and Type A6_: https://arxiv.org/pdf/2503.07809
+
+    In this article the authors analyse several related problems and conjectures
+    concerning special linear Lie algebras and symmetric groups: Konstant's 
+    Problem, Kahrstrom's Conjecture and Indecomposability Conjecture. By relating
+    these problems and conjectures, using consecutive pattern techniques, and 
+    performing a number of case-by-case computations, the authors prove the 
+    veracity of the Incomposability Conjecture for the Lie algebra of type A6.
+
+---
 
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
