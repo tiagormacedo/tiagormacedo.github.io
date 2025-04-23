@@ -1,14 +1,13 @@
 // Sidebar button: show sidebar when button is clicked
 function showSidebar () {
-    let state = [];
-    state[0] = window.getComputedStyle(botao, null).display;
-    state[1] = window.getComputedStyle(menu, null).transform;
-
     const botao = document.querySelector(".sidebarButton");
     const menu = document.querySelector("#sidebar");
     const core = document.querySelector("#main");
-
-    if (state[0] == "block" && state[1] != "") {
+    
+    const botaoDisplay = window.getComputedStyle(botao).display;
+    const menuTransform = window.getComputedStyle(menu).transform;
+    
+    if (botaoDisplay == "block" && menuTransform != "") {
         botao.style.display = "none";
         menu.style.transform = "translateX(0)";
         core.style.transform = "translate(275px)";
@@ -17,15 +16,14 @@ function showSidebar () {
 
 // Sidebar: show hamburger button when an item is clicked (and the screen is small)
 function showButton () {
-    const state = [];
-    state[0] = window.getComputedStyle(botao, null).display;
-    state[1] = window.getComputedStyle(menu, null).transform;
-
     let botao = document.querySelector(".sidebarButton");
     let menu = document.querySelector("#sidebar");
     let core = document.querySelector("#main");
-
-    if (state[0] == "none" && state[1] != "") {
+    
+    const botaoDisplay = window.getComputedStyle(botao).display;
+    const menuTransform = window.getComputedStyle(menu).transform;
+    
+    if (botaoDisplay === "none" && menuTransform !== "") {
         botao.style.display = "block";
         menu.style.transform = "translateX(-275px)";
         core.style.transform = "translate(0)";
@@ -35,28 +33,32 @@ function showButton () {
 // Sidebar: swap active (darker) item
 function swapActiveIndicator(item) {
     const indicators = document.querySelectorAll(".indicator");
-    for (indicator of indicators) {
+
+    indicators.forEach((indicator) => {
         indicator.classList.remove("active");
+    });
+
+    if (item) {
+        item.classList.add("active");
     }
-    item.classList.add("active");
 }
 
 // Sidebar: function that highlights the item corresponding to active section
 function highlightItem(section) {
     // Create observer callback
-    function ioCallBack (entries) {
-        for (entry of entries) {
+    function observerCallBack (entries) {
+        entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                const link = "#" + entry.target.id;
-                const indicator = document.querySelector(`[href*= "${link}"]`);
+                const targetId = entry.target.id;
+                const indicator = document.querySelector(`[href*="#${targetId}"]`);
                 swapActiveIndicator(indicator);
             }
-        }
+        });
     }
     // Set observer options
-    let ioOptions = {root: null, rootMargin: "0px", threshold: 0.25};
+    const observerOptions = {root: null, rootMargin: "0px", threshold: 0.25};
     // Create observer
-    let ioObserver = new IntersectionObserver(ioCallBack, ioOptions);
+    const ioObserver = new IntersectionObserver(observerCallBack, observerOptions);
     // Apply observer to section
     ioObserver.observe(section);
 }
@@ -65,7 +67,7 @@ function highlightItem(section) {
 function openTab() {
     // Set all buttons as in-active by default
     const tabbuttons = document.querySelectorAll("div > button.tablink");
-    for (btn of tabbuttons) {
+    for (let btn of tabbuttons) {
         if (btn.parentNode == this.parentNode) {
             btn.classList.remove("active");
         }
@@ -73,7 +75,7 @@ function openTab() {
 
     // Hide all elements with class="tabcontent" by default
     const tabs = document.querySelectorAll("div.tabcontent");
-    for (tab of tabs) {
+    for (let tab of tabs) {
         if (tab.parentNode == this.parentNode.parentNode) {
             tab.classList.remove("active");
         }
@@ -91,7 +93,7 @@ function openTab() {
 
 // When the page is done loading, do:
 window.onload = function() {
-    // Sidebar: show (i.e. slide right)
+    // Show sidebar (i.e. slide right)
     const sidebar = document.querySelector('#sidebar');
     sidebar.style.left = "0";
 
@@ -101,7 +103,7 @@ window.onload = function() {
 
     // Sidebar: add event listeners to each item
     const indicators = document.querySelectorAll(".indicator");
-    for (item of indicators) {
+    for (let item of indicators) {
         item.addEventListener("click", function () {
             showButton();
         });
@@ -109,7 +111,7 @@ window.onload = function() {
 
     // Sidebar: highlight item corresponding to the section I am reading
     const sections = document.querySelectorAll("section");
-    for (section of sections) {
+    for (let section of sections) {
         highlightItem(section);
     }
     
