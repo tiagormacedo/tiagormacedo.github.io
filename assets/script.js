@@ -95,26 +95,27 @@ function openTab() {
 window.onload = function() {
     // Show sidebar (i.e. slide right)
     const sidebar = document.querySelector('#sidebar');
-    sidebar.style.left = "0";
+    if (sidebar) {
+        sidebar.style.left = "0";
+    }
 
     // Sidebar button: add an event listener to the button
-    let btn = document.querySelector(".sidebarButton");
-    btn.addEventListener("click", showSidebar);
+    const btn = document.querySelector(".sidebarButton");
+    if (btn) {
+        btn.addEventListener("click", showSidebar);
+    }
 
     // Sidebar: add event listeners to each item
     const indicators = document.querySelectorAll(".indicator");
-    for (let item of indicators) {
-        item.addEventListener("click", function () {
-            showButton();
-        });
-    }
-
+    indicators.forEach((item) => {
+        item.addEventListener("click", showButton);
+    });
+    
     // Sidebar: highlight item corresponding to the section I am reading
     const sections = document.querySelectorAll("section");
-    for (let section of sections) {
-        highlightItem(section);
-    }
-    
+    sections.forEach((section) => highlightItem(section));
+
+    // Tab buttons: assign openTab to all tab link buttons
     const tablinkButtons = document.querySelectorAll("button.tablink");
-    tablinkButtons.forEach((btn) => { btn.addEventListener("click", openTab); });
+    tablinkButtons.forEach((btn) => btn.addEventListener("click", openTab));
 };
