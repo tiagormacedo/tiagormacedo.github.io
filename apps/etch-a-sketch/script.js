@@ -1,7 +1,6 @@
-const mainDiv = document.querySelector("div#main"); 
+const mainDiv = document.querySelector("div#main");
 
-
-//  Black-and-white x random-color switch //
+// Black-and-white x random-color switch //
 const switchDiv = document.createElement("div");
 switchDiv.style.display = "flex";
 switchDiv.style.justifyContent = "end";
@@ -13,69 +12,80 @@ colorSwitchLabel.classList = "switch";
 switchDiv.appendChild(colorSwitchLabel);
 
 const colorSwitchCheckbox = document.createElement("input");
-colorSwitchCheckbox.type = "checkbox"
+colorSwitchCheckbox.type = "checkbox";
 colorSwitchLabel.appendChild(colorSwitchCheckbox);
 
 const colorSwitchSlider = document.createElement("span");
 colorSwitchSlider.classList = "slider round";
 colorSwitchSlider.textContent = "b & w";
-colorSwitchSlider.addEventListener("click", toggleColorMode);
 colorSwitchLabel.appendChild(colorSwitchSlider);
 
-function toggleColorMode () {
-    if (this.textContent === "b & w") {
-        this.style.color = "#F92C85";
-        this.textContent = "color";
-    } else {
-        this.style.color = "black";
-        this.textContent = "b & w";
-    }
+let isColorMode = false;
+
+function toggleColorMode() {
+    isColorMode = !isColorMode;
+    colorSwitchSlider.style.color = isColorMode ? "#F92C85" : "black";
+    colorSwitchSlider.textContent = isColorMode ? "color" : "b & w";
 }
 
+colorSwitchCheckbox.addEventListener("change", toggleColorMode);
 
-//  Drawing board  //
+// Drawing board //
 const board = document.createElement("div");
 board.classList = "board";
 mainDiv.appendChild(board);
 
-//  Pixel squares  //
-for (let i = 0; i < 10000; i++) {
+// Create pixel squares //
+const GRID_SIZE = 10000; 
+let isMouseDown = false;
+
+// Add event listeners for mouse events
+window.addEventListener("mousedown", () => (isMouseDown = true));
+window.addEventListener("mouseup", () => (isMouseDown = false));
+
+// Helper function to generate random color
+function generateRandomColor() {
+    const randomRed = Math.floor(256 * Math.random());
+    const randomGreen = Math.floor(256 * Math.random());
+    const randomBlue = Math.floor(256 * Math.random());
+    return `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;
+}
+
+// Add squares to the board
+for (let i = 0; i < GRID_SIZE; i++) {
     const square = document.createElement("div");
-    square.classList = "square"; 
+    square.classList = "square";
     square.id = `square${i}`;
-    
-    // Add event listener to change color when the mouse is clicked and over //
     square.draggable = false;
-    window.addEventListener("mousedown", () => {
-        square.addEventListener("mouseover", findElement);
+
+    square.addEventListener("mouseover", () => {
+        if (isMouseDown) findElement({ target: square });
     });
-    window.addEventListener("mouseup", () => {
-        square.removeEventListener("mouseover", findElement);
-    });
-    
-    const board = document.querySelector("div.board");
+
     board.appendChild(square);
 }
 
-// Add event listener to change color when touch over a pixel square //
-window.addEventListener("touchmove", (ev) => findElement(ev), {passive: false});
+// Add event listener for touch movement
+window.addEventListener("touchmove", (ev) => findElement(ev), { passive: false });
 
-function findElement (evento) {
-    if (!evento) { evento = this };
-    
-    let x = evento.pageX ? evento.pageX : evento.changedTouches[0].pageX;
-    let y = evento.pageY ? evento.pageY : evento.changedTouches[0].pageY;
-    
-    let pixel = document.elementFromPoint(x, y);
-    let classes = Array.from(pixel.classList);
-    
-    if (classes.includes("square")) {
+// Function to find the element under the pointer
+function findElement(event) {
+    let pixel = event.target;
+
+    if (!pixel.classList.contains("square")) {
+        const x = event.pageX || event.changedTouches[0].pageX;
+        const y = event.pageY || event.changedTouches[0].pageY;
+        pixel = document.elementFromPoint(x, y);
+    }
+
+    if (pixel && pixel.classList.contains("square")) {
         changeColor(pixel);
     }
-};
+}
 
-function changeColor (pixel) {
-    if (colorSwitchSlider.textContent === "b & w") {
+// Function to change the color of a pixel
+function changeColor(pixel) {
+    if (!isColorMode) {
         const oldColor = pixel.style.background;
         if (oldColor === "" || oldColor === "white") {
             pixel.style.background = "lightgray";
@@ -87,10 +97,6 @@ function changeColor (pixel) {
             pixel.style.background = "white";
         }
     } else {
-        randomRedComponent = Math.floor(256 * Math.random());
-        randomGreenComponent = Math.floor(256 * Math.random());
-        randomBlueComponent = Math.floor(256 * Math.random());
-        randomColor = `rgb(${randomRedComponent}, ${randomGreenComponent}, ${randomBlueComponent})`;
-        pixel.style.background = randomColor;
+        pixel.style.background = generateRandomColor();
     }
 }
