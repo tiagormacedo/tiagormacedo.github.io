@@ -15,14 +15,14 @@ h1 {
     text-transform: uppercase;
 }
 
-div#content {
+main {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-div#face {
+section#face {
     background: gold;
     border-radius: 50%;
     height: 600px;
@@ -50,6 +50,14 @@ div.eye {
     border-radius: 50%;
     height: 120px;
     width: 100px;
+}
+
+#left-eye {
+    align-self: end;
+}
+
+#right-eye {
+    align-self: start;
 }
 
 div.iris {
