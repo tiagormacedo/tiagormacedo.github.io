@@ -1,6 +1,20 @@
+:root {
+    /* CSS Variables for colors and sizes */
+    --background-color: #D1FAE5;
+    --primary-color: #6EE7B7;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --face-size: 600px;
+    --eye-width: 100px;
+    --eye-height: 120px;
+    --iris-width: 50px;
+    --iris-height: 60px;
+    --mouth-width: 400px;
+    --mouth-height: 200px;
+}
 
 body {
-    background: #D1FAE5;
+    background: var(--background-color);
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -9,10 +23,18 @@ body {
 
 h1 {
     align-self: center;
-    color: #6EE7B7;
-    font-family: Guinerin, Helvetica, sans-serif;
+    color: var(--primary-color);
+    font-family: 'Guinerin', Helvetica, sans-serif;
     font-weight: 900;
     text-transform: uppercase;
+}
+
+/* Ensure Guinerin font is loaded */
+@font-face {
+    font-family: 'Guinerin';
+    src: url('path-to-guinerin-font-file.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 main {
@@ -25,31 +47,33 @@ main {
 section#face {
     background: gold;
     border-radius: 50%;
-    height: 600px;
-    width: 600px;
+    height: var(--face-size);
+    width: var(--face-size);
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 div#eyes {
-    flex: 3;
+    flex-grow: 3;
     display: flex;
     flex-direction: row;
     align-items: end;
 }
 
 div.eye-socle {
-    flex: 1;
+    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 div.eye {
-    background: white;
+    background: var(--white-color);
     border-radius: 50%;
-    height: 120px;
-    width: 100px;
+    height: var(--eye-height);
+    width: var(--eye-width);
+    position: relative;
 }
 
 #left-eye {
@@ -61,25 +85,47 @@ div.eye {
 }
 
 div.iris {
-    background: black;
+    background: var(--black-color);
     border-radius: 50%;
-    height: 60px;
-    width: 50px;
+    height: var(--iris-height);
+    width: var(--iris-width);
     position: absolute;
-    transition: 0.1s;
+    transition: transform 0.1s;
 }
 
 div#mouth {
-    flex: 5;
+    flex-grow: 5;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 div#smile {
-    background: white;
-    height: 200px;
-    width: 400px;
-    border: 0px solid black;
+    background: var(--white-color);
+    height: var(--mouth-height);
+    width: var(--mouth-width);
     border-radius: 0 0 200px 200px;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    section#face {
+        height: calc(var(--face-size) * 0.75);
+        width: calc(var(--face-size) * 0.75);
+    }
+
+    div.eye {
+        height: calc(var(--eye-height) * 0.75);
+        width: calc(var(--eye-width) * 0.75);
+    }
+
+    div.iris {
+        height: calc(var(--iris-height) * 0.75);
+        width: calc(var(--iris-width) * 0.75);
+    }
+
+    div#smile {
+        height: calc(var(--mouth-height) * 0.75);
+        width: calc(var(--mouth-width) * 0.75);
+    }
 }
