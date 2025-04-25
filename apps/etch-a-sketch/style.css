@@ -1,20 +1,29 @@
+/* Define reusable CSS variables for colors */
+:root {
+    --primary-color: #5EBEC4;
+    --secondary-color: #F92C85;
+    --background-color: #FDF5DF;
+    --light-gray: lightgray;
+}
+
+/* General body styling */
 body {
-    background: #5EBEC4;
+    background: var(--primary-color);
     font-family: Verdana, Helvetica, sans-serif;
     padding: 10px 19%;
     width: 62%;
 }
 
 h1, h2 {
-    color: #5EBEC4;
+    color: var(--primary-color);
     text-align: center;
     text-transform: uppercase;
 }
 
 #container {
-    background: #FDF5DF;
+    background: var(--background-color);
     border-radius: 5px;
-    box-shadow: 0 0 10px #F92C85;
+    box-shadow: 0 0 10px var(--secondary-color);
     padding: 25px;
 }
 
@@ -49,11 +58,10 @@ h1, h2 {
     top: 0;
     text-align: center;
     transition: .5s;
-    -webkit-transition: .5s;
 }
 
-.slider:before{
-    background: lightgray;
+.slider:before {
+    background: var(--light-gray);
     content: "";
     position: absolute;
     bottom: -4px;
@@ -63,11 +71,11 @@ h1, h2 {
 }
 
 input:checked + .slider {
-    background: linear-gradient(in hsl longer hue 90deg, red 0 0);
+    background: linear-gradient(90deg, red, orange);
 }
 
 input:checked + .slider:before {
-    background: #F92C85; 
+    background: var(--secondary-color); 
     transform: translateX(32px);
 }
 
@@ -76,9 +84,9 @@ input:checked + .slider:before {
 }
 
 .board {
-    border: 1px solid #5EBEC4;
+    border: 1px solid var(--primary-color);
     border-radius: 2px;
-    box-shadow: 0 0 2px #5EBEC4;
+    box-shadow: 0 0 2px var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     height: 400px;
