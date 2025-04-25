@@ -359,43 +359,6 @@ ul.default li {
 
 
 
-/* Sidebar Toggle Button */
-.sidebarButton {
-    position: fixed;
-    display: none; /* Hidden by default, shown in media queries */
-    height: 2.25em;
-    width: 3.25em;
-    left: 0;
-    top: 0;
-    z-index: 101;
-    outline: 0;
-    border: 0;
-    background: transparent;
-    transition: transform 0.5s ease;
-}
-
-.sidebarButton:before {
-    text-decoration: none;
-    font-family: 'FontAwesome', sans-serif;
-    line-height: 2.25em;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: normal;
-    content: "\f0c9";
-    color: #fff;
-    background: rgba(128, 136, 144, 0.5);
-    border-radius: 0.35em;
-    text-align: center;
-    position: absolute;
-    left: 0.5em;
-    top: 0.5em;
-    display: block;
-    height: 2.25em;
-    width: 3.25em;
-}
-
-
-
 /* Responsiveness */
 
 /* Wide */
@@ -513,7 +476,36 @@ ul.default li {
     }
 
     .sidebarButton {
-        display: block; /* Show the sidebar button */
+        position: fixed;
+        display: block;
+        height: 2.25em;
+        width: 3.25em;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        outline: 0;
+        border: 0;
+        transition: transform 0.5s ease;
+    }
+
+    .sidebarButton:before {
+        text-decoration: none;
+        font-family: FontAwesome;
+        line-height: 2.25em;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: normal;
+        content: "\f0c9";
+        color: #fff;
+        background: rgba(128, 136, 144, 0.5);
+        border-radius: 0.35em;
+        text-align: center;
+        position: absolute;
+        left: 0.5em;
+        top: 0.5em;
+        display: block;
+        height: 2.25em;
+        width: 3.25em;
     }
 
     #sidebar {
