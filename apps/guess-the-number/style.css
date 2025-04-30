@@ -1,34 +1,58 @@
+/* Root Variables for Custom Properties */
+:root {
+    --primary-color: #7E22CE;
+    --secondary-color: #E9D5FF;
+    --background-light: #F5F3FF;
+    --error-color: red;
+    --success-color: #0F0;
+    --neutral-color: #BABCBF;
+    --font-size-base: 115%;
+    --font-size-small: 50%;
+    --font-size-large: 120%;
+    --font-size-header: 64px;
+    --border-radius-small: 2px;
+    --border-radius-medium: 5px;
+    --border-radius-large: 50%;
+    --transition-duration: 0.3s;
+}
+
+/* Global Styles */
 body {
     margin: 0;
     padding: 0;
-}
-
-#container {
-    background: #F5F3FF;
-    border-radius: 5px;
-    box-shadow: 0 0 2px 2px #EFE;
-    color: #7E22CE;
     font-family: verdana, arial, sans-serif;
-    font-size: 115%;
-    margin: 0 19.1%;
-    height: 100vh;
-    width: 61.8%;
 }
 
+/* Container Styles */
+#container {
+    background: var(--background-light);
+    border-radius: var(--border-radius-medium);
+    box-shadow: 0 0 2px 2px #EFE;
+    color: var(--primary-color);
+    font-size: var(--font-size-base);
+    margin: 0 auto;
+    max-width: 800px;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header Styles */
 h1 {
     background: #581C87;
-    color: #E9D5FF;
+    color: var(--secondary-color);
     margin: 0;
     padding: 50px;
     text-align: center;
     text-transform: uppercase;
 }
 
-div#intro {
+/* Intro Section */
+#intro {
     margin: 40px auto;
     text-align: center;
 }
 
+/* Form Styles */
 form {
     margin: 40px auto;
     text-align: center;
@@ -36,37 +60,58 @@ form {
 
 form > input {
     border: 2px solid #D8B4FE;
-    border-radius: 5px;
+    border-radius: var(--border-radius-medium);
     padding: 10px;
     width: 50px;
-    color: #7E22CE;
-    font-size: 115%;
+    color: var(--primary-color);
+    font-size: var(--font-size-base);
     text-align: center;
+    transition: border-color var(--transition-duration);
+}
+
+form > input:valid {
+    border-color: var(--success-color);
+}
+
+form > input:invalid {
+    border-color: var(--error-color);
 }
 
 form > button {
-    background: #E9D5FF;
-    color: #7E22CE;
-    border: 2px solid #7E22CE;
-    border-radius: 50%;
-    font-size: 120%;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius-large);
+    font-size: var(--font-size-large);
     margin-left: 20px;
     padding: 10px;
+    transition: background var(--transition-duration), color var(--transition-duration);
 }
 
-form > div.error-message {
-    color: red;
-    font-size: 50%;
+form > button:hover {
+    background: #D8B4FE;
+    cursor: pointer;
+}
+
+form > button:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+form > .error-message {
+    color: var(--error-color);
+    font-size: var(--font-size-small);
+    font-weight: bold;
     margin-top: 5px;
 }
 
-div.display {
+/* Display Section */
+.display {
     display: flex;
     gap: 40px;
     justify-content: center;
 }
 
-div.display > div#attempts {
+#attempts {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -74,20 +119,20 @@ div.display > div#attempts {
     justify-content: space-between;
 }
 
-div.display > div#attempts > div.attempt {
-    background: #0F0;
+#attempts > .attempt {
+    background: var(--success-color);
     border: 1px solid purple;
-    border-radius: 2px;
+    border-radius: var(--border-radius-small);
     height: 10px;
     width: 25px;
 }
 
-div.display > div#goal-number {
-    background: #BABCBF;
+#goal-number {
+    background: var(--neutral-color);
     color: white;
-    border-radius: 50%;
+    border-radius: var(--border-radius-large);
     flex: 0 0 250px;
-    font-size: 64px;
+    font-size: var(--font-size-header);
     height: 250px;
     width: 250px;
     display: flex;
@@ -95,8 +140,8 @@ div.display > div#goal-number {
     justify-content: center;
 }
 
-div.display > div#guessed-number {
-    color: #7E22CE;
+#guessed-number {
+    color: var(--primary-color);
     flex: 1;
     display: flex;
     flex-direction: column;
