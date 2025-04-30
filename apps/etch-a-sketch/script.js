@@ -1,6 +1,6 @@
 const mainDiv = document.querySelector("div#main");
 
-// Black-and-white x random-color switch //
+// Black-and-white x random-color switch
 const switchDiv = document.createElement("div");
 switchDiv.style.display = "flex";
 switchDiv.style.justifyContent = "end";
@@ -30,20 +30,33 @@ function toggleColorMode() {
 
 colorSwitchCheckbox.addEventListener("change", toggleColorMode);
 
-// Drawing board //
+// Drawing board
 const board = document.createElement("div");
 board.classList = "board";
 mainDiv.appendChild(board);
 
-// Create pixel squares //
+// Create pixel squares
 const GRID_SIZE = 10000; 
 let isMouseDown = false;
+let isTouchActive = false; // Track touch state
 
 // Add event listeners for mouse events
 window.addEventListener("mousedown", () => (isMouseDown = true));
 window.addEventListener("mouseup", () => (isMouseDown = false));
 
-// Helper function to generate random color
+// Add event listeners for touch events
+window.addEventListener("touchstart", (event) => {
+    isTouchActive = true;
+    findElement(event);
+}, { passive: false });
+
+window.addEventListener("touchend", () => (isTouchActive = false), { passive: false });
+
+window.addEventListener("touchmove", (event) => {
+    if (isTouchActive) findElement(event);
+}, { passive: false });
+
+// Function to generate random color
 function generateRandomColor() {
     const randomRed = Math.floor(256 * Math.random());
     const randomGreen = Math.floor(256 * Math.random());
@@ -65,16 +78,13 @@ for (let i = 0; i < GRID_SIZE; i++) {
     board.appendChild(square);
 }
 
-// Add event listener for touch movement
-window.addEventListener("touchmove", (ev) => findElement(ev), { passive: false });
-
 // Function to find the element under the pointer
 function findElement(event) {
     let pixel = event.target;
 
     if (!pixel.classList.contains("square")) {
-        const x = event.pageX || event.changedTouches[0].pageX;
-        const y = event.pageY || event.changedTouches[0].pageY;
+        const x = event.pageX || event.touches[0].pageX;
+        const y = event.pageY || event.touches[0].pageY;
         pixel = document.elementFromPoint(x, y);
     }
 
