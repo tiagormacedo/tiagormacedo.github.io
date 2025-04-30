@@ -23,6 +23,7 @@ body {
 
 h1 {
     align-self: center;
+    padding: 1ex;
     color: var(--primary-color);
     font-family: 'Guinerin', Helvetica, sans-serif;
     font-weight: 900;
