@@ -100,7 +100,6 @@ form > button:focus {
 form > .error-message {
     color: var(--error-color);
     font-size: var(--font-size-small);
-    font-weight: bold;
     margin-top: 5px;
 }
 
