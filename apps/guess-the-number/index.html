@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
-        <title> Guess The Number </title>
+        <title>Guess The Number</title>
     </head>
     
     <body>
-        <div id="container">
-            <h1> Guess the number </h1>
+        <main id="container">
+            <h1>Guess the Number</h1>
             
-            <div id="intro">
-                <p> I am thinking of an integer number between 1 and 1000. </p>
-                <p> Can you guess which number I am thinking of? </p>
-                <p> You have <b>10</b> chances to get it right. </p>
-            </div>
+            <section id="intro">
+                <p>I am thinking of an integer number between 1 and 1000.</p>
+                <p>Can you guess which number I am thinking of?</p>
+                <p>You have <b>10</b> chances to get it right.</p>
+            </section>
             
             <form>
-                <input type="number" min="0" max="1000" pattern="\d{1:4}" name="userGuess" id="userGuess" required />
-                <button type="submit" id="tryButton"> try </button>
-                <div class="error-message"> &nbsp; </div>
+                <label for="userGuess">Your Guess:</label>
+                <input type="number" id="userGuess" name="userGuess" min="0" max="1000" pattern="\d{1,4}" required placeholder="Enter your guess" aria-label="Guess a number between 0 and 1000">
+                <button type="submit" id="tryButton">Try</button>
+                <div class="error-message visually-hidden" aria-live="polite"></div>
             </form>
             
-            <div class="display">
+            <section class="display">
                 <div id="attempts">
-                    <div> <b>Chances</b> </div>
+                    <h2>Chances</h2>
+                    <p>Remaining attempts: <span id="remainingAttempts">10</span></p>
                 </div>
                 
                 <div id="goal-number">
-                    <div>???</div>
+                    <h2>Goal Number</h2>
+                    <div><span aria-hidden="true">???</span></div>
                 </div>
-
+                
                 <div id="guessed-number">
+                    <h2>Your Guesses</h2>
                     <div id="info"></div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </body>
     
 </html>
