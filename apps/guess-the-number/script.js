@@ -1,4 +1,4 @@
-const TOTAL_NUMBER_OF_CHANCES = 10;
+const totalNumberOfChances = 10;
 let attemptNumber = 0;
 const goalNumber = Math.ceil(1000 * Math.random());
 
@@ -10,7 +10,7 @@ const guessedNumberInfo = document.querySelector("div#guessed-number > #info");
 const goalNumberDiv = document.querySelector("div#goal-number");
 
 // Initialize attempt rectangles
-for (let i = 0; i < TOTAL_NUMBER_OF_CHANCES; i++) {
+for (let i = 0; i < totalNumberOfChances; i++) {
     const attemptRectangle = document.createElement("div");
     attemptRectangle.classList = "attempt";
     attemptRectangle.id = `attempt${i}`;
@@ -38,7 +38,7 @@ tryButton.addEventListener("click", (event) => {
 });
 
 function compareNumbers(userGuess, goalNumber) {
-    if (userGuess === goalNumber || attemptNumber >= TOTAL_NUMBER_OF_CHANCES) {
+    if (userGuess === goalNumber || attemptNumber >= totalNumberOfChances) {
         endGame(userGuess);
     } else if (userGuess < goalNumber) {
         guessedNumberInfo.textContent = `The number I'm thinking is larger than ${userGuess}`;
@@ -51,7 +51,6 @@ function endGame(userGuess) {
     goalNumberDiv.textContent = goalNumber;
     goalNumberDiv.style.background = userGuess === goalNumber ? "green" : "red";
     guessedNumberInfo.textContent = "";
-
     userGuessInput.disabled = true;
     tryButton.disabled = true;
 }
