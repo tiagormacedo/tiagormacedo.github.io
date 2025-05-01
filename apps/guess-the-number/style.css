@@ -126,6 +126,10 @@ form > .error-message {
     width: 25px;
 }
 
+#attempts > .used-attempt {
+    background: var(--neutral-color);
+}
+
 #goal-number {
     background: var(--neutral-color);
     color: white;
