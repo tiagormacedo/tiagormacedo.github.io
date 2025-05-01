@@ -24,7 +24,7 @@
                 <label for="userGuess">Guess:</label>
                 <input type="number" id="userGuess" name="userGuess" min="0" max="1000" required aria-label="Guess a number between 0 and 1000">
                 <button type="submit" id="tryButton">try</button>
-                <div class="error-message" aria-live="polite">&bnsp;</div>
+                <div class="error-message" aria-live="polite"></div>
             </form>
             
             <section class="display">
@@ -34,11 +34,11 @@
                 </div>
                 
                 <div id="goal-number">
-                    <div><span aria-hidden="true">???</span></div>
+                    <div><span aria-hidden="true"> &nbsp; ? &nbsp; </span></div>
                 </div>
                 
                 <div id="guessed-number">
-                    <div id="info">&nbsp;</div>
+                    <div id="info"></div>
                 </div>
             </section>
         </main>
