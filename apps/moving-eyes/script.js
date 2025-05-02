@@ -7,9 +7,9 @@ const rightEye = document.querySelector("div#right-eye");
 const rightIris = document.querySelector("div#right-iris");
 
 // Define constants
-const SQUARE_ROOT_OF_2 = 1.4142;
-const EYE_DIAMETER = 100;
-const IRIS_DIAMETER = 50;
+const squareRootOf2 = 1.4142;
+const eyeDiameter = 100;
+const irisDiameter = 50;
 
 // Variables for window dimensions
 let windowX, windowY, maxXY;
@@ -18,28 +18,27 @@ let windowX, windowY, maxXY;
 function updateWindowDimensions() {
     windowX = window.innerWidth;
     windowY = window.innerHeight;
-    maxXY = Math.max(windowX, windowY) * SQUARE_ROOT_OF_2;
+    maxXY = Math.max(windowX, windowY) * squareRootOf2;
 }
 window.addEventListener("resize", updateWindowDimensions);
 updateWindowDimensions();
 
-// Add event listeners for mouse and touch movements
+// Add event listener for mouse
 window.addEventListener("mousemove", moveEyes);
-window.addEventListener("touchmove", moveEyes, { passive: false });
 
-// Function to move irises based on cursor or touch location
+// Function to move irises based on cursor location
 function moveEyes(evento) {
     // Get mouse or touch coordinates
-    const mouseX = evento.pageX || (evento.changedTouches && evento.changedTouches[0].pageX);
-    const mouseY = evento.pageY || (evento.changedTouches && evento.changedTouches[0].pageY);
+    const mouseX = evento.pageX;
+    const mouseY = evento.pageY;
 
     if (mouseX == null || mouseY == null) return;
 
     // Precompute eye center positions
-    const leftEyeCenterX = leftEye.offsetLeft + EYE_DIAMETER / 2;
-    const leftEyeCenterY = leftEye.offsetTop + EYE_DIAMETER / 2;
-    const rightEyeCenterX = rightEye.offsetLeft + EYE_DIAMETER / 2;
-    const rightEyeCenterY = rightEye.offsetTop + EYE_DIAMETER / 2;
+    const leftEyeCenterX = leftEye.offsetLeft + (eyeDiameter / 2);
+    const leftEyeCenterY = leftEye.offsetTop + (eyeDiameter / 2);
+    const rightEyeCenterX = rightEye.offsetLeft + (eyeDiameter / 2);
+    const rightEyeCenterY = rightEye.offsetTop + (eyeDiameter / 2);
 
     // Calculate relative positions
     const leftAuxX = mouseX - leftEyeCenterX;
@@ -48,8 +47,8 @@ function moveEyes(evento) {
     const rightAuxY = mouseY - rightEyeCenterY;
 
     // Update iris positions
-    leftIris.style.left = `${leftEyeCenterX + (leftAuxX / maxXY) * (EYE_DIAMETER / 2) - IRIS_DIAMETER / 2}px`;
-    leftIris.style.top = `${leftEyeCenterY + (leftAuxY / maxXY) * (EYE_DIAMETER / 2) - IRIS_DIAMETER / 2}px`;
-    rightIris.style.left = `${rightEyeCenterX + (rightAuxX / maxXY) * (EYE_DIAMETER / 2) - IRIS_DIAMETER / 2}px`;
-    rightIris.style.top = `${rightEyeCenterY + (rightAuxY / maxXY) * (EYE_DIAMETER / 2) - IRIS_DIAMETER / 2}px`;
+    leftIris.style.left = `${leftEyeCenterX + (leftAuxX / maxXY) * (eyeDiameter / 2) - (irisDiameter / 2)}px`;
+    leftIris.style.top = `${leftEyeCenterY + (leftAuxY / maxXY) * (eyeDiameter / 2) - (irisDiameter / 2)}px`;
+    rightIris.style.left = `${rightEyeCenterX + (rightAuxX / maxXY) * (eyeDiameter / 2) - (irisDiameter / 2)}px`;
+    rightIris.style.top = `${rightEyeCenterY + (rightAuxY / maxXY) * (eyeDiameter / 2) - (irisDiameter / 2)}px`;
 }
