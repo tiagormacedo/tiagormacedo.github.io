@@ -27,7 +27,7 @@ tryButton.addEventListener("click", (event) => {
         return;
     } 
 
-    errorMessage.textContent = "&nbsp;";
+    errorMessage.textContent = "\u00A0";
     const attemptRectangle = document.querySelector(`div#attempt${attemptNumber}`);
     attemptRectangle.classList.add("used-attempt");
 
@@ -38,7 +38,7 @@ tryButton.addEventListener("click", (event) => {
 });
 
 function compareNumbers(userGuess, goalNumber) {
-    if (userGuess === goalNumber || attemptNumber >= totalNumberOfChances) {
+    if (userGuess === goalNumber || attemptNumber == totalNumberOfChances-1) {
         endGame(userGuess);
     } else if (userGuess < goalNumber) {
         guessedNumberInfo.textContent = `The number I'm thinking is larger than ${userGuess}`;
