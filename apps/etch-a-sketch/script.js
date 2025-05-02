@@ -38,23 +38,10 @@ mainDiv.appendChild(board);
 // Create pixel squares
 const GRID_SIZE = 10000; 
 let isMouseDown = false;
-let isTouchActive = false; // Track touch state
 
 // Add event listeners for mouse events
 window.addEventListener("mousedown", () => (isMouseDown = true));
 window.addEventListener("mouseup", () => (isMouseDown = false));
-
-// Add event listeners for touch events
-window.addEventListener("touchstart", (event) => {
-    isTouchActive = true;
-    findElement(event);
-}, { passive: false });
-
-window.addEventListener("touchend", () => (isTouchActive = false), { passive: false });
-
-window.addEventListener("touchmove", (event) => {
-    if (isTouchActive) findElement(event);
-}, { passive: false });
 
 // Function to generate random color
 function generateRandomColor() {
