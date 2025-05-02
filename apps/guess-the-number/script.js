@@ -3,7 +3,7 @@ let attemptNumber = 0;
 const goalNumber = Math.ceil(1000 * Math.random());
 
 const attemptsDiv = document.querySelector("div#attempts");
-const tryButton = document.querySelector("#tryButton");
+const tryButton = document.querySelector("button#tryButton");
 const userGuessInput = document.querySelector("input#userGuess");
 const errorMessage = document.querySelector(".error-message");
 const guessedNumberInfo = document.querySelector("div#guessed-number > #info");
@@ -27,7 +27,7 @@ tryButton.addEventListener("click", (event) => {
         return;
     } 
 
-    errorMessage.textContent = "";
+    errorMessage.textContent = "&nbsp;";
     const attemptRectangle = document.querySelector(`div#attempt${attemptNumber}`);
     attemptRectangle.classList.add("used-attempt");
 
@@ -49,7 +49,7 @@ function compareNumbers(userGuess, goalNumber) {
 
 function endGame(userGuess) {
     goalNumberDiv.textContent = goalNumber;
-    goalNumberDiv.style.background = userGuess === goalNumber ? "green" : "red";
+    goalNumberDiv.style.background = userGuess == goalNumber ? "green" : "red";
     guessedNumberInfo.textContent = "";
     userGuessInput.disabled = true;
     tryButton.disabled = true;
