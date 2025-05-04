@@ -14,15 +14,6 @@ const irisDiameter = 50;
 // Variables for window dimensions
 let windowX, windowY, maxXY;
 
-// Update window dimensions and maxXY when the window resizes
-function updateWindowDimensions() {
-    windowX = window.innerWidth;
-    windowY = window.innerHeight;
-    maxXY = Math.max(windowX, windowY) * squareRootOf2;
-}
-window.addEventListener("resize", updateWindowDimensions);
-updateWindowDimensions();
-
 // Add event listener for mouse
 window.addEventListener("mousemove", moveEyes);
 
@@ -45,6 +36,11 @@ function moveEyes(evento) {
     const leftAuxY = mouseY - leftEyeCenterY;
     const rightAuxX = mouseX - rightEyeCenterX;
     const rightAuxY = mouseY - rightEyeCenterY;
+
+    // Update window dimensions and maxXY
+    windowX = window.innerWidth;
+    windowY = window.innerHeight;
+    maxXY = Math.max(windowX, windowY) * squareRootOf2;
 
     // Update iris positions
     leftIris.style.left = `${leftEyeCenterX + (leftAuxX / maxXY) * (eyeDiameter / 2) - (irisDiameter / 2)}px`;
