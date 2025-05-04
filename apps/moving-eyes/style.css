@@ -82,7 +82,6 @@ main {
     border-radius: 50%;
     height: var(--iris-height);
     width: var(--iris-width);
-    position: absolute;
     transition: transform 0.1s;
 }
 
