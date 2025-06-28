@@ -68,7 +68,28 @@ Creedon and Mazorchuk, _Consecutive Patterns, Kostant's Problem and Type A6_: ht
     performing a number of case-by-case computations, the authors prove the 
     veracity of the Incomposability Conjecture for the Lie algebra of type A6.
 
+Dotsenko and Mozgovoy, _Global Weyl modules for thin Lie algebras are finite-dimensional_: https://arxiv.org/pdf/2411.17550.
+
+    In this article, the authors study Weyl modules for Lie algebras that 
+    contain a semisimple Lie algebra as a subalgebra and are integrable under 
+    their adjoint action. The authors generalise several previous results, 
+    including those by Chari, Fourier and Khandai (2010) and Manning, Neher and 
+    Salmasian (2018).
+
+    More specifically, recall that a module for a semisimple Lie algebra is said 
+    to be integrable when it can be decomposed as a direct sum of its finite-
+    -dimensional submodules. Let g̅ be a Lie algebra. Assume that g̅ contains a 
+    Lie subalgebra of g that is a semisimple Lie algebra. In this article, the 
+    authors define global Weyl modules for g̅ as maximal integrable g̅-modules 
+    which are integrable when restricted to g and which are generated, as 
+    g̅-modules, by a highest-weight vector. They also prove a finite-
+    -dimensionality result for global Weyl modules and construct stratifications 
+    in certain categories of integrable g̅-modules.
+
 ---
+
+Rani and Setia, _Graded representations of current Lie superalgebras_ $\mathfrak{sl}(1|2)[t]$: https://arxiv.org/pdf/2506.01134.
+
 
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
