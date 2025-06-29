@@ -86,10 +86,17 @@ Dotsenko and Mozgovoy, _Global Weyl modules for thin Lie algebras are finite-dim
     -dimensionality result for global Weyl modules and construct stratifications 
     in certain categories of integrable g̅-modules.
 
----
-
 Rani and Setia, _Graded representations of current Lie superalgebras_ $\mathfrak{sl}(1|2)[t]$: https://arxiv.org/pdf/2506.01134.
 
+    In this article, Rani and Setia advance our understanding of local Weyl 
+    modules and Chari-Venkatesh modules for the current superalgebra of sl(1|2).
+    In fact, they introduce a combinatorial technique to parametrize the bases
+    of local Weyl modules, they also provide a graded character formula for
+    graded local Weyl modules, and most interestingly, they cunstruct short 
+    exact sequences of Chari-Venkatesh modules that enables us to filter Chari-
+    -Venkatesh modules by other Chari-Venkatesh modules.
+
+---
 
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
