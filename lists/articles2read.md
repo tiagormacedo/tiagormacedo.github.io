@@ -76,24 +76,24 @@ Dotsenko and Mozgovoy, _Global Weyl modules for thin Lie algebras are finite-dim
     including those by Chari, Fourier and Khandai (2010) and Manning, Neher and 
     Salmasian (2018).
 
-    More specifically, recall that a module for a semisimple Lie algebra is said 
-    to be integrable when it can be decomposed as a direct sum of its finite-
-    -dimensional submodules. Let g̅ be a Lie algebra. Assume that g̅ contains a 
-    Lie subalgebra of g that is a semisimple Lie algebra. In this article, the 
-    authors define global Weyl modules for g̅ as maximal integrable g̅-modules 
-    which are integrable when restricted to g and which are generated, as 
-    g̅-modules, by a highest-weight vector. They also prove a finite-
+    To be more specific, recall that a module for a semisimple Lie algebra is 
+    said to be integrable when it can be decomposed as a direct sum of its 
+    finite-dimensional submodules. Let g̅ be a Lie algebra. Assume that g̅ 
+    contains a Lie subalgebra of g that is a semisimple Lie algebra. In this 
+    article, the authors define global Weyl modules for g̅ as maximal integrable
+    g̅-modules which are integrable when restricted to g and which are generated,
+    as g̅-modules, by a highest-weight vector. They also prove a finite-
     -dimensionality result for global Weyl modules and construct stratifications 
     in certain categories of integrable g̅-modules.
 
-Rani and Setia, _Graded representations of current Lie superalgebras_ $\mathfrak{sl}(1|2)[t]$: https://arxiv.org/pdf/2506.01134.
+Rani and Setia, _Graded representations of current Lie superalgebras sl(1,2)[t]_: https://arxiv.org/pdf/2506.01134.
 
     In this article, Rani and Setia advance our understanding of local Weyl 
     modules and Chari-Venkatesh modules for the current superalgebra of sl(1|2).
     In fact, they introduce a combinatorial technique to parametrize the bases
     of local Weyl modules, they also provide a graded character formula for
     graded local Weyl modules, and most interestingly, they construct short 
-    exact sequences of Chari-Venkatesh modules that enables us to filter Chari-
+    exact sequences of Chari-Venkatesh modules that enable us to filter Chari-
     -Venkatesh modules by other Chari-Venkatesh modules.
 
 ---
@@ -150,18 +150,6 @@ _Topology of deep neural networks_: http://arxiv.org/abs/2004.06093
     - a shallow network operates mainly through changing geometry and changes
     topology only in its final layers, a deep one spreads topological changes 
     more evenly across all layer.
-
-Negut, _Category O for quantum loop algebras_: http://arxiv.org/pdf/2501.00724
-
-    Abstract. We generalize the Hernandez-Jimbo category O of representations
-    of Borel subalgebras of quantum affine algebras to the case of quantum loop 
-    algebras for arbitrary Kac-Moody g (as well as related algebras, such as  
-    quantum toroidal gl(1)). Moreover, we give explicit realizations of all  
-    simple modules, and devise tools for the computation of q-characters that 
-    are new even for g of finite type. Our techniques allow us to generalize  
-    classic results of FrenkelHernandez, Frenkel-Mukhin, Hernandez-Jimbo and 
-    Hernandez-Leclerc, as well as prove conjectures of Feigin-Jimbo-Miwa-Mukhin 
-    and Mukhin-Young.
 
 ---
 
