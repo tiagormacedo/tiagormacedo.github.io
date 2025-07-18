@@ -98,6 +98,12 @@ Rani and Setia, _Graded representations of current Lie superalgebras sl(1,2)[t]_
 
 ---
 
+Rieck, _Topology Meets Machine Learning_: https://www.ams.org/journals/notices/202507/rnoti-p719.pdf
+
+Iannone, Marasingha and Thoma, _Teaching Mathematics with Lean_: https://www.ams.org/journals/notices/202507/rnoti-p740.pdf
+
+Banica, _Basic quantum algebra_: https://arxiv.org/pdf/2507.11459
+
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
 
     Conclusion. Tropical geometry and max-plus algebra offer a rich collection 
