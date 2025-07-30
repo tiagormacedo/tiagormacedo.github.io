@@ -98,6 +98,8 @@ Rani and Setia, _Graded representations of current Lie superalgebras sl(1,2)[t]_
 
 ---
 
+Vaswani et al., _Attention is all you need_: https://dl.acm.org/doi/pdf/10.5555/3295222.3295349
+
 Olanrewaju, _Partial Symmetry Enforced Attention Decomposition_: https://arxiv.org/pdf/2507.14908
 
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
@@ -152,8 +154,6 @@ _Topology of deep neural networks_: http://arxiv.org/abs/2004.06093
     - a shallow network operates mainly through changing geometry and changes
     topology only in its final layers, a deep one spreads topological changes 
     more evenly across all layer.
-
-Banica, _Basic quantum algebra_: https://arxiv.org/pdf/2507.11459
 
 ---
 
