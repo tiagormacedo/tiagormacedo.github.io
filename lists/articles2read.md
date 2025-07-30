@@ -98,8 +98,6 @@ Rani and Setia, _Graded representations of current Lie superalgebras sl(1,2)[t]_
 
 ---
 
-Rieck, _Topology Meets Machine Learning_: https://www.ams.org/journals/notices/202507/rnoti-p719.pdf
-
 Olanrewaju, _Partial Symmetry Enforced Attention Decomposition_: https://arxiv.org/pdf/2507.14908
 
 _Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
