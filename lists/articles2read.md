@@ -99,9 +99,8 @@ Rani and Setia, _Graded representations of current Lie superalgebras sl(1,2)[t]_
 Chirvasitu, _Finite-dimensional modules over associative equivariant map algebras_: https://arxiv.org/pdf/2509.01386.
 
     In this article, the author classifies finite-dimensional representations of 
-    equivariant map _associative_ algebras. To do that, he uses several results 
-    from category theory and on representations of algebraic groups and Hopf 
-    algebras.
+    equivariant map associative algebras. To do that, he uses several results from
+    category theory and on representations of algebraic groups and Hopf algebras.
 
 ---
 
