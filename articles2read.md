@@ -104,20 +104,10 @@ Chirvasitu, _Finite-dimensional modules over associative equivariant map algebra
 
 ---
 
+_Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
+
+Alper, _Evolution of stacks and moduli_: https://www.ams.org/journals/notices/202511/rnoti-p1248.pdf
+
 Vaswani et al., _Attention is all you need_: https://dl.acm.org/doi/pdf/10.5555/3295222.3295349
 
 Olanrewaju, _Partial Symmetry Enforced Attention Decomposition_: https://arxiv.org/pdf/2507.14908
-
-_Tropical geometry and machine learning_: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9394420
-
----
-
-## for students:
-
- * _Mathematical Data Science_: http://arxiv.org/pdf/2502.08620
-
- * _Machine Learning meets Algebraic Combinatorics_: http://arxiv.org/pdf/2503.06366
-  
- * _The nearly perfect prediction theorem_: http://www.ams.org/journals/notices/202503/rnoti-p308.pdf
- 
- * _Tropical geometry and deep neural networks_: http://arxiv.org/abs/1805.07091
