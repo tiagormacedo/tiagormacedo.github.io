@@ -12,13 +12,15 @@ Petschack et al., [Learning the symmetric group: large from small](http://arxiv.
 
 Balestriero et al., [On the geometry of deep learning](https://doi.org/10.1090/noti3150).
 
-Romera-Paredes et al, [Mathematical discoveries from program search with large language models](https://doi.org/10.1038/s41586-023-06924-6).
+Romera-Paredes et al., [Mathematical discoveries from program search with large language models](https://doi.org/10.1038/s41586-023-06924-6).
 
 Creedon and Mazorchuk, [Consecutive Patterns, Kostant's Problem and Type A6](https://arxiv.org/pdf/2503.07809).
 
 Dotsenko and Mozgovoy, [Global Weyl modules for thin Lie algebras are finite-dimensional](https://arxiv.org/pdf/2411.17550).
 
 Rani and Setia, [Graded representations of current Lie superalgebras sl(1,2)[t]](https://doi.org/10.1016/j.laa.2025.08.007).
+
+Deng et al., [Long time derivation of the Boltzmann equation from hard sphere dynamics](https://annals.math.princeton.edu/articles/22284).
 
 ---
 
@@ -30,6 +32,10 @@ Vaswani et al., _Attention is all you need_: https://dl.acm.org/doi/pdf/10.5555/
 
 Olanrewaju, _Partial Symmetry Enforced Attention Decomposition_: https://arxiv.org/pdf/2507.14908
 
-_Long time derivation of the Boltzmann equation from hard sphere dynamics_: https://arxiv.org/pdf/2408.07818
+Steininger and Yurkevich, A convex polyhedron without Rupert's property: https://arxiv.org/abs/2508.18475
 
-_Arithmetic and Geometric Langlands Program_: https://doi.org/10.4171/ICM2022/176
+Pardon, Universally counting curves in Calabi-Yau threefolds: https://arxiv.org/abs/2308.02948
+
+Malle et al., Brauer's Height Zero Conjecture: https://doi.org/10.4007/annals.2024.200.2.4
+
+Cabanes and Spath, The McKay Conjecture on character degrees: https://arxiv.org/abs/2410.20392
