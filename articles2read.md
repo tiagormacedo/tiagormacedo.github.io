@@ -22,20 +22,20 @@ Rani and Setia, [Graded representations of current Lie superalgebras sl(1,2)[t]]
 
 Deng et al., [Long time derivation of the Boltzmann equation from hard sphere dynamics](https://annals.math.princeton.edu/articles/22284).
 
+Steininger and Yurkevich, [A convex polyhedron without Rupert's property](https://arxiv.org/abs/2508.18475).
+
+Malle et al., [Brauer's Height Zero Conjecture](https://doi.org/10.4007/annals.2024.200.2.4).
+
+Cabanes and Spath, [The McKay Conjecture on character degrees](https://arxiv.org/abs/2410.20392).
+
 ---
 
-_Tropical geometry and machine learning_: https://doi.org/10.1109/JPROC.2021.3065238
+Maragos et al., _Tropical geometry and machine learning_: https://doi.org/10.1109/JPROC.2021.3065238
 
-_Deep learning: an introduction for applied mathematicians_: https://doi.org/10.1137/18M1165748
+Higham and Higham, _Deep learning: an introduction for applied mathematicians_: https://doi.org/10.1137/18M1165748
 
 Vaswani et al., _Attention is all you need_: https://dl.acm.org/doi/pdf/10.5555/3295222.3295349
 
 Olanrewaju, _Partial Symmetry Enforced Attention Decomposition_: https://arxiv.org/pdf/2507.14908
 
-Steininger and Yurkevich, A convex polyhedron without Rupert's property: https://arxiv.org/abs/2508.18475
-
-Pardon, Universally counting curves in Calabi-Yau threefolds: https://arxiv.org/abs/2308.02948
-
-Malle et al., Brauer's Height Zero Conjecture: https://doi.org/10.4007/annals.2024.200.2.4
-
-Cabanes and Spath, The McKay Conjecture on character degrees: https://arxiv.org/abs/2410.20392
+Pardon, _Universally counting curves in Calabi-Yau threefolds_: https://arxiv.org/abs/2308.02948
