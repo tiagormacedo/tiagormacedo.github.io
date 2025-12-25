@@ -28,19 +28,13 @@ Malle et al., [Brauer's Height Zero Conjecture](https://doi.org/10.4007/annals.2
 
 Cabanes and Spath, [The McKay Conjecture on character degrees](https://arxiv.org/abs/2410.20392).
 
+Pardon, _Universally counting curves in Calabi-Yau threefolds_: https://arxiv.org/abs/2308.02948
+
 ---
 
-Maragos et al., _Tropical geometry and machine learning_: https://doi.org/10.1109/JPROC.2021.3065238
-
-Higham and Higham, _Deep learning: an introduction for applied mathematicians_: https://doi.org/10.1137/18M1165748
-
-Vaswani et al., _Attention is all you need_: https://dl.acm.org/doi/pdf/10.5555/3295222.3295349
-
-Olanrewaju, _Partial Symmetry Enforced Attention Decomposition_: https://arxiv.org/pdf/2507.14908
+Vaswani et al., Attention is all you need: https://dl.acm.org/doi/pdf/10.5555/3295222.3295349
 
 Lee et al., Discovering hidden algebraic structures via transformers with rank-aware beam GRPO: https://arxiv.org/pdf/2508.15766
-
-Pardon, _Universally counting curves in Calabi-Yau threefolds_: https://arxiv.org/abs/2308.02948
 
 Arman et al., Small volume bodies of constant width: https://doi.org/10.1093/imrn/rnaf020
 
@@ -51,3 +45,13 @@ Brue et al., Fundamental groups and the Milnor conjecture: https://doi.org/10.40
 Brue et al., Six-dimensional counterexample to the Milnor conjecture: https://doi.org/10.4171/jems/1737
 
 Katzarkov et al., Birational invariants from Hodge structures and quantum multiplication: https://arxiv.org/pdf/2508.05105
+
+---
+
+## for students
+
+Maragos et al., _Tropical geometry and machine learning_: https://doi.org/10.1109/JPROC.2021.3065238
+
+Higham and Higham, _Deep learning: an introduction for applied mathematicians_: https://doi.org/10.1137/18M1165748
+
+Olanrewaju, _Partial symmetry enforced attention decomposition_: https://arxiv.org/pdf/2507.14908
