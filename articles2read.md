@@ -38,4 +38,16 @@ Vaswani et al., _Attention is all you need_: https://dl.acm.org/doi/pdf/10.5555/
 
 Olanrewaju, _Partial Symmetry Enforced Attention Decomposition_: https://arxiv.org/pdf/2507.14908
 
+Lee et al., Discovering hidden algebraic structures via transformers with rank-aware beam GRPO: https://arxiv.org/pdf/2508.15766
+
 Pardon, _Universally counting curves in Calabi-Yau threefolds_: https://arxiv.org/abs/2308.02948
+
+Arman et al., Small volume bodies of constant width: https://doi.org/10.1093/imrn/rnaf020
+
+Campos et al., A new lower bound for sphere packing: https://arxiv.org/pdf/2312.10026
+
+Brue et al., Fundamental groups and the Milnor conjecture: https://doi.org/10.4007/annals.2025.201.1.4
+
+Brue et al., Six-dimensional counterexample to the Milnor conjecture: https://doi.org/10.4171/jems/1737
+
+Katzarkov et al., Birational invariants from Hodge structures and quantum multiplication: https://arxiv.org/pdf/2508.05105
