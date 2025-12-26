@@ -38,8 +38,8 @@ Brue et al., [Six-dimensional counterexample to the Milnor Conjecture](https://d
 
 ---
 
-Vaswani et al., Attention is all you need: https://dl.acm.org/doi/pdf/10.5555/3295222.3295349
+Vaswani et al., [Attention is all you need](https://dl.acm.org/doi/pdf/10.5555/3295222.3295349).
 
-Maragos et al., Tropical geometry and machine learning: https://doi.org/10.1109/JPROC.2021.3065238
+Maragos et al., [Tropical geometry and machine learning](https://doi.org/10.1109/JPROC.2021.3065238).
 
-Higham and Higham, Deep learning: an introduction for applied mathematicians: https://doi.org/10.1137/18M1165748
+Higham and Higham, [Deep learning: an introduction for applied mathematicians](https://doi.org/10.1137/18M1165748).
