@@ -30,11 +30,11 @@ Cabanes and Spath, [The McKay Conjecture on character degrees](https://arxiv.org
 
 Pardon, [Universally counting curves in Calabi-Yau threefolds](https://arxiv.org/abs/2308.02948).
 
-Campos et al., A new lower bound for sphere packing: https://arxiv.org/pdf/2312.10026
+Campos et al., [A new lower bound for sphere packing](https://arxiv.org/pdf/2312.10026).
 
-Brue et al., Fundamental groups and the Milnor Conjecture: https://doi.org/10.4007/annals.2025.201.1.4
+Brue et al., [Fundamental groups and the Milnor Conjecture](https://doi.org/10.4007/annals.2025.201.1.4).
 
-Brue et al., Six-dimensional counterexample to the Milnor Conjecture: https://doi.org/10.4171/jems/1737
+Brue et al., [Six-dimensional counterexample to the Milnor Conjecture](https://doi.org/10.4171/jems/1737).
 
 ---
 
