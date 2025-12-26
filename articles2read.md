@@ -40,14 +40,6 @@ Brue et al., [Six-dimensional counterexample to the Milnor Conjecture](https://d
 
 Vaswani et al., Attention is all you need: https://dl.acm.org/doi/pdf/10.5555/3295222.3295349
 
-Lee et al., Discovering hidden algebraic structures via transformers with rank-aware beam GRPO: https://arxiv.org/pdf/2508.15766
+Maragos et al., Tropical geometry and machine learning: https://doi.org/10.1109/JPROC.2021.3065238
 
----
-
-## for students
-
-Maragos et al., _Tropical geometry and machine learning_: https://doi.org/10.1109/JPROC.2021.3065238
-
-Higham and Higham, _Deep learning: an introduction for applied mathematicians_: https://doi.org/10.1137/18M1165748
-
-Olanrewaju, _Partial symmetry enforced attention decomposition_: https://arxiv.org/pdf/2507.14908
+Higham and Higham, Deep learning: an introduction for applied mathematicians: https://doi.org/10.1137/18M1165748
