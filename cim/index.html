@@ -46,12 +46,12 @@
                 <h3> Step 1: review the manuscript </h3>
 
                 <p>
-                    Within two days, double-check the following: 
+                    Within two days after the authors have responded to the request to submit their source files, double-check the following: 
                 </p>
 
                 <ul>
                     <li>
-                        Spell and grammar.  My suggestion is that you use a large language model (such as ChatGPT, Deepseek, ...) to review the text. Here is a suggested prompt that you can use: <i>"Assume you are a copy editor. I would like you to review the punctuation and spelling of the attached scientific article.  Please note that this is a scientific article in the field of Mathematics and is written in English.  Please, return to me all the instances in the text of this article where there is a typographical or punctuation error."</i>
+                        Spell and grammar.  My suggestion is that you use a large language model (such as ChatGPT, Deepseek, ...) to help you review the text. Here is a suggested prompt that you can use: <i>"Assume you are a copy editor. I would like you to review the punctuation and spelling of the attached scientific article.  Please note that this is a scientific article in the field of Mathematics and is written in English.  Please, return to me all the instances in the text of this article where there is a typographical or punctuation error."</i>
                     </li>
 
                     <li>
@@ -61,11 +61,11 @@
 
                     <li>
                         Change every sentence containing mathematical formulas that break between two lines.  My suggestion is that
-                        you: either use a display <span class="latex">\[ ... \]</span>, or reorder, or rephrase the sentence.
+                        you: use a display <span class="latex">\[ ... \]</span>, or reorder, or rephrase those sentences.
                     </li>
 
                     <li>
-                        Avoid inline formulas longer than half of a line; use math display
+                        Avoid inline formulas longer than half of a line by using math displays
                         <span class="latex">\[ ... \]</span> instead. 
                     </li>
 
@@ -89,7 +89,7 @@
                 <h3> Step 2: send pdf to the authors </h3>
 
                 <p> 
-                    As soon as you are done reviewing the authors' manuscript send it back to
+                    As soon as you are done reviewing the authors' files send them back to
                     the authors, asking if there are any further changes that they would like
                     you to make.
                 </p>
@@ -113,7 +113,7 @@
                 </p>
 
                 <p>
-                    Make sure you attach (only) the pdf file of their manuscript to this email.
+                    Make sure you attach only the pdf file of their manuscript to this email.
                 </p>
             </section>
 
@@ -135,23 +135,16 @@
                     \YEAR{&lt;volume year&gt;}<br />
                     \ISSUE{&lt;issue number&gt;}<br />
                     \NUMBER{&lt; ask head technical editor &gt;}<br />
-                    \DOI{https://doi.org/10.46298/cm.&lt;id of the paper&gt;}
+                    \DOI{https://doi.org/10.46298/cm.&lt;id of the paper&gt;}<br />
+                    \licence{&lt; licence's name &gt;}<br/>
+                    \editinfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editor&gt;}
                 </blocktex>
 
                 <img src="images/cim-paper_data.png" />
-
-                <p>
-                    Then, add the following line right before <span class="latex">\end{document}</span>:
-                </p>
-
-                <blocktex>
-                    \EditInfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editor&gt;}
-                </blocktex>
-
                 <img src="images/cim-paper_data2.png" />
                 
                 <p>
-                    Lastly, replace <span class="latex">\bibliography{cimart}</span> in the tex file by the contents of the .bbl file that is created during compilation.  (This is important in order to avoid problems when ArXiv compiles the tex file.)
+                    Lastly, replace <span class="latex">\bibliography{cimart}</span> in the tex file by the contents of the .bbl file that is created during compilation.  (This is important in order to avoid problems when arXiv compiles the tex file.)
                 </p>
             </section>
 
@@ -231,7 +224,7 @@
                 <p>
                     Make sure you attach the tex file of the final version, together with:
                     <a href="https://raw.githubusercontent.com/tiagormacedo/tiagormacedo.github.io/refs/heads/master/cim/assets/00README.json" download>00README.json</a>, cimart.cls, episciences.eps and any other file (figures, etc) that the 
-                    authors (and ArXiv) may need to successfully compile the tex file.
+                    authors (and arXiv) may need to successfully compile the tex file.
                 </p>
             </section>
 
@@ -246,6 +239,10 @@
 
                     <li>
                         Never change the files: cimart.cls, episciences.eps and 00README.json.
+                    </li>
+
+                    <li>
+                        Always use the latest versions of these files: ...
                     </li>
 
                     <li>
