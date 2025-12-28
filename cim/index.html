@@ -44,35 +44,9 @@
 
             <section class="step" id="step1">
                 <h3> Step 1: review the manuscript </h3>
-                
-                <p>
-                    First, process the tex file sent by the authors using the following form:
-                </p>
-
-                <div style="text-align: center">
-                    <form action="https://tmacedo.pythonanywhere.com/cim/" method="post" enctype="multipart/form-data" target="form-target">
-                        <label for="infile"> Upload tex: </label>
-                        <input type="file" name="infile" id="infile" required />
-                        <button type="submit" class="button" id="display-links">
-                            process
-                        </button>
-                        <iframe name="form-target" class="invisible"></iframe>
-                    </form>
-
-                    
-                    <p>
-                        <a id="raw_outfile" class="invisible" target="_blank">raw file</a>
-                        <span> &nbsp; &nbsp; </span>
-                        <a id="edited_outfile" class="invisible" target="_blank">edited file</a>
-                    </p>
-                </div>
 
                 <p>
-                    Alternatively, you can use <a href="https://colab.research.google.com/drive/1KvmhIyxARafJm8qCPoxIfS2JgVLdP-ti">this Python notebook</a> to process the tex file sent by the authors.
-                </p>
-
-                <p>
-                    Next, within two days, double-check the following: 
+                    Within two days, double-check the following: 
                 </p>
 
                 <ul>
@@ -81,7 +55,7 @@
                     </li>
 
                     <li>
-                        If there are any sentences starting with a mathematical formula.  My suggestion is that
+                        Change every sentence starting with a mathematical formula.  My suggestion is that
                         you search for <span class="latex">. $</span> in the tex file and rephrase those sentences.
                     </li>
 
