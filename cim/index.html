@@ -17,6 +17,7 @@
         <div class="sidemenu">
             <ul>
                 <li> <a href="#intro" class="indicator"> Intro </a> </li>
+                <li> <a href="#initial" class="indicator"> Initial instructions </a> </li>
                 <li> <a href="#step1" class="indicator"> Review manuscript </a> </li>
                 <li> <a href="#step2" class="indicator"> Send pdf to authors </a> </li>
                 <li> <a href="#step3" class="indicator"> Make final edits </a> </li>
@@ -37,36 +38,40 @@
                 <h3> Intro </h3>
 
                 <p>
-                    The main goal of the technical editorial process is to fit all the articles that are published by Communications in Mathematics into the same standards.  To do that the technical editors will edit the source files sent by the authors and modify the parts that do not adhere to the format of the journal.  More details about this process are contained in the steps below.
+                    The main goal of the technical editorial process is to ensure that all articles published by Communications in Mathematics adhere to the same standards. To this end, technical editors must modify the source files submitted by authors, adjusting any parts that do not align with the journal's format. More details about this process can be found below.
                 </p>
             </section>
 
+            <section class="step" id="initial">
+                <h3> Initial instructions </h3>
+
+                <ul>
+                    <li> Always use Romanleaf to edit the files: https://tex.lubkov.spbu.ru/. </li>
+                    <li> Always check for the latest versions of the cls and json files:<br/>
+                        www.overleaf.com/read/hxycsnytwjcm#90fd42.</li>
+                </ul>
+            </section>
 
             <section class="step" id="step1">
                 <h3> Step 1: review the manuscript </h3>
 
-                <p>
-                    Within two days after the authors have responded to the request to submit their source files, double-check the following: 
-                </p>
+                <p> Within two days of receiving the authors' response to the request to submit their source files, double-check the following: </p>
 
                 <ul>
                     <li>
-                        Spell and grammar.  My suggestion is that you use a large language model (such as ChatGPT, Deepseek, ...) to help you review the text. Here is a suggested prompt that you can use: <i>"Assume you are a copy editor. I would like you to review the punctuation and spelling of the attached scientific article.  Please note that this is a scientific article in the field of Mathematics and is written in English.  Please, return to me all the instances in the text of this article where there is a typographical or punctuation error."</i>
+                        Spelling and grammar. I suggest using a large language model (such as ChatGPT or Deepseek) to assist with the review. Here is a suggested prompt: "Assume you are a copy editor. I would like you to review the punctuation and spelling of the attached scientific article. Please note that this is a scientific article in the field of Mathematics and is written in English. Please, return to me all the instances in the text of this article where there is a typographical or punctuation error."</i>
                     </li>
 
                     <li>
-                        Change every sentence starting with a mathematical formula.  My suggestion is that
-                        you search for <span class="latex">. $</span> in the tex file and rephrase those sentences.
+                        Change every sentence starting with a mathematical formula.  My suggestion is that you search for <span class="latex">. $</span> in the tex file and rephrase those sentences.
                     </li>
 
                     <li>
-                        Change every sentence containing mathematical formulas that break between two lines.  My suggestion is that
-                        you: use a display <span class="latex">\[ ... \]</span>, or reorder, or rephrase those sentences.
+                        Change every sentence containing mathematical formulas that break between two lines.  My suggestion is that you: use a display <span class="latex">\[ ... \]</span>, or reorder, or rephrase those sentences.
                     </li>
 
                     <li>
-                        Avoid inline formulas longer than half of a line by using math displays
-                        <span class="latex">\[ ... \]</span> instead. 
+                        Avoid inline formulas longer than half of a line by using math displays <span class="latex">\[ ... \]</span> instead. 
                     </li>
 
                     <li>
@@ -74,8 +79,7 @@
                     </li>
 
                     <li>
-                        Instead of numbering equations or citing a reference by hand (using 
-                        parenthesis or brackets), use <span class="latex">\cite</span>, <span class="latex">\ref</span> and <span class="latex">\eqref</span>.
+                        Instead of numbering equations or citing a reference by hand (using parenthesis or brackets), use <span class="latex">\cite</span>, <span class="latex">\ref</span> and <span class="latex">\eqref</span>.
                     </li>
 
                     <li>
@@ -140,7 +144,7 @@
                     \editinfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editor&gt;}
                 </blocktex>
 
-                <img src="images/cim-paper_data.png" />
+                <img src="images/cim-paper_data1.png" />
                 <img src="images/cim-paper_data2.png" />
                 
                 <p>
@@ -198,39 +202,37 @@
                     Send the source files to the authors asking for them to update their post on arXiv and their submission on Episciences.  Here is a template email that you can use:
 
                     <blockquote>
-                        Dear author,<br />
-                        <br />
-                        Thank you for your response.<br />
-                        <br />
-                        Now, I would like to ask you to <b>update</b> your posting on arXiv to its final<br />
-                        version (see attached files). Please, do not make a new posting, as<br />
-                        Episciences uses the id of the posting on arXiv that was informed during<br /> 
-                        submission.<br />
-                        <br />
-                        I would also like to suggest that you remove all content from the "comment"<br>
-                        section, as it may be merged with the abstract of your article in the<br>
-                        journal's webpage.<br/>
+                        Dear author, <br/>
                         <br/>
-                        As soon as your article is updated on arXiv, please inform its final version<br />
-                        on the Episciences platform.<br />
-                        <br />
-                        Best regards,<br />
-                        <br />
-                        &lt;your name&gt;<br />
+                        Thank you for your response. <br/>
+                        <br/>
+                        Now, I would like to ask you to update your posting on arXiv to its final <br/>
+                        version (using the attached files). Please, do not make a new posting, as <br/>
+                        Episciences uses the id of the posting on arXiv that was informed during <br/>
+                        submission. <br/>
+                        <br/>
+                        I would also like to suggest that you remove all content from the "comments" <br/>
+                        section of the arXiv post, as it may be merged with the abstract of your <br/>
+                        article in the journal's webpage. <br/>
+                        <br/>
+                        As soon as your article is updated on arXiv, please inform its final version <br/>
+                        on the Episciences platform. <br/>
+                        <br/>
+                        Best regards, <br/>
+                        <br/>
+                        &lt;your name&gt; <br/>
                         Technical editor of Communications in Mathematics
                     </blockquote>
                 </p>
 
                 <p>
-                    Make sure you attach the tex file of the final version, together with:
-                    00README.json, cimart.cls, episciences.eps and any other file (figures, etc) that the 
-                    authors (and arXiv) may need to successfully compile the tex file.
+                    Make sure you attach the tex file of the final version, together with: cimart.cls, episciences.eps, 00README.json, and any other file (figures, etc) that the authors (and arXiv) may need to successfully compile the tex file.
                 </p>
             </section>
 
 
             <div class="step">
-                <h3> General suggestions: </h3>
+                <h3> Final instructions </h3>
                 
                 <ul>
                     <li>
@@ -239,11 +241,6 @@
 
                     <li>
                         Never change the files: cimart.cls, episciences.eps and 00README.json.
-                    </li>
-
-                    <li>
-                        Always use the latest versions of these files; see <br/>
-                        <div style="display: flex; align-items: center; margin-left: auto; margin-right: auto;">www.overleaf.com/read/hxycsnytwjcm#90fd42.</div>
                     </li>
 
                     <li>
