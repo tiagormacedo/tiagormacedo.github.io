@@ -43,3 +43,7 @@ Vaswani et al., [Attention is all you need](https://dl.acm.org/doi/pdf/10.5555/3
 Maragos et al., [Tropical geometry and machine learning](https://doi.org/10.1109/JPROC.2021.3065238).
 
 Higham and Higham, [Deep learning: an introduction for applied mathematicians](https://doi.org/10.1137/18M1165748).
+
+Ellenberg et al., [Generative modeling for mathematical discovery](http://arxiv.org/pdf/2503.11061).
+
+Georgiev et al., [Mathematical exploration and discovery at scale](https://arxiv.org/pdf/2511.02864).
