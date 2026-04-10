@@ -18,12 +18,13 @@
             <ul>
                 <li> <a href="#intro" class="indicator"> Intro </a> </li>
                 <li> <a href="#initial" class="indicator"> Initial instructions </a> </li>
-                <li> <a href="#step1" class="indicator"> Review manuscript </a> </li>
-                <li> <a href="#step2" class="indicator"> Send pdf to authors </a> </li>
-                <li> <a href="#step3" class="indicator"> Make final edits </a> </li>
-                <li> <a href="#step4" class="indicator"> Double-check final version </a> </li>
-                <li> <a href="#step5" class="indicator"> Change status of submission </a> </li>
-                <li> <a href="#step6" class="indicator"> Send source files </a> </li>
+                <li> <a href="#step1" class="indicator"> Assignment </a> </li>
+                <li> <a href="#step2" class="indicator"> First review </a> </li>
+                <li> <a href="#step3" class="indicator"> Authors' review </a> </li>
+                <li> <a href="#step4" class="indicator"> Final edits </a> </li>
+                <li> <a href="#step5" class="indicator"> Editors' review </a> </li>
+                <li> <a href="#step6" class="indicator"> Change status </a> </li>
+                <li> <a href="#step7" class="indicator"> Send source files </a> </li>
             </ul>
         </div>
 
@@ -59,7 +60,20 @@
             </section>
 
             <section class="step" id="step1">
-                <h3> Step 1: review the manuscript </h3>
+                <h3> Step 1: assignment </h3>
+
+                <p>
+                    When an article is assigned to be edited by you, you will receive an email entitled "cm #..... - You've been chosen to manage copy editing of an article". After receiving this email, you should also receive an email entitled, "cm #..... - Waiting for author's sources". This email means that the source files have been requested to the authors. If you do not receive the second email, please contact the Head Technical Editor.
+                </p>
+
+                <p>
+                    When the authors submit the source files for their article, you will receive an email entitled "cm #..... - Author sources have been submitted", containing the source files as attachments. If you do not see this email in your inbox, please check the spam folder of your email account. If you do not receive this email after 5 days, please contact the authors and kindly remind them to send the source files.
+                </p>
+
+            </section>
+            
+            <section class="step" id="step2">
+                <h3> Step 2: first review </h3>
 
                 <p> Within two days of receiving the authors' response to the request to submit their source files, double-check the following: </p>
 
@@ -95,8 +109,8 @@
             </section>
 
 
-            <section class="step" id="step2">
-                <h3> Step 2: send pdf to the authors </h3>
+            <section class="step" id="step3">
+                <h3> Step 3: authors' review </h3>
 
                 <p> 
                     As soon as you are done reviewing the authors' files send them back to
@@ -128,8 +142,8 @@
             </section>
 
 
-            <section class="step" id="step3">
-                <h3> Step 3: make final edits </h3>
+            <section class="step" id="step4">
+                <h3> Step 4: final edits </h3>
 
                 <p>
                     When the authors and you agree with all the edition of their article, it is
@@ -147,7 +161,8 @@
                     \NUMBER{&lt;<a href="https://docs.google.com/document/d/1x3DOecBEkrbCCg6Vm90YhT0LWHcAxooF6ZXJpOJaEbQ/">see this document</a>&gt;}<br />
                     \DOI{https://doi.org/10.46298/cm.&lt;id of the paper&gt;}<br />
                     \licence{&lt;licence's name&gt;}<br/>
-                    \editinfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editors&gt;}
+                    \editinfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editors&gt;}<br />
+                    \acknowledgments{&lt;paste the acknowledgments here, if there are any&gt;}
                 </blocktex>
 
                 <img src="images/cim-paper_data1.png" />
@@ -158,9 +173,8 @@
                 </p>
             </section>
 
-
-            <section class="step" id="step4">
-                <h3> Step 4: ask the editors to double-check the final version </h3>
+            <section class="step" id="step5">
+                <h3> Step 5: editors' review </h3>
                 
                 <p> Once you have finished editing the authors' manuscript, send an email to the Editor-in-Chief, the head technical editor and the handling editors of the article asking them to double-check the final version of the article. </p>
                 
@@ -188,8 +202,8 @@
                 </p>
             </section>
 
-            <section class="step" id="step5">
-                <h3> Step 5: change the status of the submission </h3>
+            <section class="step" id="step6">
+                <h3> Step 6: change the status of the submission </h3>
 
                 <p>
                     Once all the editors have approved the final version of the article, change the status of the submission on the Episciences platform.
@@ -198,9 +212,8 @@
                 <img src="images/cim-status_update.png" />
             </section>
 
-
-            <section class="step" id="step6">
-                <h3> Step 6: send source files to the authors </h3>
+            <section class="step" id="step7">
+                <h3> Step 7: send source files to the authors </h3>
 
                 <p>
                     Send the source files to the authors asking for them to update their post on arXiv and their submission on Episciences.  Here is a template email that you can use:
@@ -213,10 +226,10 @@
                         Now, I would like to ask you to update your posting on arXiv to its final <br/>
                         version (using the attached files). Please, do not make a new posting, as <br/>
                         Episciences uses the id of the posting on arXiv that was informed during <br/>
-                        submission. <br/>
+                        submission. Also, please make sure you use *all* files attached to this email. <br/>
                         <br/>
                         I would also like to suggest that you remove all content from the "comments" <br/>
-                        section of the arXiv post, as it may be merged with the abstract of your <br/>
+                        section of your arXiv post, as it may be merged with the abstract of your <br/>
                         article in the journal's webpage. <br/>
                         <br/>
                         As soon as your article is updated on arXiv, please inform its final version <br/>
@@ -232,8 +245,11 @@
                 <p>
                     Make sure you attach the tex file of the final version, together with: cimart.cls, episciences.eps, 00README.json, and any other file (figures, etc) that the authors (and arXiv) may need to successfully compile the tex file.
                 </p>
-            </section>
 
+                <p>
+                    Please, do not manually change the version of the article in the Episciences platform. The authors should submit the final version of their article themselves.
+                </p>
+            </section>
 
             <div class="step">
                 <h3> Final instructions </h3>
