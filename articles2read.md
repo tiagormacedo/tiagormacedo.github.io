@@ -8,13 +8,13 @@ Weinan, [Machine learning, mathematical theory and scientific applications](http
 
 Hernandez, [Symmetries of Grothendieck rings in representation theory](http://arxiv.org/pdf/2501.03024).
 
-Petschack et al., [Learning the symmetric group: large from small](http://arxiv.org/pdf/2502.12717).
+Petschack et al., [Learning the symmetric group: large from small](https://doi.org/10.4310/atmp.260413002222).
 
 Balestriero et al., [On the geometry of deep learning](https://doi.org/10.1090/noti3150).
 
 Romera-Paredes et al., [Mathematical discoveries from program search with large language models](https://doi.org/10.1038/s41586-023-06924-6).
 
-Creedon and Mazorchuk, [Consecutive Patterns, Kostant's Problem and Type A6](https://arxiv.org/pdf/2503.07809).
+Creedon and Mazorchuk, [Consecutive Patterns, Kostant's Problem and Type A6](https://doi.org/10.1142/S0218196726500116).
 
 Dotsenko and Mozgovoy, [Global Weyl modules for thin Lie algebras are finite-dimensional](https://arxiv.org/pdf/2411.17550).
 
@@ -26,7 +26,7 @@ Steininger and Yurkevich, [A convex polyhedron without Rupert's property](https:
 
 Malle et al., [Brauer's Height Zero Conjecture](https://doi.org/10.4007/annals.2024.200.2.4).
 
-Cabanes and Spath, [The McKay Conjecture on character degrees](https://arxiv.org/abs/2410.20392).
+Cabanes and Spath, [The McKay Conjecture on character degrees](https://doi.org/10.4007/annals.2026.203.3.5).
 
 Pardon, [Universally counting curves in Calabi-Yau threefolds](https://arxiv.org/abs/2308.02948).
 
@@ -36,14 +36,28 @@ Brue et al., [Fundamental groups and the Milnor Conjecture](https://doi.org/10.4
 
 Brue et al., [Six-dimensional counterexample to the Milnor Conjecture](https://doi.org/10.4171/jems/1737).
 
+
+##    2026
+
+Goertzen and Williamson, [Kazhdan-Lusztig basis and optimization](https://arxiv.org/pdf/2604.18894).
+
+Brundan, [Graded triangular bases](https://doi.org/10.1007/s10468-025-10315-y).
+
+Yao, Levin and Diaz, [Any-dimensional invariant universality](https://arxiv.org/pdf/2605.23156).
+
+Ben-Zvi, [What is the geometric Langlands correspondence about?](https://arxiv.org/pdf/2605.23167)
+
+Fujita and Hernandez, [Monoidal Jantzen filtrations](https://doi.org/10.1016/j.aim.2026.110963).
+
+Williamson, [Local Hodge theory of Soergel bimodules](https://doi.org/10.1007/s11511-017-0146-8).
+
+Beilinson and Bernstein, [A proof of Jantzen conjectures](https://doi.org/10.1090/advsov/016.1).
+
+
 ---
 
 Vaswani et al., [Attention is all you need](https://dl.acm.org/doi/pdf/10.5555/3295222.3295349).
 
 Maragos et al., [Tropical geometry and machine learning](https://doi.org/10.1109/JPROC.2021.3065238).
-
-Higham and Higham, [Deep learning: an introduction for applied mathematicians](https://doi.org/10.1137/18M1165748).
-
-Ellenberg et al., [Generative modeling for mathematical discovery](http://arxiv.org/pdf/2503.11061).
 
 Georgiev et al., [Mathematical exploration and discovery at scale](https://arxiv.org/pdf/2511.02864).
