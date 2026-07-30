@@ -8,7 +8,6 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, img, strong, su
 	vertical-align: baseline;
 }
 
-
 body {
 	color: #6a6b6c;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -84,14 +83,14 @@ body img {
 }
 
     .topmatter h1 {
-        color: #555;
+        color: white;
         font-size: 150%;
         font-weight: 600;
         padding: 0 0 1em 0;
     }
 
     .topmatter h2 {
-        color: #555;
+        color: white;
         font-size: 125%;
         font-weight: 500;
         padding: 0 0 1em 0;
