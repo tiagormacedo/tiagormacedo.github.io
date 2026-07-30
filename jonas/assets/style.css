@@ -83,7 +83,7 @@ body img {
 }
 
     .topmatter h1 {
-        color: #ddd;
+        color: #ededed;
         font-size: 150%;
         font-weight: 600;
         padding: 0 0 1em 0;
@@ -194,7 +194,7 @@ blocktex {
 
 
 .footer {
-	color: #ddd;
+	color: #eee;
     background: #6478FA;
     font-size: 66%;
     padding: 0.5ex 1em;
