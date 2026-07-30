@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title> Journal of Non-Associative Structures </title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+
+        <link href="./assets/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet" />
+
+        <script type="text/javascript" src="./assets/script.js" defer></script>
+    </head>
+
+    <body onload="sidemenuHighlight()">
+        <div class="sidemenu">
+            <ul>
+                <li> <a href="#intro" class="indicator"> Intro </a> </li>
+                <li> <a href="#initial" class="indicator"> Initial instructions </a> </li>
+                <li> <a href="#step1" class="indicator"> Assignment </a> </li>
+                <li> <a href="#step2" class="indicator"> First review </a> </li>
+                <li> <a href="#step3" class="indicator"> Authors' review </a> </li>
+                <li> <a href="#step4" class="indicator"> Final edits </a> </li>
+                <li> <a href="#step5" class="indicator"> Editors' review </a> </li>
+                <li> <a href="#step6" class="indicator"> Change status </a> </li>
+                <li> <a href="#step7" class="indicator"> Send source files </a> </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="topmatter">
+                <h1> JoNAS </h1>
+                <h2> Technical editing process </h2>
+            </div>
+
+
+            <section class="step" id="intro">
+                <h3> Intro </h3>
+
+                <p>
+                    The main goal of the technical editorial process is to ensure that all articles published by the Journal of Non-Associative Structures adhere to the same standards. To this end, technical editors must modify the source files submitted by authors, adjusting any parts that do not align with the journal's format. More details about this process can be found below.
+                </p>
+            </section>
+
+            <section class="step" id="initial">
+                <h3> Initial instructions </h3>
+
+                <ul>
+                    <li> Always use Overleaf to edit the files. </li>
+                    <li>
+                        Always use the latest versions of the cls and json files:<br/>
+                        <div style="display:block">
+                            <a href="http://www.overleaf.com/read/hxycsnytwjcm#90fd42">
+                                www.overleaf.com/read/hxycsnytwjcm#90fd42
+                            </a>.
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="step" id="step1">
+                <h3> Step 1: assignment </h3>
+
+                <p>
+                    When an article is assigned to you for editing, you will receive an email entitled <i>“jonas #..... – You’ve been chosen to manage copy editing of an article.”</i> After receiving this email, you should also receive another email entitled <i>“jonas #..... – Waiting for author’s sources.”</i> This second email indicates that the source files have been requested from the authors. If you do not receive this email, please contact the Head Technical Editor.
+                </p>
+
+                <p>
+                    When the authors submit the source files for their article, you will receive an email entitled <i>"jonas #..... - Author sources have been submitted"</i>, containing the source files as attachments. If you do not see this email in your inbox, please check the spam folder of your email account. If you do not receive this email after 5 days, please contact the authors and kindly remind them to send you their source files.
+                </p>
+            </section>
+
+            <section class="step" id="step2">
+                <h3> Step 2: first review </h3>
+
+                <p> Within two days of receiving the authors' response to the request to submit their source files, double-check the following: </p>
+
+                <ul>
+                    <li>
+                        Spelling and grammar. I suggest using a large language model (such as ChatGPT, Gemini, etc.) to assist with the review. Here is a suggested prompt: <i>"Assume you are a copy editor. I would like you to review the punctuation and spelling of the attached scientific article. Please note that this is a scientific article in the field of Mathematics and is written in English. Please, return to me all the instances in the text of this article where there is a typographical or punctuation error."</i>
+                    </li>
+
+                    <li>
+                        Change every sentence starting with a mathematical formula. My suggestion is that you search for <span class="latex">. $</span> in the tex file and rephrase those sentences.
+                    </li>
+
+                    <li>
+                        Change every sentence containing mathematical formulas that break between two lines. My suggestion is that you: use a display <span class="latex">\[ ... \]</span>, or reorder, or rephrase those sentences.
+                    </li>
+
+                    <li>
+                        Avoid inline formulas longer than half of a line by using math displays <span class="latex">\[ ... \]</span> instead.
+                    </li>
+
+                    <li>
+                        Always use the enumerate and itemize environments for lists.
+                    </li>
+
+                    <li>
+                        Instead of numbering equations or citing a reference by hand (using parenthesis or brackets), use <span class="latex">\cite</span>, <span class="latex">\ref</span> and <span class="latex">\eqref</span>.
+                    </li>
+
+                    <li>
+                        Clear all the errors, warnings, overfull and underfull boxes.
+                    </li>
+                </ul>
+            </section>
+
+
+            <section class="step" id="step3">
+                <h3> Step 3: authors' review </h3>
+
+                <p>
+                    As soon as you are done reviewing the authors' files send them back to
+                    the authors, asking if there are any further changes that they would like
+                    you to make.
+                </p>
+
+                <p>
+                    Here is a template email that you can use:
+
+                    <blockquote>
+                        Dear author,<br />
+                        <br />
+                        Thank you for sending your manuscript.<br />
+                        <br />
+                        I am attaching to this email an updated version of your article. If there is<br />
+                        anything you would like me to change, please let me know within 2 days.<br />
+                        <br />
+                        Best regards,<br />
+                        <br />
+                        &lt;your name&gt;<br />
+                        Technical editor of JoNAS
+                    </blockquote>
+                </p>
+
+                <p>
+                    Make sure you attach only the pdf file of their manuscript to this email.
+                </p>
+            </section>
+
+
+            <section class="step" id="step4">
+                <h3> Step 4: final edits </h3>
+
+                <p>
+                    When the authors and you agree with all the edition of their article, it is
+                    time to do the final editing of their manuscript.
+                </p>
+
+                <p>
+                    First, add the following lines right before <span class="latex">\begin{document}</span>:
+                </p>
+
+                <blocktex>
+                    \VOLUME{&lt;volume number&gt;}<br />
+                    \YEAR{&lt;volume year&gt;}<br />
+                    \ISSUE{&lt;issue number&gt;}<br />
+                    \NUMBER{&lt;<a href="https://docs.google.com/document/d/1x3DOecBEkrbCCg6Vm90YhT0LWHcAxooF6ZXJpOJaEbQ/">see this document</a>&gt;}<br />
+                    \DOI{https://doi.org/10.46298/cm.&lt;id of the paper&gt;}<br />
+                    \licence{&lt;arXiv's post's licence&gt;}<br/>
+                    \editinfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editors&gt;}<br />
+                    \acknowledgments{&lt;move the acknowledgments here&gt;}
+                </blocktex>
+
+                <img src="images/cim-paper_data1.png" />
+                <img src="images/cim-paper_data2.png" />
+
+                <p>
+                    Lastly, replace <span class="latex">\bibliography{jonasart}</span> in the tex file by the contents of the .bbl file that is created during compilation. (This is important in order to avoid problems when arXiv compiles the tex file.)
+                </p>
+            </section>
+
+            <section class="step" id="step5">
+                <h3> Step 5: editors' review </h3>
+
+                <p> Once you have finished editing the authors' manuscript, send an email to the Editor-in-Chief, the head technical editor and the handling editors of the article asking them to double-check the final version of the article. </p>
+
+                <p>
+                    Here is a template email that you can use:
+
+                    <blockquote>
+                        Dear editors, <br />
+                        <br />
+                        I have just finished editing the attached article and would like to ask <br />
+                        you to double-check it before I send the source files to the authors. <br />
+                        <br />
+                        Please, let me know if you would like me to make any changes to the <br />
+                        article or if you approve this version within the next 2 days. <br />
+                        <br />
+                        Best regards, <br />
+                        <br />
+                        &lt;your name&gt;<br />
+                        Technical editor of JoNAS
+                    </blockquote>
+                </p>
+
+                <p>
+                    Make sure you attach the pdf of the final version of the article.
+                </p>
+            </section>
+
+            <section class="step" id="step6">
+                <h3> Step 6: change the status of the submission </h3>
+
+                <p>
+                    Once all the editors have approved the final version of the article, change the status of the submission on the Episciences platform.
+                </p>
+
+                <img src="images/cim-status_update.png" />
+            </section>
+
+            <section class="step" id="step7">
+                <h3> Step 7: send source files to the authors </h3>
+
+                <p>
+                    Send the source files to the authors asking for them to update their post on arXiv and their submission on Episciences. Here is a template email that you can use:
+
+                    <blockquote>
+                        Dear author, <br/>
+                        <br/>
+                        Thank you for your response. <br/>
+                        <br/>
+                        Now, I would like to ask you to update your posting on arXiv to its final <br/>
+                        version (using the attached files). Please, do not make a new posting, as <br/>
+                        Episciences uses the id of the posting on arXiv that was informed during <br/>
+                        submission. Also, please make sure you use all the 4 files attached to this <br/>
+                        email without changing them. Furthermore, make sure you choose the <br/>
+                        CC BY 4.0 licence when you update your post. <br/>
+                        <br/>
+                        I would also like to suggest that you remove all content from the "comments" <br/>
+                        section of your arXiv post, as it may be merged with the abstract of your <br/>
+                        article in the journal's webpage. <br/>
+                        <br/>
+                        As soon as your article is updated on arXiv, please inform its final version <br/>
+                        on the Episciences platform. <br/>
+                        <br/>
+                        Best regards, <br/>
+                        <br/>
+                        &lt;your name&gt; <br/>
+                        Technical editor of JoNAS
+                    </blockquote>
+                </p>
+
+                <p>
+                    Make sure you attach the tex file of the final version, together with: jonasart.cls, episciences.eps, 00README.json, and any other file (figures, etc) that the authors (and arXiv) may need to successfully compile the tex file.
+                </p>
+
+                <p>
+                    Please, do not manually change the version of the article in the Episciences platform. The authors should submit the final version of their article themselves.
+                </p>
+            </section>
+
+            <div class="step">
+                <h3> Final instructions </h3>
+
+                <ul>
+                    <li>
+                        Be kind and patient.
+                    </li>
+
+                    <li>
+                        Never change the files: jonasart.cls, episciences.eps and 00README.json.
+                    </li>
+
+                    <li>
+                        Do not ask the authors to perform more than one action in the same email.
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="footer">
+                <p>
+                     The content and opinions on this webpage do not necessarily reflect the view of nor are they endorsed by the Journal of Non-Associative Structures.
+                </p>
+            </div>
+        </div>
+    </body>
+
+</html>
