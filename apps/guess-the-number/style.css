@@ -1,14 +1,20 @@
-/* Root Variables for Custom Properties */
+/* General padding */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Root variables for custom properties */
 :root {
     --primary-color: #7E22CE;
     --secondary-color: #E9D5FF;
     --background-light: #F5F3FF;
+    --primary-dark: #581C87;
     --error-color: red;
     --success-color: #0F0;
     --neutral-color: #BABCBF;
-    --font-size-base: 115%;
-    --font-size-small: 50%;
-    --font-size-large: 120%;
+    --font-size-base: 1.125rem;
+    --font-size-small: 0.85rem;
+    --font-size-large: 1.35rem;
     --font-size-header: 64px;
     --border-radius-small: 2px;
     --border-radius-medium: 5px;
@@ -16,14 +22,14 @@
     --transition-duration: 0.3s;
 }
 
-/* Global Styles */
+/* Global styles */
 body {
     margin: 0;
     padding: 0;
     font-family: verdana, arial, sans-serif;
 }
 
-/* Container Styles */
+/* Container styles */
 #container {
     background: var(--background-light);
     border-radius: var(--border-radius-medium);
@@ -36,23 +42,23 @@ body {
     padding: 20px;
 }
 
-/* Header Styles */
+/* Header styles */
 h1 {
-    background: #581C87;
+    background: var(--primary-dark);
     color: var(--secondary-color);
     margin: 0;
-    padding: 50px;
+    padding: clamp(24px, 6vw, 50px);
     text-align: center;
     text-transform: uppercase;
 }
 
-/* Intro Section */
+/* Intro section */
 #intro {
     margin: 40px auto;
     text-align: center;
 }
 
-/* Form Styles */
+/* Form styles */
 form {
     margin: 40px auto;
     text-align: center;
@@ -62,7 +68,7 @@ form > input {
     border: 2px solid #D8B4FE;
     border-radius: var(--border-radius-medium);
     padding: 10px;
-    width: 50px;
+    width: 7ch;
     color: var(--primary-color);
     font-size: var(--font-size-base);
     text-align: center;
@@ -97,13 +103,18 @@ form > button:focus {
     outline: 2px solid var(--primary-color);
 }
 
+form > button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 form > .error-message {
     color: var(--error-color);
     font-size: var(--font-size-small);
     margin-top: 5px;
 }
 
-/* Display Section */
+/* Display section */
 .display {
     display: flex;
     gap: 40px;
@@ -151,4 +162,56 @@ form > .error-message {
     align-items: center;
     justify-content: center;
     padding: 40px;
+}
+
+#goal-number.won  {
+    background: var(--success-color);
+}
+
+#goal-number.lost {
+   background: var(--error-color);
+}
+
+/* Play again button */
+#play-again {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 24px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius-medium);
+    cursor: pointer;
+}
+
+/* Hidden attribute */
+[hidden] {
+    display: none !important;
+}
+
+/* Small screens: stack the three columns */
+@media (max-width: 700px) {
+    .display {
+        flex-direction: column;
+        align-items: center; gap: 24px;
+    }
+
+    #attempts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    #attempts > p {
+        width: 100%;
+        text-align: center;
+    }
+
+    #goal-number {
+        flex: none;
+        width: 180px;
+        height: 180px;
+        font-size: 48px;
+    }
 }
