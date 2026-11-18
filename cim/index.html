@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <title> Communications in Mathematics </title>
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+        <meta name="description" content="Step-by-step guide to the technical editing process of Communications in Mathematics.">
 
         <link href="./assets/style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet" />
 
         <script type="text/javascript" src="./assets/script.js" defer></script>
     </head>
 
     <body onload="sidemenuHighlight()">
-        <div class="sidemenu">
+        <nav class="sidemenu" aria-label="Main navigation">
             <ul>
                 <li> <a href="#intro" class="indicator"> Intro </a> </li>
                 <li> <a href="#initial" class="indicator"> Initial instructions </a> </li>
@@ -26,9 +28,9 @@
                 <li> <a href="#step6" class="indicator"> Change status </a> </li>
                 <li> <a href="#step7" class="indicator"> Send source files </a> </li>
             </ul>
-        </div>
+        </nav>
 
-        <div class="container">
+        <main class="container">
             <div class="topmatter">
                 <h1> Communications in Mathematics </h1>
                 <h2> Technical editing process </h2>
@@ -47,11 +49,14 @@
                 <h3> Initial instructions </h3>
 
                 <ul>
-                    <li> Always use Overleaf to edit the files. </li>
-                    <li> 
+                    <li>
+                        Always use Overleaf to edit the files.
+                    </li>
+
+                    <li>
                         Always use the latest versions of the cls and json files:<br/>
                         <div style="display:block">
-                            <a href="http://www.overleaf.com/read/hxycsnytwjcm#90fd42">
+                            <a href="https://www.overleaf.com/read/hxycsnytwjcm#90fd42">
                                 www.overleaf.com/read/hxycsnytwjcm#90fd42
                             </a>.
                         </div>
@@ -70,7 +75,7 @@
                     When the authors submit the source files for their article, you will receive an email entitled <i>"cm #..... - Author sources have been submitted"</i>, containing the source files as attachments. If you do not see this email in your inbox, please check the spam folder of your email account. If you do not receive this email after 5 days, please contact the authors and kindly remind them to send you their source files.
                 </p>
             </section>
-            
+
             <section class="step" id="step2">
                 <h3> Step 2: first review </h3>
 
@@ -90,7 +95,7 @@
                     </li>
 
                     <li>
-                        Avoid inline formulas longer than half of a line by using math displays <span class="latex">\[ ... \]</span> instead. 
+                        Avoid inline formulas longer than half of a line by using math displays <span class="latex">\[ ... \]</span> instead.
                     </li>
 
                     <li>
@@ -111,7 +116,7 @@
             <section class="step" id="step3">
                 <h3> Step 3: authors' review </h3>
 
-                <p> 
+                <p>
                     As soon as you are done reviewing the authors' files send them back to
                     the authors, asking if there are any further changes that they would like
                     you to make.
@@ -119,21 +124,21 @@
 
                 <p>
                     Here is a template email that you can use:
-
-                    <blockquote>
-                        Dear author,<br />
-                        <br />
-                        Thank you for sending your manuscript.<br />
-                        <br />
-                        I am attaching to this email an updated version of your article. If there is<br />
-                        anything you would like me to change, please let me know within 2 days.<br />
-                        <br />
-                        Best regards,<br />
-                        <br />
-                        &lt;your name&gt;<br />
-                        Technical editor of Communications in Mathematics
-                    </blockquote>
                 </p>
+
+                <blockquote>
+                    Dear author,<br />
+                    <br />
+                    Thank you for sending your manuscript.<br />
+                    <br />
+                    I am attaching to this email an updated version of your article. If there is<br />
+                    anything you would like me to change, please let me know within 2 days.<br />
+                    <br />
+                    Best regards,<br />
+                    <br />
+                    &lt;your name&gt;<br />
+                    Technical editor of Communications in Mathematics
+                </blockquote>
 
                 <p>
                     Make sure you attach only the pdf file of their manuscript to this email.
@@ -159,14 +164,13 @@
                     \ISSUE{&lt;issue number&gt;}<br />
                     \NUMBER{&lt;<a href="https://docs.google.com/document/d/1x3DOecBEkrbCCg6Vm90YhT0LWHcAxooF6ZXJpOJaEbQ/">see this document</a>&gt;}<br />
                     \DOI{https://doi.org/10.46298/cm.&lt;id of the paper&gt;}<br />
-                    \licence{&lt;arXiv's post's licence&gt;}<br/>
                     \editinfo{&lt;received date&gt;}{&lt;acceptance date&gt;}{&lt;handling editors&gt;}<br />
                     \acknowledgments{&lt;move the acknowledgments here&gt;}
                 </blocktex>
 
                 <img src="images/cim-paper_data1.png" />
                 <img src="images/cim-paper_data2.png" />
-                
+
                 <p>
                     Lastly, replace <span class="latex">\bibliography{cimart}</span> in the tex file by the contents of the .bbl file that is created during compilation.  (This is important in order to avoid problems when arXiv compiles the tex file.)
                 </p>
@@ -174,28 +178,28 @@
 
             <section class="step" id="step5">
                 <h3> Step 5: editors' review </h3>
-                
+
                 <p> Once you have finished editing the authors' manuscript, send an email to the Editor-in-Chief, the head technical editor and the handling editors of the article asking them to double-check the final version of the article. </p>
-                
+
                 <p>
                     Here is a template email that you can use:
-                    
-                    <blockquote>
-                        Dear editors, <br />
-                        <br />
-                        I have just finished editing the attached article and would like to ask <br />
-                        you to double-check it before I send the source files to the authors. <br />
-                        <br />
-                        Please, let me know if you would like me to make any changes to the <br />
-                        article or if you approve this version within the next 2 days. <br />
-                        <br />
-                        Best regards, <br />
-                        <br />
-                        &lt;your name&gt;<br />
-                        Technical editor of Communications in Mathematics
-                    </blockquote>
                 </p>
-                
+
+                <blockquote>
+                    Dear editors, <br />
+                    <br />
+                    I have just finished editing the attached article and would like to ask <br />
+                    you to double-check it before I send the source files to the authors. <br />
+                    <br />
+                    Please, let me know if you would like me to make any changes to the <br />
+                    article or if you approve this version within the next 2 days. <br />
+                    <br />
+                    Best regards, <br />
+                    <br />
+                    &lt;your name&gt;<br />
+                    Technical editor of Communications in Mathematics
+                </blockquote>
+
                 <p>
                     Make sure you attach the pdf of the final version of the article.
                 </p>
@@ -207,7 +211,7 @@
                 <p>
                     Once all the editors have approved the final version of the article, change the status of the submission on the Episciences platform.
                 </p>
-                
+
                 <img src="images/cim-status_update.png" />
             </section>
 
@@ -216,32 +220,32 @@
 
                 <p>
                     Send the source files to the authors asking for them to update their post on arXiv and their submission on Episciences.  Here is a template email that you can use:
-
-                    <blockquote>
-                        Dear author, <br/>
-                        <br/>
-                        Thank you for your response. <br/>
-                        <br/>
-                        Now, I would like to ask you to update your posting on arXiv to its final <br/>
-                        version (using the attached files). Please, do not make a new posting, as <br/>
-                        Episciences uses the id of the posting on arXiv that was informed during <br/>
-                        submission. Also, please make sure you use all the 4 files attached to this <br/>
-                        email without changing them. Furthermore, make sure you choose the <br/>
-                        CC BY-SA 4.0 licence when you update your post. <br/>
-                        <br/>
-                        I would also like to suggest that you remove all content from the "comments" <br/>
-                        section of your arXiv post, as it may be merged with the abstract of your <br/>
-                        article in the journal's webpage. <br/>
-                        <br/>
-                        As soon as your article is updated on arXiv, please inform its final version <br/>
-                        on the Episciences platform. <br/>
-                        <br/>
-                        Best regards, <br/>
-                        <br/>
-                        &lt;your name&gt; <br/>
-                        Technical editor of Communications in Mathematics
-                    </blockquote>
                 </p>
+
+                <blockquote>
+                    Dear author, <br/>
+                    <br/>
+                    Thank you for your response. <br/>
+                    <br/>
+                    Now, I would like to ask you to update your posting on arXiv to its final <br/>
+                    version (using the attached files). Please, do not make a new posting, as <br/>
+                    Episciences uses the id of the posting on arXiv that was informed during <br/>
+                    submission. Also, please make sure you use all the 4 files attached to this <br/>
+                    email without changing them. Furthermore, make sure you choose the <br/>
+                    CC BY-SA 4.0 licence when you update your post. <br/>
+                    <br/>
+                    I would also like to suggest that you remove all content from the "comments" <br/>
+                    section of your arXiv post, as it may be merged with the abstract of your <br/>
+                    article in the journal's webpage. <br/>
+                    <br/>
+                    As soon as your article is updated on arXiv, please inform its final version <br/>
+                    on the Episciences platform. <br/>
+                    <br/>
+                    Best regards, <br/>
+                    <br/>
+                    &lt;your name&gt; <br/>
+                    Technical editor of Communications in Mathematics
+                </blockquote>
 
                 <p>
                     Make sure you attach the tex file of the final version, together with: cimart.cls, episciences.eps, 00README.json, and any other file (figures, etc) that the authors (and arXiv) may need to successfully compile the tex file.
@@ -252,9 +256,9 @@
                 </p>
             </section>
 
-            <div class="step">
+            <section class="step" id="final-instructions">
                 <h3> Final instructions </h3>
-                
+
                 <ul>
                     <li>
                         Be kind and patient.
@@ -268,15 +272,13 @@
                         Do not ask the authors to perform more than one action in the same email.
                     </li>
                 </ul>
-            </div>
-
+            </section>
 
             <div class="footer">
-                <p> 
+                <p>
                      The content and opinions on this webpage do not necessarily reflect the view of nor are they endorsed by Communications in Mathematics.
                 </p>
             </div>
-        </div>
+        </main>
     </body>
-
 </html>
