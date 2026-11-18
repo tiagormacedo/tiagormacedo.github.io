@@ -1,50 +1,39 @@
-// Select DOM elements
-const content = document.querySelector("div#content");
-const face = document.querySelector("div#face");
-const leftEye = document.querySelector("div#left-eye");
-const leftIris = document.querySelector("div#left-iris");
-const rightEye = document.querySelector("div#right-eye");
-const rightIris = document.querySelector("div#right-iris");
+const face = document.querySelector("#face");
+const leftEye = document.querySelector("#left-eye");
+const leftIris = document.querySelector("#left-iris");
+const rightEye = document.querySelector("#right-eye");
+const rightIris = document.querySelector("#right-iris");
 
-// Define constants
-const squareRootOf2 = 1.4142;
-const eyeDiameter = 100;
-const irisDiameter = 50;
+const eyes = [
+    { eye: leftEye, iris: leftIris },
+    { eye: rightEye, iris: rightIris },
+];
 
-// Variables for window dimensions
-let windowX, windowY, maxXY;
+const squareRootOf2 = Math.SQRT2;
 
-// Add event listener for mouse
-window.addEventListener("mousemove", moveEyes);
+window.addEventListener("pointermove", moveEyes);
 
-// Function to move irises based on cursor location
 function moveEyes(evento) {
-    // Get mouse or touch coordinates
     const mouseX = evento.pageX;
     const mouseY = evento.pageY;
-
     if (mouseX == null || mouseY == null) return;
 
-    // Precompute eye center positions
-    const leftEyeCenterX = leftEye.offsetLeft + (eyeDiameter / 2);
-    const leftEyeCenterY = leftEye.offsetTop + (eyeDiameter / 2);
-    const rightEyeCenterX = rightEye.offsetLeft + (eyeDiameter / 2);
-    const rightEyeCenterY = rightEye.offsetTop + (eyeDiameter / 2);
+    const maxXY = Math.max(window.innerWidth, window.innerHeight) * squareRootOf2;
 
-    // Calculate relative positions
-    const leftAuxX = mouseX - leftEyeCenterX;
-    const leftAuxY = mouseY - leftEyeCenterY;
-    const rightAuxX = mouseX - rightEyeCenterX;
-    const rightAuxY = mouseY - rightEyeCenterY;
+    const faceRect = face.getBoundingClientRect();
+    const facePageX = faceRect.left + window.scrollX;
+    const facePageY = faceRect.top + window.scrollY;
 
-    // Update window dimensions and maxXY
-    windowX = window.innerWidth;
-    windowY = window.innerHeight;
-    maxXY = Math.max(windowX, windowY) * squareRootOf2;
+    for (const { eye, iris } of eyes) {
+        const eyeCenterX = facePageX + eye.offsetLeft + eye.offsetWidth / 2;
+        const eyeCenterY = facePageY + eye.offsetTop + eye.offsetHeight / 2;
 
-    // Update iris positions
-    leftIris.style.left = `${leftEyeCenterX + (leftAuxX / maxXY) * (eyeDiameter / 2) - (irisDiameter / 2)}px`;
-    leftIris.style.top = `${leftEyeCenterY + (leftAuxY / maxXY) * (eyeDiameter / 2) - (irisDiameter / 2)}px`;
-    rightIris.style.left = `${rightEyeCenterX + (rightAuxX / maxXY) * (eyeDiameter / 2) - (irisDiameter / 2)}px`;
-    rightIris.style.top = `${rightEyeCenterY + (rightAuxY / maxXY) * (eyeDiameter / 2) - (irisDiameter / 2)}px`;
+        const dx = (mouseX - eyeCenterX) / maxXY;
+        const dy = (mouseY - eyeCenterY) / maxXY;
+
+        const shiftX = (dx * (eye.offsetWidth - iris.offsetWidth)) / 2;
+        const shiftY = (dy * (eye.offsetHeight - iris.offsetHeight)) / 2;
+
+        iris.style.transform = `translate(${shiftX}px, ${shiftY}px)`;
+    }
 }
