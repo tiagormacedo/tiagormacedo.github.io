@@ -1,99 +1,116 @@
-const mainDiv = document.querySelector("div#main");
+const GRID_COLS = 100;
+const GRID_SIZE = GRID_COLS * GRID_COLS;
 
-// Black-and-white x random-color switch
-const switchDiv = document.createElement("div");
-switchDiv.style.display = "flex";
-switchDiv.style.justifyContent = "end";
-switchDiv.style.width = "400px";
-mainDiv.appendChild(switchDiv);
+const mainDiv = document.querySelector("#main");
 
-const colorSwitchLabel = document.createElement("label");
-colorSwitchLabel.classList = "switch";
-switchDiv.appendChild(colorSwitchLabel);
+
+/* Mode switch */
+
+const controls = document.createElement("div");
+controls.className = "controls";
+
+const modeLabel = document.createElement("span");
+modeLabel.className = "mode-label";
+modeLabel.textContent = "b & w";
+
+const switchLabel = document.createElement("label");
+switchLabel.className = "switch";
 
 const colorSwitchCheckbox = document.createElement("input");
 colorSwitchCheckbox.type = "checkbox";
-colorSwitchLabel.appendChild(colorSwitchCheckbox);
+colorSwitchCheckbox.id = "color-mode";
+colorSwitchCheckbox.setAttribute("aria-label", "Toggle random color mode");
 
 const colorSwitchSlider = document.createElement("span");
-colorSwitchSlider.classList = "slider round";
-colorSwitchSlider.textContent = "b & w";
-colorSwitchLabel.appendChild(colorSwitchSlider);
+colorSwitchSlider.className = "slider";
+
+switchLabel.append(colorSwitchCheckbox, colorSwitchSlider);
+controls.append(modeLabel, switchLabel);
+mainDiv.appendChild(controls);
 
 let isColorMode = false;
 
-function toggleColorMode() {
-    isColorMode = !isColorMode;
-    colorSwitchSlider.style.color = isColorMode ? "#F92C85" : "black";
-    colorSwitchSlider.textContent = isColorMode ? "color" : "b & w";
+function updateMode() {
+  isColorMode = colorSwitchCheckbox.checked;
+  modeLabel.textContent = isColorMode ? "color" : "b & w";
+  modeLabel.classList.toggle("color-mode", isColorMode);
 }
 
-colorSwitchCheckbox.addEventListener("change", toggleColorMode);
+colorSwitchCheckbox.addEventListener("change", updateMode);
 
-// Drawing board
+
+/* Board */
+
 const board = document.createElement("div");
-board.classList = "board";
+board.className = "board";
 mainDiv.appendChild(board);
 
-// Create pixel squares
-const GRID_SIZE = 10000; 
+const fragment = document.createDocumentFragment();
+for (let i = 0; i < GRID_SIZE; i++) {
+  const square = document.createElement("div");
+  square.className = "square";
+  fragment.appendChild(square);
+}
+board.appendChild(fragment);
+
+
+/* Drawing */
+
+const GRAY_SHADES = ["lightgray", "gray", "black", "white"];
+
 let isMouseDown = false;
 
-// Add event listeners for mouse events
-window.addEventListener("mousedown", () => (isMouseDown = true));
+window.addEventListener("mousedown", (event) => {
+  if (event.button !== 0) return;
+  if (event.target.closest("label, .switch, .mode-label")) return;
+  isMouseDown = true;
+});
+
 window.addEventListener("mouseup", () => (isMouseDown = false));
+window.addEventListener("blur", () => (isMouseDown = false));
 
-// Function to generate random color
 function generateRandomColor() {
-    const randomRed = Math.floor(256 * Math.random());
-    const randomGreen = Math.floor(256 * Math.random());
-    const randomBlue = Math.floor(256 * Math.random());
-    return `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
 }
 
-// Add squares to the board
-for (let i = 0; i < GRID_SIZE; i++) {
-    const square = document.createElement("div");
-    square.classList = "square";
-    square.id = `square${i}`;
-    square.draggable = false;
-
-    square.addEventListener("mouseover", () => {
-        if (isMouseDown) findElement({ target: square });
-    });
-
-    board.appendChild(square);
-}
-
-// Function to find the element under the pointer
-function findElement(event) {
-    let pixel = event.target;
-
-    if (!pixel.classList.contains("square")) {
-        const x = event.pageX || event.touches[0].pageX;
-        const y = event.pageY || event.touches[0].pageY;
-        pixel = document.elementFromPoint(x, y);
-    }
-
-    if (pixel && pixel.classList.contains("square")) {
-        changeColor(pixel);
-    }
-}
-
-// Function to change the color of a pixel
 function changeColor(pixel) {
-    if (!isColorMode) {
-        const oldColor = pixel.style.background;
-        if (oldColor === "" || oldColor === "white") {
-            pixel.style.background = "lightgray";
-        } else if (oldColor === "lightgray") {
-            pixel.style.background = "gray";
-        } else if (oldColor === "gray") {
-            pixel.style.background = "black";
-        } else {
-            pixel.style.background = "white";
-        }
-    } else {
-        pixel.style.background = generateRandomColor();
-    }
+  if (isColorMode) {
+    pixel.style.background = generateRandomColor();
+    return;
+  }
+  const step = Number(pixel.dataset.shade ?? 0);
+  pixel.style.background = GRAY_SHADES[step];
+  pixel.dataset.shade = (step + 1) % GRAY_SHADES.length;
 }
+
+function pixelAt(x, y) {
+  const el = document.elementFromPoint(x, y);
+  return el && el.classList.contains("square") ? el : null;
+}
+
+/* Mouse */
+board.addEventListener("mousedown", (event) => {
+  if (event.button !== 0) return;
+  const pixel = event.target.closest(".square");
+  if (pixel) changeColor(pixel); // paint the pixel you pressed on
+});
+
+board.addEventListener("mouseover", (event) => {
+  if (!isMouseDown) return;
+  const pixel = event.target.closest(".square");
+  if (pixel) changeColor(pixel);
+});
+
+/* Touch */
+function handleTouch(event) {
+  const touch = event.touches[0];
+  if (!touch) return;
+  const pixel = pixelAt(touch.clientX, touch.clientY);
+  if (pixel) changeColor(pixel);
+}
+
+board.addEventListener("touchstart", handleTouch, { passive: true });
+board.addEventListener("touchmove", handleTouch, { passive: true });
