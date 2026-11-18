@@ -1,4 +1,4 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, img, strong, sub, sup, ul, li, form, label {
+a, blockquote, body, div, form, h1, h2, h3, html, img, label, li, p, span, strong, sub, sup, ul {
 	border: 0;
 	font: inherit;
 	font-size: 100%;
@@ -8,6 +8,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, img, strong, su
 	vertical-align: baseline;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
 	color: #6a6b6c;
@@ -21,6 +24,11 @@ body a {
     text-decoration: none;
 }
 
+    body a:focus-visible {
+        outline: 2px solid #ff9c10;
+        outline-offset: 2px;
+    }
+
 body img {
     border: 2px solid #ff9c10;
     margin: 1em;
@@ -29,7 +37,7 @@ body img {
 
 
 .container {
-    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, .25); 
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, .25);
     padding: 0 17%;
     width: 66%;
 }
@@ -39,11 +47,14 @@ body img {
         list-style: circle;
     	padding: 0.5em 1em;
     }
-    
+
     .container li {
     	padding: 0.5ex;
     }
 
+        .container li::marker {
+            color: #ff9c10;
+        }
 
 .sidemenu {
     background: #fefefe;
@@ -64,11 +75,11 @@ body img {
         color: #aaa;
         font-size: 10pt;
         padding: 0;
-        transition: all 0.5s ease;
     }
 
     .sidemenu a {
-        color: #bbb;
+        color: #767676;
+        transition: color 0.3s ease;
     }
 
         .sidemenu a:hover,
@@ -78,7 +89,7 @@ body img {
 
 
 .topmatter {
-    background: #ff9c10;
+    background: linear-gradient(180deg, #ffb340, #ff9c10);
     padding: 3em 0 2em 0;
     text-align: center;
 }
@@ -101,6 +112,7 @@ body img {
 .step {
     border-bottom: 1px solid #ddd;
     padding: 1em 6em 2em 6em;
+    scroll-margin-top: 1.5em;
     text-align: justify;
 }
 
@@ -120,12 +132,15 @@ body img {
     }
 
     .step p {
-        hyphen: auto;
+        hyphens: auto;
+        -webkit-hyphens: auto;
         padding: 1ex 0;
     }
 
     .step blockquote {
         background: white;
+        border-left: 4px solid #ff9c10;
+        border-radius: 0 6px 6px 0;
         display: block;
         margin: 0 auto;
         padding: 1em;
@@ -136,46 +151,17 @@ body img {
     }
 
 
-.button {
-    background: rgb(255, 220, 120);
-    color: inherit;
-    font-family: inherit;
-    border: solid 1pt rgb(255, 200, 20);
-    border-radius: 5px;
-    padding: .5ex 1ex;
-}
-
-.button:hover {
-    box-shadow: 0pt 0pt 1pt 1pt lightgray;
-}
-
-.button:active {
-    transform: translateX(1pt) translateY(1pt);
-}
-
-input[type=file] {
-    color: inherit;
-    font-family: inherit;
-}
-
-    input[type=file]::file-selector-button {
-        color: inherit;
-        background: rgb(255, 220, 120);
-        border: solid 1pt rgb(255, 200, 20);
-        border-radius: 5px;
-        font-family: inherit;
-        padding: .5ex 1ex;
-    }
-
-    
 .latex {
     background: #eee;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
     font-family: Courier, monospace;
     font-size: 12pt;
     display: inline;
-    padding: 1px;
+    padding: .1em .45em;
     border-radius: 1px;
 }
+
 
 blocktex {
     background: white;
@@ -189,13 +175,9 @@ blocktex {
 }
 
 
-.invisible {
-    display: none;
-}
-
-
 .footer {
     background: #ff9c10;
+    color: #333;
     font-size: 66%;
     padding: 0.5ex 1em;
 }
