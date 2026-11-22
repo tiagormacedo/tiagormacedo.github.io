@@ -1,29 +1,32 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
     <head>
         <title>Tiago Macedo @ Unifesp</title>
 
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+        <meta name="referrer" content="strict-origin-when-cross-origin">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Tiago Macedo. Associate Professor of Mathematics at Unifesp.">
 
-        <link href="images/tmacedo-favicon.png" rel="icon" type="image/x-icon" />
-        <link href="assets/style.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet" />
+        <link href="assets/style.css" rel="stylesheet">
+        <link rel="preload" href="assets/fonts/source-sans-3-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 
-        <script src="https://kit.fontawesome.com/6ed58a6111.js"></script>
-        <script src="assets/script.js"></script>
+        <script src="assets/script.js" defer></script>
+        <noscript><link rel="stylesheet" href="assets/nojs.css"></noscript>
     </head>
 
     <body>
         <!-- sidebar button (which appears when the sidebar disappears) -->
-        <div class="sidebarButton"></div>
+        <button class="sidebarButton" type="button" aria-label="Open navigation menu" aria-controls="sidebar" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+        </button>
 
         <!-- sidebar -->
-        <div id="sidebar">
+        <nav id="sidebar" aria-label="Site navigation">
             <!-- top -->
             <div class="top">
-                <img src="images/com-casaco-circulo.jpg" />
+                <img src="assets/images/portrait-frankfurt.jpg" alt="Portrait of Tiago Macedo" width="70" height="70">
                 <h1> Tiago Macedo </h1>
                 <p> Associate Professor of Mathematics at Unifesp </p>
             </div>
@@ -31,52 +34,70 @@
             <!-- navigation menu -->
             <div class="menu">
                 <ul>
-                    <li><a href="#home" class="indicator"><span class="icon fa-house">Home</span></a></li>
+                    <li>
+                        <a href="#home" class="indicator">
+                            <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272l16 0 0 176c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-176 16 0c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1l-224-208zM240 320l32 0c26.5 0 48 21.5 48 48l0 96-128 0 0-96c0-26.5 21.5-48 48-48z"/></svg>
+                            <span class="label">Home</span>
+                        </a>
+                    </li>
 
-                    <li><a href="#research" class="indicator"><span class="icon fa-mug-hot">Research</span></a></li>
+                    <li>
+                        <a href="#research" class="indicator">
+                            <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -16 576 528"><path fill="currentColor" d="M152 0c-13.3 0-24 10.7-24 24 0 38.9 23.4 59.4 39.1 73.1l1.1 1c16.3 14.3 23.8 21.8 23.8 37.9 0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C183.5 31.7 176 24.1 176 8C176-5.3 165.3-16 152 0zM96 192c-17.7 0-32 14.3-32 32l0 192c0 53 43 96 96 96l192 0c41.8 0 77.4-26.7 90.5-64l5.5 0c70.7 0 128-57.3 128-128S518.7 192 448 192L96 192zM448 384l0-128c35.3 0 64 28.7 64 64s-28.7 64-64 64zM304 8c0-13.3-10.7-24-24-24C266.7-16 256-5.3 256 8c0 38.9 23.4 59.4 39.1 73.1l1.1 1c16.3 14.3 23.8 21.8 23.8 37.9 0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C296.3 31.7 288 24.1 288 8C288-5.3 280.7-16 304-16z"/></svg>
+                            <span class="label">Research</span>
+                        </a>
+                    </li>
 
-                    <li><a href="#teaching" class="indicator"><span class="icon fa-chalkboard-user">Teaching</span></a></li>
+                    <li>
+                        <a href="#teaching" class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true" viewBox="0 0 640 512"><path fill="currentColor" d="M192 384c53 0 96 43 96 96 0 17.7-14.3 32-32 32L32 512c-17.7 0-32-14.3-32-32 0-53 43-96 96-96l96 0zM544 32c35.3 0 64 28.7 64 64l0 288c0 33.1-25.2 60.4-57.5 63.7l-6.5 .3-211.1 0c-5.1-24.2-16.3-46.1-32.1-64l51.2 0 0-32c0-17.7 14.3-32 32-32l96 0c17.7 0 32 14.3 32 32l0 32 32 0 0-288-352 0 0 57.3c-14.8-6-31-9.3-48-9.3-5.4 0-10.8 .3-16 1l0-49c0-35.3 28.7-64 64-64l352 0zM144 352a80 80 0 1 1 0-160 80 80 0 1 1 0 160z"/></svg>
+                            <span class="label">Teaching</span>
+                        </a>
+                    </li>
 
-                    <li><a href="#service" class="indicator"><span class="icon fa-people-group">Service</span></a></li>
+                    <li>
+                        <a href="#service" class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true" viewBox="0 0 576 512"><path fill="currentColor" d="M466.8 186.5l42.5-42.5 34.7 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32L223.6 16c-29 0-57.3 9.3-80.7 26.5L16.3 135.8c-17.8 13.1-21.6 38.1-8.5 55.9s38.1 21.6 55.9 8.5L183.4 112 296 112c13.3 0 24 10.7 24 24s-10.7 24-24 24l-72 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l152.2 0c33.9 0 66.5-13.5 90.5-37.5zm-357.5 139L66.7 368 32 368c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l320.5 0c29 0 57.3-9.3 80.7-26.5l126.6-93.3c17.8-13.1 21.6-38.1 8.5-55.9s-38.1-21.6-55.9-8.5L392.6 400 280 400c-13.3 0-24-10.7-24-24s10.7-24 24-24l72 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-152.2 0c-33.9 0-66.5 13.5-90.5 37.5z"/></svg>
+                            <span class="label">Service</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
             <!-- bottom icons -->
             <div class="bottom">
-                <a href="http://lattes.cnpq.br/6725002674545546" title="Curriculum Vitae">
-                    <span class="icon fa-solid fa-file"></span>
+                <a title="online, Portuguese CV" lang="pt-BR" href="https://lattes.cnpq.br/6725002674545546" aria-label="Currículo Lattes">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true" viewBox="0 0 384 512"><path fill="currentColor" d="M0 64C0 28.7 28.7 0 64 0L213.5 0c17 0 33.3 6.7 45.3 18.7L365.3 125.3c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm208-5.5l0 93.5c0 13.3 10.7 24 24 24L325.5 176 208 58.5zM120 256c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0z"/></svg>
                 </a>
 
-                <a href="https://github.com/tiagormacedo">
-                    <span class="icon fa-brands fa-github"></span>
+                <a href="https://github.com/tiagormacedo" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true" viewBox="0 0 512 512"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg>
                 </a>
-                
-                <a href="http://www.linkedin.com/in/trmacedo">
-                    <span class="icon fa-brands fa-linkedin"></span>
+
+                <a href="https://www.linkedin.com/in/trmacedo" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" aria-hidden="true" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"/></svg>
                 </a>
             </div>
-        </div>
+        </nav>
 
 
         <!-- Main -->
-        <div id="main">
+        <main>
 
             <!-- Home -->
-            <section id="home" class="container">
+            <section id="home" tabindex="-1">
                 <h2> Tiago Macedo </h2>
-               
-                <div class="image featured">
-                    <img src="images/neworleans.jpg" />
-                </div>
+
+                <div class="image featured"><img src="assets/images/picture-new-orleans.jpg" alt="A picture of Tiago Macedo"></div>
 
                 <p>
-                    I am an Associate Professor of Mathematics at the Federal University of São Paulo (<a href="http://www.unifesp.br/campus/sjc/#">Unifesp</a>), in Brazil. In the past, I have been a postdoctoral fellow at the <a href="http://science.uottawa.ca/mathstat/en">University of Ottawa</a> (in Canada) and an Assistant Professor at the <a href="https://imtec.ufcat.edu.br/">Federal University of Catalão</a> (in Brazil).
+                    I am an Associate Professor of Mathematics at the Federal University of São Paulo (<a href="https://www.unifesp.br/campus/sjc/">Unifesp</a>), in Brazil. In the past, I have been a postdoctoral fellow at the <a href="https://science.uottawa.ca/mathstat/en">University of Ottawa</a> (in Canada) and an Assistant Professor at the <a href="https://imtec.ufcat.edu.br/">Federal University of Catalão</a> (in Brazil).
                 </p>
-                
+
                 <p>
-                    I am currently working on a <a href="#research">research</a> project and <a href="#teaching">teaching</a> two undergraduate level classes at Unifesp. I am also an editor of the journal <a href="http://cm.episciences.org">Communications in Mathematics</a> and a technical editor of the <a href="http://jonas.episciences.org">Journal of Non-Associative Structures</a>. More detailed information about me can be found in my <a title="online, Portuguese version" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4718830A6">Currículo Lattes</a> and on my <a href="https://github.com/tiagormacedo">GitHub profile</a>.
+                    I am currently working on a <a href="#research">research</a> project and <a href="#teaching">teaching</a> two undergraduate level classes at Unifesp. I am also an editor of the journal <a href="https://cm.episciences.org">Communications in Mathematics</a> and a technical editor of the <a href="https://jonas.episciences.org">Journal of Non-Associative Structures</a>. More detailed information about me can be found in my <a title="online, Portuguese CV" lang="pt-BR" href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4718830A6">Currículo Lattes</a> and on my <a href="https://github.com/tiagormacedo">GitHub profile</a>.
                 </p>
-                
+
                 <p>
                     The best way to contact me is via email at tmacedo@unifesp.br.
                 </p>
@@ -84,26 +105,26 @@
 
 
             <!-- Research -->
-            <section id="research" class="container tabs_wrap">
+            <section id="research" class="tabs_wrap" tabindex="-1">
                 <h2> Research </h2>
-                
+
                 <p>
                     I am mainly interested in homological algebra and representation theory. But I am also interested in combinatorial optimization and operations research.
                 </p>
 
-                <!-- buttons (in reverse order) -->
-                <div>
-                    <button id="unpublishedButton" class="tablink last">
-                        unpublished
+                <!-- buttons (in order of appearance) -->
+                <div class="tabbar" role="tablist" aria-label="Publications">
+                    <button type="button" role="tab" id="publishedButton" class="tablink active" data-target="published" aria-controls="published" aria-selected="true">
+                        published
                     </button>
 
-                    <button id="publishedButton" class="tablink first active">
-                        published
+                    <button type="button" role="tab" id="unpublishedButton" class="tablink" data-target="unpublished" aria-controls="unpublished" aria-selected="false">
+                        unpublished
                     </button>
                 </div>
 
                 <!-- Published papers -->
-                <div id="published" class="tabcontent active">
+                <div id="published" class="tabcontent active" role="tabpanel" aria-labelledby="publishedButton" tabindex="0">
                     <h3>Published papers</h3>
 
                     <ul class="default">
@@ -112,7 +133,7 @@
                             Annals of LV meeting of the Brazilian Operations Research Society (2023).<br/>
                             Joint work with G. Delgado, L. Santos and L. Salles-Neto.
                         </li>
-                        
+
                         <li>
                             <a href="https://doi.org/10.1016/j.laa.2023.07.011">Finite-dimensional representations of map superalgebras</a><br />
                             Linear Algebra and its Applications <strong>676</strong>, 104-130 (2023). <br />
@@ -138,7 +159,7 @@
                         </li>
 
                         <li>
-                            <a href="http://rdcu.be/NNEa">Weyl modules and Weyl functors for Lie superalgebras</a><br/>
+                            <a href="https://rdcu.be/NNEa">Weyl modules and Weyl functors for Lie superalgebras</a><br/>
                             Algebras and Representation Theory <strong>22</strong>, no 3, 723-756 (2019).<br/>
                             Joint work with Irfan Bagci and Lucas Calixto.
                         </li>
@@ -162,7 +183,7 @@
                         </li>
 
                         <li>
-                            <a href="http://dx.doi.org/10.2140/pjm.2015.274.257">On Demazure and local Weyl modules for affine hyperalgebras</a><br/>
+                            <a href="https://doi.org/10.2140/pjm.2015.274.257">On Demazure and local Weyl modules for affine hyperalgebras</a><br/>
                             Pacific Journal of Mathematics <strong>274</strong>, no 2, 257-303 (2015).<br/>
                             Joint work with Angelo Bianchi and Adriano Moura.
                         </li>
@@ -176,20 +197,20 @@
                 </div>
 
                 <!-- Unpublished works -->
-                <div  id="unpublished" class="tabcontent">
+                <div id="unpublished" class="tabcontent" role="tabpanel" aria-labelledby="unpublishedButton" tabindex="0">
                     <h3>Unpublished works</h3>
 
                     <ul class="default">
                         <li>
-                            <a href="docs/Tiago Macedo - Notas de Aula de Topologia Geral.pdf">Lecture notes on point-set topology</a> (in Portuguese)
-                        </li>
-                        
-                        <li>
-                            <a href="docs/Tiago Macedo - Notes on category theory.pdf">Notes on category theory</a>
+                            <a href="docs/Tiago%20Macedo%20-%20Notas%20de%20Aula%20de%20Topologia%20Geral.pdf">Lecture notes on point-set topology</a> (in Portuguese)
                         </li>
 
                         <li>
-                            <a href="http://arxiv.org/abs/1511.00024">Extensions for Generalized Current algebras</a> <br />
+                            <a href="docs/Tiago%20Macedo%20-%20Notes%20on%20category%20theory.pdf">Notes on category theory</a>
+                        </li>
+
+                        <li>
+                            <a href="https://arxiv.org/abs/1511.00024">Extensions for Generalized Current algebras</a> <br />
                             Joint work with B. Boe, C. Drupieski and D. Nakano.
                         </li>
 
@@ -205,7 +226,7 @@
                         </li>
 
                         <li>
-                            <a href="http://repositorio.unicamp.br/bitstream/REPOSIP/306921/1/Macedo_TiagoRodrigues_M.pdf">Hyperalgebras and algebraic groups</a> (in Portuguese)<br />
+                            <a href="https://repositorio.unicamp.br/bitstream/REPOSIP/306921/1/Macedo_TiagoRodrigues_M.pdf">Hyperalgebras and algebraic groups</a> (in Portuguese)<br />
                             Masters thesis, defended at Unicamp in February 2009.
                         </li>
                     </ul>
@@ -214,24 +235,24 @@
 
 
             <!-- Teaching -->
-            <section id="teaching" class="container tabs_wrap">
+            <section id="teaching" class="tabs_wrap" tabindex="-1">
                 <h2> Teaching </h2>
-                
-                <!-- Buttons (in reverse order) -->
-                <div>
-                    <button id="ufgButton" class="tablink last">
-                        UFG
+
+                <!-- Buttons (in order of appearance) -->
+                <div class="tabbar" role="tablist" aria-label="Institutions">
+                    <button type="button" role="tab" id="unifespButton" class="tablink active" data-target="unifesp" aria-controls="unifesp" aria-selected="true">
+                        Unifesp
                     </button>
 
-                    <button id="unifespButton" class="tablink first active">
-                        Unifesp
+                    <button type="button" role="tab" id="ufgButton" class="tablink" data-target="ufg" aria-controls="ufg" aria-selected="false">
+                        UFG
                     </button>
                 </div>
 
                 <!-- Unifesp and UFG tabs -->
-                <div id="unifesp" class="tabcontent active">
-                    <!-- Next semester (at Unifesp) -->
-                    <h3> Next semester at Unifesp: </h3>
+                <div id="unifesp" class="tabcontent active" role="tabpanel" aria-labelledby="unifespButton" tabindex="0">
+                    <!-- This semester (at Unifesp) -->
+                    <h3> This semester at Unifesp: </h3>
 
                     <ul class="default">
                         <li> Advanced Linear Algebra for third-year Applied Mathematics majors. </li>
@@ -281,7 +302,7 @@
                 </div>
 
                 <!-- At UFG -->
-                <div id="ufg" class="tabcontent">
+                <div id="ufg" class="tabcontent" role="tabpanel" aria-labelledby="ufgButton" tabindex="0">
                     <h3>Classes taught at UFG</h3>
 
                     <ul class="default">
@@ -296,26 +317,26 @@
 
 
             <!-- Service -->
-            <section id="service" class="container tabs_wrap">
+            <section id="service" class="tabs_wrap" tabindex="-1">
                 <h2> Service </h2>
 
-                <!-- Buttons (in reverse order) -->
-                <div>
-                    <button id="meetingsButton" class="tablink last">
-                        meetings
+                <!-- Buttons (in order of appearance) -->
+                <div class="tabbar" role="tablist" aria-label="Services">
+                    <button type="button" role="tab" id="studentsButton" class="tablink active" data-target="students" aria-controls="students" aria-selected="true">
+                        students
                     </button>
 
-                    <button id="adminButton" class="tablink">
+                    <button type="button" role="tab" id="adminButton" class="tablink" data-target="administration" aria-controls="administration" aria-selected="false">
                         administration
                     </button>
 
-                    <button id="studentsButton" class="tablink first active">
-                        students
+                    <button type="button" role="tab" id="meetingsButton" class="tablink" data-target="meetings" aria-controls="meetings" aria-selected="false">
+                        meetings
                     </button>
                 </div>
 
                 <!-- students advised -->
-                <div id="students" class="tabcontent active">
+                <div id="students" class="tabcontent active" role="tabpanel" aria-labelledby="studentsButton" tabindex="0">
                     <h3> Current students </h3>
 
                     <ul class="default">
@@ -328,49 +349,49 @@
                             Major in Science and Technology at Unifesp. August 2023 – present.
                         </li>
                     </ul>
-                    
+
                     <h3>Students' dissertations</h3>
 
                     <ul class="default">
                         <li>
-                            Aline Jaqueline Andrade: <a href="https://repositorio.unifesp.br/handle/11600/61016">Superálgebras de Lie de dimensão finita</a>.<br/>
+                            Aline Jaqueline Andrade: <a href="https://repositorio.unifesp.br/handle/11600/61016" lang="pt-BR">Superálgebras de Lie de dimensão finita</a>.<br/>
                             Masters in Pure and Applied Math. Unifesp, February 2021.
                         </li>
 
                         <li>
-                            Luiz Filipe Moraes: <a href="https://repositorio.unifesp.br/handle/11600/60762">Introdução à Geometria Algébrica</a>.<br/>
+                            Luiz Filipe Moraes: <a href="https://repositorio.unifesp.br/handle/11600/60762" lang="pt-BR">Introdução à Geometria Algébrica</a>.<br/>
                             Major in Computational Mathematics.  Unifesp, February 2021.
                         </li>
                     </ul>
                 </div>
 
                 <!-- Admin Services -->
-                <div id="admin" class="tabcontent">
+                <div id="administration" class="tabcontent" role="tabpanel" aria-labelledby="adminButton" tabindex="0">
                     <h3>Administrative services</h3>
 
                     <ul class="default">
-                        <li> 
-                            Head technical editor of the <a href="http://jonas.episciences.org">Journal of Non-Associative Structures</a>. <br />
+                        <li>
+                            Head technical editor of the <a href="https://jonas.episciences.org">Journal of Non-Associative Structures</a>. <br />
                             January 2026 - present.
                         </li>
 
-                        <li> 
-                            Editor of <a href="http://cm.episciences.org">Communications in Mathematics</a>. <br />
+                        <li>
+                            Editor of <a href="https://cm.episciences.org">Communications in Mathematics</a>. <br />
                             January 2022 - present.
                         </li>
 
                         <li>
-                            Member of the <a title="Comissão de Ensino de Pós-Graduação">Pure and Applied Mathematics Graduate Committee</a>. <br/>
+                            Member of the <span title="Comissão de Ensino de Pós-Graduação">Pure and Applied Mathematics Graduate Committee</span>. <br/>
                             Unifesp. July 2025 - present.
                         </li>
 
                         <li>
-                            Representative of Mathematics in the <a title="Departamento de Ciência e Tecnologia">Department of Science and Technology Council</a>. <br/>
+                            Representative of Mathematics in the <span title="Departamento de Ciência e Tecnologia">Department of Science and Technology Council</span>. <br/>
                             Unifesp. September 2021 - August 2023 and November 2025 - present.
                         </li>
 
                         <li>
-                            Representative of Mathematics in the <a title="Congregação do ICT">Institute of Science and Technology Executive Committee</a>. <br/>
+                            Representative of Mathematics in the <span title="Congregação do ICT">Institute of Science and Technology Executive Committee</span>. <br/>
                             Unifesp. December 2017 - present.
                         </li>
 
@@ -378,19 +399,19 @@
                             Chair of the <a href="https://ppg-mat.unifesp.br">Graduate Program in Pure and Applied Mathematics</a>. <br />
                             Unifesp. July 2023 - June 2025.
                         </li>
-                        
+
                         <li>
-                            Representative of Mathematics in the <a title="NDE da Matemática">Curriculum Committee</a>. <br/>
+                            Representative of Mathematics in the <span title="NDE da Matemática">Curriculum Committee</span>. <br/>
                             Unifesp. March 2017 - July 2022.
                         </li>
 
                         <li>
-                            Member of the <a title="Comissão de curso da Matemática Computacional">Applied Mathematics Undergraduate Committee</a>. <br/>
+                            Member of the <span title="Comissão de curso da Matemática Computacional">Applied Mathematics Undergraduate Committee</span>. <br/>
                             Unifesp. March 2018 - February 2022.
                         </li>
 
                         <li>
-                            Representative of <a title="Masters in Mathematics for Secondary Education" href="http://www.unifesp.br/campus/sjc/profmat">PROFMAT</a> in the Graduate Studies and Research Committee. <br/>
+                            Representative of <a title="Masters in Mathematics for Secondary Education" href="https://www.unifesp.br/campus/sjc/profmat">PROFMAT</a> in the Graduate Studies and Research Committee. <br/>
                             Unifesp. April - August, 2015 and August 2016 - March 2017.
                         </li>
 
@@ -407,43 +428,33 @@
                 </div>
 
                 <!-- seminars and meetings -->
-                <div id="meetings" class="tabcontent">
+                <div id="meetings" class="tabcontent" role="tabpanel" aria-labelledby="meetingsButton" tabindex="0">
                     <h3>Organization of meetings</h3>
 
                     <ul class="default">
                         <li> <a href="https://sites.google.com/view/cimpa2020madagascar/home">CIMPA School on Non-associative Algebras and their Applications</a>. Madagascar (online). September 2021.</li>
-                        <li> <a href="http://ppgmat.sites.unifesp.br/pesquisa/#seminarios">Pure and Applied Math Seminars</a>. Unifesp. March - July, 2020.</li>
-                        <li> <a href="http://www.unifesp.br/campus/sjc/apresentacao-cafe.html#">Mathematical Caf&eacute;</a>. Unifesp. September 2014 - June 2015.</li>
-                        <li> <a href="http://www.unifesp.br/campus/sjc/papmem.html#">High School Teachers Perfectioning Program (PAPMEM)</a>. Unifesp. July 2015.</li>
-                        <li> <a href="http://ssa_mat.catalao.ufg.br/pages/71336"> III Workshop de Álgebra da UFG-CAC</a>. UFG. October 2014.</li>
-                        <li> <a href="http://ssa_mat.catalao.ufg.br/pages/66565"> Seminário Semanal de Álgebra</a>. UFG. November 2013 - June 2014. </li>
-                        <li> <a href="http://ssa_mat.catalao.ufg.br/pages/66553"> II Workshop de Álgebra da UFG-CAC</a>. April 2014. </li>
+                        <li> <a href="https://ppgmat.sites.unifesp.br/pesquisa/#seminarios">Pure and Applied Math Seminars</a>. Unifesp. March - July, 2020.</li>
+                        <li> <a href="https://www.unifesp.br/campus/sjc/apresentacao-cafe.html">Mathematical Caf&eacute;</a>. Unifesp. September 2014 - June 2015.</li>
+                        <li> <a href="https://www.unifesp.br/campus/sjc/papmem.html">High School Teachers Perfectioning Program (PAPMEM)</a>. Unifesp. July 2015.</li>
+                        <li> <a href="https://ssa_mat.catalao.ufg.br/pages/71336" lang="pt-BR"> III Workshop de Álgebra da UFG-CAC</a>. UFG. October 2014.</li>
+                        <li> <a href="https://ssa_mat.catalao.ufg.br/pages/66565" lang="pt-BR"> Seminário Semanal de Álgebra</a>. UFG. November 2013 - June 2014. </li>
+                        <li> <a href="https://ssa_mat.catalao.ufg.br/pages/66553" lang="pt-BR"> II Workshop de Álgebra da UFG-CAC</a>. April 2014. </li>
                         <li> PAPMEM (High School Teachers Perfectioning Program). UFG. January 2014. </li>
-                        <li> <a href="http://ssa_mat.catalao.ufg.br/pages/54170">I Workshop de Álgebra da UFG - CAC</a>. November 2013. </li>
-                        <li> <a href="http://www.ime.unicamp.br/~encpos/VII_EnCPos/EnCPos_2012.html">VII Encontro dos Pós-Graduandos do IMECC</a>. September 2012. </li>
+                        <li> <a href="https://ssa_mat.catalao.ufg.br/pages/54170" lang="pt-BR">I Workshop de Álgebra da UFG - CAC</a>. November 2013. </li>
+                        <li> <a href="https://www.ime.unicamp.br/~encpos/VII_EnCPos/EnCPos_2012.html" lang="pt-BR">VII Encontro dos Pós-Graduandos do IMECC</a>. September 2012. </li>
                         <li> Graduate students seminar. IMECC. Fall 2009, Spring 2010 and Fall 2011. </li>
                     </ul>
                 </div>
             </section>
-        </div>
-
+        </main>
 
         <!-- Footer -->
-        <div id="footer">
+        <footer>
             <p>
-                The content and opinions on this webpage do not necessarily reflect the view of nor are they endorsed by the Federal University of São Paulo. 
-                <span class="footer right"><a href="http://html5up.net/prologue">Original Design</a></span>
+                The content and opinions on this webpage do not necessarily reflect the view of nor are they endorsed by the Federal University of São Paulo.
+                <span class="right"><a href="https://html5up.net/prologue">Original Design</a></span>
             </p>
-            <!--<p>Last update: &nbsp; August 19, 2026.</p>-->
-        </div>
+            <!--<p>Last update: &nbsp; November 22, 2026.</p>-->
+        </footer>
     </body>
-
 </html>
-
-
-
-
-
-
-
-
