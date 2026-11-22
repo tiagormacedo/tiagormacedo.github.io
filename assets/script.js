@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape')  && body.classList.contains('sidebar-open')) {
+    if (e.key === 'Escape' && body.classList.contains('sidebar-open')) {
       closeDrawer({ restoreFocus: true });
     }
   });
