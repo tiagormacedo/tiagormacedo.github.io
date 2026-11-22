@@ -1,121 +1,121 @@
-// Sidebar button: show sidebar when button is clicked
-function showSidebar () {
-    const botao = document.querySelector(".sidebarButton");
-    const menu = document.querySelector("#sidebar");
-    const core = document.querySelector("#main");
-    
-    const botaoDisplay = window.getComputedStyle(botao).display;
-    const menuTransform = window.getComputedStyle(menu).transform;
-    
-    if (botaoDisplay == "block" && menuTransform != "") {
-        botao.style.display = "none";
-        menu.style.transform = "translateX(0)";
-        core.style.transform = "translate(275px)";
+document.addEventListener('DOMContentLoaded', () => {
+  const body = document.body;
+  const button = document.querySelector('.sidebarButton');
+  const footer = document.querySelector('footer');
+  const main = document.querySelector('main');
+  const mq = window.matchMedia('(max-width: 960px)');
+  const sidebar = document.getElementById('sidebar');
+
+  const setInert = on => [main, footer].forEach(el => el && el.toggleAttribute('inert', on));
+
+  function openDrawer() {
+    if (!mq.matches) return;
+    body.classList.add('sidebar-open');
+    button.setAttribute('aria-expanded', 'true');
+    button.setAttribute('aria-label', 'Close navigation menu');
+    setInert(true);
+    (sidebar.querySelector('a, button') || button).focus();
+  }
+
+  function closeDrawer({ restoreFocus = false } = {}) {
+    // if (!body.classList.contains('sidebar-open')) return;
+    body.classList.remove('sidebar-open');
+    button.setAttribute('aria-expanded', 'false');
+    button.setAttribute('aria-label', 'Open navigation menu');
+    setInert(false);
+    if (restoreFocus) button.focus();
+  }
+
+  button.addEventListener('click', () => {
+    if (body.classList.contains('sidebar-open')) {
+      closeDrawer();
+    } else {
+      openDrawer();
     }
-}
+  });
 
-// Sidebar: show hamburger button when an item is clicked (and the screen is small)
-function showButton () {
-    let botao = document.querySelector(".sidebarButton");
-    let menu = document.querySelector("#sidebar");
-    let core = document.querySelector("#main");
-    
-    const botaoDisplay = window.getComputedStyle(botao).display;
-    const menuTransform = window.getComputedStyle(menu).transform;
-    
-    if (botaoDisplay === "none" && menuTransform !== "") {
-        botao.style.display = "block";
-        menu.style.transform = "translateX(-275px)";
-        core.style.transform = "translate(0)";
+  sidebar.addEventListener('click', e => {
+    const link = e.target.closest('a');
+    if (!link) return;
+    closeDrawer();
+    const target = link.hash ? document.getElementById(link.hash.slice(1)) : null;
+    if (target) target.focus({ preventScroll: true });
+  });
+
+  document.addEventListener('click', e => {
+    if (body.classList.contains('sidebar-open') &&
+        !e.target.closest('#sidebar') && !e.target.closest('.sidebarButton')) closeDrawer();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape')  && body.classList.contains('sidebar-open')) {
+      closeDrawer({ restoreFocus: true });
     }
-}
+  });
 
-// Sidebar: swap active (darker) item
-function swapActiveIndicator(item) {
-    const indicators = document.querySelectorAll(".indicator");
+  const onMq = () => {
+    if (!mq.matches) closeDrawer({ restoreFocus: sidebar.contains(document.activeElement) });
+  };
 
-    indicators.forEach((indicator) => {
-        indicator.classList.remove("active");
+  if (mq.addEventListener) {
+      mq.addEventListener('change', onMq);
+  } else {
+      mq.addListener(onMq);
+  }
+
+  document.querySelectorAll('.tabs_wrap').forEach(wrap => {
+    const tabs = Array.from(wrap.querySelectorAll('[role="tab"]'));
+    const panelFor = t => document.getElementById(t.dataset.target || t.id.replace(/Button$/, ''));
+
+    function select(tab, focus = false) {
+      tabs.forEach(t => {
+        const on = t === tab;
+        t.classList.toggle('active', on);
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        const p = panelFor(t);
+        if (p) p.classList.toggle('active', p === panelFor(tab));
+      });
+      if (focus) tab.focus();
+    }
+    tabs.forEach(t => {
+      t.tabIndex = t.classList.contains('active') ? 0 : -1;
+      t.addEventListener('click', () => select(t));
     });
-
-    if (item) {
-        item.classList.add("active");
-    }
-}
-
-// Sidebar: function that highlights the item corresponding to active section
-function highlightItem(section) {
-    // Create observer callback
-    function observerCallBack (entries) {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                const targetId = entry.target.id;
-                const indicator = document.querySelector(`[href*="#${targetId}"]`);
-                swapActiveIndicator(indicator);
-            }
-        });
-    }
-    // Set observer options
-    const observerOptions = {root: null, rootMargin: "0px", threshold: 0.25};
-    // Create observer
-    const ioObserver = new IntersectionObserver(observerCallBack, observerOptions);
-    // Apply observer to section
-    ioObserver.observe(section);
-}
-
-// Tabs: show and hide tabs within the same section
-function openTab() {
-    // Set all buttons as in-active by default
-    const tabbuttons = document.querySelectorAll("div > button.tablink");
-    for (let btn of tabbuttons) {
-        if (btn.parentNode == this.parentNode) {
-            btn.classList.remove("active");
-        }
-    }
-
-    // Hide all elements with class="tabcontent" by default
-    const tabs = document.querySelectorAll("div.tabcontent");
-    for (let tab of tabs) {
-        if (tab.parentNode == this.parentNode.parentNode) {
-            tab.classList.remove("active");
-        }
-    }
-
-    // Set a specific tab button as active
-    const thisTabButton = document.querySelector("div > button#" + this.id);
-    thisTabButton.classList.add("active");
-
-    // Show a specific tab content
-    const thisTab = document.querySelector("div#" + this.id.slice(0, -6));
-    thisTab.classList.add("active");
-}
-
-
-// When the page is done loading, do:
-window.onload = function() {
-    // Show sidebar (i.e. slide right)
-    const sidebar = document.querySelector('#sidebar');
-    if (sidebar) {
-        sidebar.style.left = "0";
-    }
-
-    // Sidebar button: add an event listener to the button
-    const btn = document.querySelector(".sidebarButton");
-    if (btn) {
-        btn.addEventListener("click", showSidebar);
-    }
-
-    // Sidebar: add event listeners to each item
-    const indicators = document.querySelectorAll(".indicator");
-    indicators.forEach((item) => {
-        item.addEventListener("click", showButton);
+    wrap.addEventListener('keydown', e => {
+      const keys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'];
+      if (!keys.includes(e.key)) return;
+      const i = tabs.indexOf(document.activeElement);
+      if (i === -1) return;
+      let j = i;
+      if (e.key === 'Home') j = 0;
+      else if (e.key === 'End') j = tabs.length - 1;
+      else j = (i + (['ArrowLeft', 'ArrowUp'].includes(e.key) ? -1 : 1) + tabs.length) % tabs.length;
+      e.preventDefault();
+      select(tabs[j], true);
     });
-    
-    // Sidebar: highlight item corresponding to the section I am reading
-    const sections = document.querySelectorAll("section");
-    sections.forEach((section) => highlightItem(section));
+  });
 
-    // Tab buttons: assign openTab to all tab link buttons
-    const tablinkButtons = document.querySelectorAll("button.tablink");
-    tablinkButtons.forEach((btn) => btn.addEventListener("click", openTab));
-};
+  const indicators = Array.from(document.querySelectorAll('#sidebar .menu a.indicator'));
+
+  const sections = Array.from(document.querySelectorAll('main > section[id]'));
+
+  const visible = new Map();
+
+  const setActive = link => indicators.forEach(a => a.classList.toggle('active', a === link));
+
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(e => visible.set(e.target.id, e.isIntersecting));
+    let active = sections.filter(s => visible.get(s.id)).pop();
+    if (!active && window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 2) {
+      active = sections[sections.length - 1];
+    }
+    if (active) {
+      const link = indicators.find(a => a.hash === '#' + active.id);
+      if (link) setActive(link);
+    }
+  }, { rootMargin: '-25% 0px -25% 0px', threshold: 0 });
+
+  sections.forEach(s => spy.observe(s));
+});
