@@ -269,12 +269,12 @@ nav .top p {
 }
 
 nav .top img {
-    position: absolute;
+    border-radius: 100%;
+    height: 70px;
     left: 0;
+    position: absolute;
     top: 0;
     width: 70px;
-    height: 70px;
-    border-radius: 100%;
 }
 
 
@@ -459,6 +459,20 @@ footer .right a {
         transform: translateX(0);
         transition: transform var(--slide-time) var(--slide-ease);
         visibility: visible;
+    }
+
+    body.sidebar-open nav .top img {
+        display: block;
+        position: static;
+        margin: 0 auto;
+    }
+
+    body.sidebar-open nav .top p {
+        width: auto;
+    }
+
+    body.sidebar-open nav .menu {
+        margin-top: 1em;
     }
 
     body.sidebar-open .sidebarButton {
