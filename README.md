@@ -20,7 +20,7 @@ This repository contains the source files for the academic webpages I maintain: 
 ├── 404.html          # GitHub Pages not-found page
 ├── LICENSE
 ├── index.html        # personal website
-└── readme.md
+└── README.md
 ```
 
 
